@@ -1,0 +1,240 @@
+{
+    "name": "Burn and Plastic -Operative Report",
+    "description": "Burn and Plastic -Operative Report",
+    "version": "1.0",
+    "published": true,
+    "retired": false,
+    "encounter": "Burn and Plastic -Operative Report",
+    "pages": [
+      {
+        "label": "Form",
+        "sections": [
+          {
+            "label": "Surgery Date",
+            "isExpanded": "true",
+            "questions": [
+                {
+                    "label": "Surgery Date",
+                    "type": "obs",
+                    "required": true,
+                    "id": "surgeryDate",
+                    "questionOptions": {
+                      "rendering": "date",
+                      "concept": "3b72d5ef-d63c-498a-9e01-bbf713020286",
+                      "conceptMappings": [],
+                      "answers": []
+                    }
+                }
+            ]
+          },
+          {
+            "label": "Surgeon and Assistant",
+            "isExpanded": "true",
+            "questions": [
+              {
+                "label": "Surgeon",
+                "type": "obs",
+                "required": true,
+                "id": "surgeon",
+                "questionOptions": {
+                  "rendering": "select",
+                  "concept": "390116c7-4cb3-4870-bfb7-2e2684d97a72",
+                  "conceptMappings": [],
+                  "answers": [
+                    {
+                      "concept": "fe2da37c-0c99-484c-85e3-cfaa23c9fb2a",
+                      "label": "Dr. Charles Furaha"
+                    },
+                    {
+                      "concept": "f96508c6-f0a2-440e-883e-4540286d3057",
+                      "label": "Other:"
+                    }
+                  ]
+                },
+                "validators": []
+              },
+              {
+                "label": "Assistant",
+                "type": "obs",
+                "required": false,
+                "id": "assistant",
+                "questionOptions": {
+                  "rendering": "select",
+                  "concept": "6814959a-a6f4-4072-bbf0-bd65c8e3f0a8",
+                  "conceptMappings": [],
+                  "answers": [
+                    {
+                      "concept": "fe2da37c-0c99-484c-85e3-cfaa23c9fb2a",
+                      "label": "Dr. Charles Furaha"
+                    },
+                    {
+                      "concept": "f96508c6-f0a2-440e-883e-4540286d3057",
+                      "label": "Other:"
+                    }
+                  ]
+                },
+                "validators": []
+              },
+              {
+                "label": "Comment",
+                "type": "obs",
+                "required": false,
+                "id": "comment",
+                "questionOptions": {
+                  "rendering": "text",
+                  "concept": "92f7fd24-6a8a-4615-b0dd-56e1d89c581a",
+                  "conceptMappings": [],
+                  "answers": []
+                },
+                "validators": []
+              }
+            ]
+          },
+          {
+            "label": "Operative Procedure",
+            "isExpanded": "true",
+            "questions": [
+              {
+                "label": "Operative Procedure",
+                "type": "obs",
+                "required": true,
+                "id": "operativeProcedure",
+                "questionOptions": {
+                    "rendering": "text",
+                    "concept": "c38d98cd-3f10-11e4-adec-0800271c1b75",
+                    "conceptMappings": [],
+                    "answers": []
+                }
+              },  
+              {
+                "label": "Findings",
+                "type": "obs",
+                "required": true,
+                "id": "findings",
+                "questionOptions": {
+                  "rendering": "text",
+                  "concept": "50d2cac1-4c03-41b0-848e-0f30081325c5",
+                  "conceptMappings": [],
+                  "answers": []
+                }
+              },
+              {
+                "label": "Technique",
+                "type": "obs",
+                "required": true,
+                "id": "technique",
+                "questionOptions": {
+                  "rendering": "text",
+                  "concept": "10ba48cf-517c-4615-9653-b3d2ee7eae55",
+                  "conceptMappings": [],
+                  "answers": []
+                },
+                "validators": []
+              },
+              {
+                "label": "Anesthesia",
+                "type": "obs",
+                "required": true,
+                "id": "anesthesia",
+                "questionOptions": {
+                  "rendering": "select",
+                  "concept": "acae61a9-be69-4995-992f-ce6a3dc6fdf0",
+                  "conceptMappings": [],
+                  "answers": [
+                    {
+                      "concept": "e8fe988f-53f5-4a87-9a04-8208a037b284",
+                      "label": "GA"
+                    },
+                    {
+                      "concept": "362bd11e-e83b-4aa4-8b23-8a3ead9908a4",
+                      "label": "Local"
+                    },
+                    {
+                      "concept": "05e9b87f-49cb-4aa0-88c6-51edc7afb65c",
+                      "label": "MAC"
+                    },
+                    {
+                      "concept": "4fdc5b5b-ff7a-4bdf-920f-92276ef6c07f",
+                      "label": "Other Answer"
+                    },
+                    {
+                      "concept": "777228ce-5230-4f00-81db-739d36872d5c",
+                      "label": "Regional"
+                    },
+                    {
+                      "concept": "72516972-735d-4514-a92c-dab2eca10d32",
+                      "label": "Spinal"
+                    }
+                  ]
+                },
+                "validators": []
+              },
+              {
+                "label": "Operative Notes, Estimated Blood Loss",
+                "type": "obs",
+                "required": false,
+                "id": "estimatedBloodLoss",
+                "questionOptions": {
+                  "rendering": "number",
+                  "concept": "3ecbd696-b590-4f13-809c-888d61bb0acb",
+                  "conceptMappings": [],
+                  "answers": []
+                },
+                "validators": []
+              },
+              {
+                "label": "Cleaning",
+                "type": "obs",
+                "required": true,
+                "id": "cleaning",
+                "questionOptions": {
+                  "rendering": "select",
+                  "concept": "4ea93f26-a0a9-42e1-93e3-512f1ca99234",
+                  "conceptMappings": [],
+                  "answers": [
+                    {
+                      "concept": "702e6e2b-6098-4b48-9398-897faffe9e66",
+                      "label": "Saline"
+                    },
+                    {
+                      "concept": "f96508c6-f0a2-440e-883e-4540286d3057",
+                      "label": "Other:"
+                    },
+                    {
+                      "concept": "1035b730-068f-40bb-b9d9-f99b8a596fea",
+                      "label": "10% Bethadin"
+                    }
+                  ]
+                },
+                "validators": []
+              },
+              {
+                "label": "Prophelaxsis Antibiotics",
+                "type": "obs",
+                "required": true,
+                "id": "prophelaxsisAntibiotics",
+                "questionOptions": {
+                  "rendering": "select",
+                  "concept": "623898df-64cb-4083-ab0c-9acf49135228",
+                  "conceptMappings": [],
+                  "answers": [
+                    {
+                      "concept": "f96508c6-f0a2-440e-883e-4540286d3057",
+                      "label": "Other:"
+                    },
+                    {
+                      "concept": "8f776aaa-81ed-4945-877f-98e53f228bc8",
+                      "label": "Ceftrixson"
+                    }
+                  ]
+                },
+                "validators": []
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "processor": "EncounterFormProcessor",
+    "uuid": "15cbba33-bb51-48ae-83d6-6c98b417d81f"
+  }

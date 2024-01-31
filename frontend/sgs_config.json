@@ -1,0 +1,32 @@
+{
+  "@openmrs/esm-styleguide": {
+    "Brand color #1": "#011c45",
+    "Brand color #2": "#4c6b00",
+    "Brand color #3": "#385600"
+  },
+  "@openmrs/esm-patient-chart-app": {
+    "extensionSlots": {
+      "patient-chart-dashboard-slot": {
+        "remove": [
+          "immunization-summary-dashboard"
+        ]
+      }
+    },
+    "notesConceptUuids": ["161011AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA", "c3659bf9-3f10-11e4-adec-0800271c1b75"],
+    "logo": {
+      "src": "sgs-logo-white.svg"
+    }
+  },
+  "@openmrs/esm-login-app": {
+    "logo": {
+      "src": "sgs-logo.svg",
+      "alt": "sgs-logo"
+    }
+  },
+  "@openmrs/esm-primary-navigation-app": {
+    "logo": {
+      "src": "sgs-logo-white.svg",
+      "alt": "sgs-logo"
+    }
+  }
+}

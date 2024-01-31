@@ -11,10 +11,28 @@ https://dev3.openmrs.org and https://o3.openmrs.org.
 docker compose build
 ```
 
+OR 
+
+```
+docker-compose build
+```
+
 ### Run the app
 
 ```
-docker compose up
+docker compose -p sgs-emr up -d
+```
+
+OR 
+
+```
+docker-compose -p sgs-emr up -d
+```
+
+## Clean up 
+
+```
+docker-compose -p sgs-emr down -v
 ```
 
 New OpenMRS UI is accessible at http://localhost/openmrs/spa

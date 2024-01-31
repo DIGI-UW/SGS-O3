@@ -1,0 +1,122 @@
+{
+    "name": "Burn - Follow up",
+    "description": "Burn - Follow up Form",
+    "version": "1.0",
+    "published": true,
+    "retired": false,
+    "encounter": "Burn - Follow up",
+    "pages": [
+      {
+        "label": "Form",
+        "sections": [
+          {
+            "label": "Follow up",
+            "isExpanded": "true",
+            "questions": [
+             {
+                "label": "Surgery Date",
+                "type": "obs",
+                "required": true,
+                "id": "surgeryDate",
+                "questionOptions": {
+                    "rendering": "date",
+                    "concept": "3b72d5ef-d63c-498a-9e01-bbf713020286",
+                    "conceptMappings": [],
+                    "answers": []
+                }
+              },
+              {
+                "label": "Author",
+                "type": "obs",
+                "required": true,
+                "id": "author",
+                "questionOptions": {
+                  "rendering": "select",
+                  "concept": "3fdec4f4-957c-4162-b2f5-915a364527f1",
+                  "conceptMappings": [],
+                  "answers": [
+                    {
+                      "concept": "fe2da37c-0c99-484c-85e3-cfaa23c9fb2a",
+                      "label": "Dr. Charles Furaha"
+                    },
+                    {
+                      "concept": "f96508c6-f0a2-440e-883e-4540286d3057",
+                      "label": "Other:"
+                    }
+                  ]
+                },
+                "validators": []
+              },
+              {
+                "label": "Subjective",
+                "type": "obs",
+                "required": false,
+                "id": "subjective",
+                "questionOptions": {
+                  "rendering": "text",
+                  "concept": "b412bdb1-664c-4e49-9ec2-aabef9be67bf",
+                  "conceptMappings": [],
+                  "answers": []
+                },
+                "validators": []
+              },
+              {
+                "label": "Objective",
+                "type": "obs",
+                "required": false,
+                "id": "objective",
+                "questionOptions": {
+                  "rendering": "text",
+                  "concept": "06a026d0-f214-49cc-8612-b31fa17dd1a4",
+                  "conceptMappings": [],
+                  "answers": []
+                },
+                "validators": []
+              },
+              {
+                "label": "Assessment",
+                "type": "obs",
+                "required": true,
+                "id": "assessment",
+                "questionOptions": {
+                  "rendering": "text",
+                  "concept": "13f82aece2cd4e3bbb950140e6cbffce",
+                  "conceptMappings": [],
+                  "answers": []
+                },
+                "validators": []
+              },
+              {
+                "label": "Plan",
+                "type": "obs",
+                "required": false,
+                "id": "plan",
+                "questionOptions": {
+                  "rendering": "text",
+                  "concept": "2ad20b043cf54dd48e698e1c8e231c99",
+                  "conceptMappings": [],
+                  "answers": []
+                },
+                "validators": []
+              },
+              {
+                "label": "Comments",
+                "type": "obs",
+                "required": false,
+                "id": "comments",
+                "questionOptions": {
+                  "rendering": "text",
+                  "concept": "92f7fd24-6a8a-4615-b0dd-56e1d89c581a",
+                  "conceptMappings": [],
+                  "answers": []
+                },
+                "validators": []
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "processor": "EncounterFormProcessor",
+    "uuid": "eb93fc67-0634-47c5-8c44-408079d5855f"
+  }
