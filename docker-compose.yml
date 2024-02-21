@@ -2,8 +2,9 @@ version: "3.7"
 
 services:
   gateway:
-    image: openmrs/openmrs-reference-application-3-gateway:${TAG:-qa}
+    image: sgs/gateway:${TAG:-v1.0.0}
     restart: "unless-stopped"
+    container_name: sgs-gateway
     depends_on:
       - frontend
       - backend
@@ -11,8 +12,9 @@ services:
       - "80:80"
 
   frontend:
-    image: openmrs/openmrs-reference-application-3-frontend:${TAG:-qa}
+    image: sgs/frontend:${TAG:-v1.0.0}
     restart: "unless-stopped"
+    container_name: sgs-frontend
     environment:
       SPA_PATH: /openmrs/spa
       API_URL: /openmrs
@@ -25,8 +27,9 @@ services:
       - backend
 
   backend:
-    image: openmrs/openmrs-reference-application-3-backend:${TAG:-qa}
+    image: sgs/backend:${TAG:-v1.0.0}
     restart: "unless-stopped"
+    container_name: sgs-backend
     depends_on:
       - db
     environment:
@@ -41,12 +44,13 @@ services:
       test: ["CMD", "curl", "-f", "http://localhost:8080/openmrs"]
       timeout: 5s
     volumes:
-      - openmrs-data:/openmrs/data
+      - ./distro/configuration:/openmrs/distribution/openmrs_config
 
   # MariaDB
   db:
     image: mariadb:10.8.2
     restart: "unless-stopped"
+    container_name: sgs-mariadb
     command: "mysqld --character-set-server=utf8 --collation-server=utf8_general_ci"
     healthcheck:
       test: "mysql --user=${OMRS_DB_USER:-openmrs} --password=${OMRS_DB_PASSWORD:-openmrs} --execute \"SHOW DATABASES;\""
@@ -59,8 +63,8 @@ services:
       MYSQL_PASSWORD: ${OMRS_DB_PASSWORD:-openmrs}
       MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD:-openmrs}
     volumes:
-      - db-data:/var/lib/mysql
+      - db_data:/var/lib/mysql
 
 volumes:
-  openmrs-data: ~
-  db-data: ~
+  openmrs_data: ~
+  db_data: ~

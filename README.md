@@ -5,34 +5,53 @@ https://dev3.openmrs.org and https://o3.openmrs.org.
 
 ## Quick start
 
-### Package the distribution and prepare the run
+### Build the custom gateway, frontend and backend images
+
+### Frontend
+
+cd frontend
 
 ```
-docker compose build
-```
-
-OR 
+docker build -t sgs/frontend:v1.0.0 . 
 
 ```
-docker-compose build
+
+### Gateway
+
+cd ../gateway
+
 ```
+docker build -t sgs/gateway:v1.0.0 . 
+
+```
+
+### Backend
+
+cd ../
+
+```
+docker build -t sgs/backend:v1.0.0 . 
+
+```
+
+docker image ls
 
 ### Run the app
 
 ```
-docker compose -p sgs-emr up -d
+docker compose -p sgs_emr up -d
 ```
 
 OR 
 
 ```
-docker-compose -p sgs-emr up -d
+docker-compose -p sgs_emr up -d
 ```
 
 ## Clean up 
 
 ```
-docker-compose -p sgs-emr down -v
+docker-compose -p sgs_emr down -v
 ```
 
 New OpenMRS UI is accessible at http://localhost/openmrs/spa

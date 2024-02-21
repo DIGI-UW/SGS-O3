@@ -4,10 +4,418 @@
                   http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-1.9.xsd">
 
 	<!-- Concepts -->
-    <changeSet id="2024-01-23-03-27PM" author="miirochristopher">
+    <changeSet id="2024-01-23-03-27-PM-01" author="miirochristopher">
         <comment>
             Set concept 'Impression' UUID
         </comment>
-        <sql>UPDATE concept SET uuid = 'bbad3db9-3f10-11e4-adec-0800271c1b75' WHERE concept_id = (select DISTINCT CONCEPT_ID from concept_name where name='Impression');</sql>
+        <sql>UPDATE concept SET uuid = 'bbad3db9-3f10-11e4-adec-0800271c1b75' WHERE concept_id = (select DISTINCT concept_id from concept_name where name='Impression');</sql>
+    </changeSet>
+    <changeSet id="2024-02-20-09-00-PM-02" author="miirochristopher">
+        <comment>
+            Set concept 'True' UUID
+        </comment>
+        <sql>UPDATE concept SET uuid = '78763e68-104e-465d-8ce3-35f9edfb083d' WHERE concept_id = (select DISTINCT concept_id from concept_name where name='True');</sql>
+    </changeSet>
+    <changeSet id="2024-02-20-09-01-PM-03" author="miirochristopher">
+        <comment>
+            Set concept 'False' UUID
+        </comment>
+        <sql>UPDATE concept SET uuid = 'f9f633a5-1544-4c44-9394-a7f746a12dff' WHERE concept_id = (select DISTINCT concept_id from concept_name where name='False');</sql>
+    </changeSet>
+    <changeSet id="2024-02-20-09-02-PM-04" author="miirochristopher">
+        <comment>
+            Set concept 'Teaspoon' UUID
+        </comment>
+        <sql>UPDATE concept SET uuid = '9d5d5f6e-3f10-11e4-adec-0800271c1b75' WHERE concept_id = (select DISTINCT concept_id from concept_name where name='Teaspoon');</sql>
+    </changeSet>
+    <changeSet id="2024-02-20-09-03-PM-05" author="miirochristopher">
+        <comment>
+            Set concept 'Tablespoon' UUID
+        </comment>
+        <sql>UPDATE concept SET uuid = '9d5e14bb-3f10-11e4-adec-0800271c1b75' WHERE concept_id = (select DISTINCT concept_id from concept_name where name='Tablespoon');</sql>
+    </changeSet>
+    <changeSet id="2024-02-20-09-04-PM-06" author="miirochristopher">
+        <comment>
+            Set concept 'Drop' UUID
+        </comment>
+        <sql>UPDATE concept SET uuid = '9d6540e1-3f10-11e4-adec-0800271c1b75' WHERE concept_id = (select DISTINCT concept_id from concept_name where name='Drop');</sql>
+    </changeSet>
+    <changeSet id="2024-02-20-09-05-PM-07" author="miirochristopher">
+        <comment>
+            Set concept 'Intramuscular' UUID
+        </comment>
+        <sql>UPDATE concept SET uuid = '9d6a6195-3f10-11e4-adec-0800271c1b75' WHERE concept_id = (select DISTINCT concept_id from concept_name where name='Intramuscular');</sql>
+    </changeSet>
+    <changeSet id="2024-02-20-09-06-PM-08" author="miirochristopher">
+        <comment>
+            Set concept 'Intravenous' UUID
+        </comment>
+        <sql>UPDATE concept SET uuid = '9d6b10cc-3f10-11e4-adec-0800271c1b75' WHERE concept_id = (select DISTINCT concept_id from concept_name where name='Intravenous');</sql>
+    </changeSet>
+    <changeSet id="2024-02-20-09-07-PM-09" author="miirochristopher">
+        <comment>
+            Set concept 'Oral' UUID
+        </comment>
+        <sql>UPDATE concept SET uuid = '9d6bc13f-3f10-11e4-adec-0800271c1b75' WHERE concept_id = (select DISTINCT concept_id from concept_name where name='Oral');</sql>
+    </changeSet>
+    <changeSet id="2024-02-20-09-08-PM-10" author="miirochristopher">
+        <comment>
+            Set concept 'Present' UUID
+        </comment>
+        <sql>UPDATE concept SET uuid = 'c4596f8c-3f10-11e4-adec-0800271c1b75' WHERE concept_id = (select DISTINCT concept_id from concept_name where name='Present');</sql>
+    </changeSet>
+    <changeSet id="2024-02-20-09-09-PM-11" author="miirochristopher">
+        <comment>
+            Set concept 'Absent' UUID
+        </comment>
+        <sql>UPDATE concept SET uuid = 'c459ee22-3f10-11e4-adec-0800271c1b75' WHERE concept_id = (select DISTINCT concept_id from concept_name where name='Absent');</sql>
+    </changeSet>
+    <changeSet id="2024-02-20-09-10-PM-12" author="miirochristopher">
+        <comment>
+            Set concept 'Normal' UUID
+        </comment>
+        <sql>UPDATE concept SET uuid = 'c45f6876-3f10-11e4-adec-0800271c1b75' WHERE concept_id = (select DISTINCT concept_id from concept_name where name='Normal');</sql>
+    </changeSet>
+    <changeSet id="2024-02-20-09-11-PM-13" author="miirochristopher">
+        <comment>
+            Set concept 'Inhaler' UUID
+        </comment>
+        <sql>UPDATE concept SET uuid = 'e5af7ef5-d381-44e4-85cb-6890b4041f21' WHERE concept_id = (select DISTINCT concept_id from concept_name where name='Inhaler');</sql>
+    </changeSet>
+    <changeSet id="2024-02-20-09-12-PM-14" author="miirochristopher">
+        <comment>
+            Set concept 'Spray' UUID
+        </comment>
+        <sql>UPDATE concept SET uuid = '5e6ad932-14a9-4a4f-98a4-780a471461fb' WHERE concept_id = (select DISTINCT concept_id from concept_name where name='Spray');</sql>
+    </changeSet>
+    <changeSet id="2024-02-20-09-13-PM-15" author="miirochristopher">
+        <comment>
+            Set concept 'Metronidazole' UUID
+        </comment>
+        <sql>UPDATE concept SET uuid = 'f9608d19-a304-4508-9074-4858cd3ccbed' WHERE concept_id = (select DISTINCT concept_id from concept_name where name='Metronidazole');</sql>
+    </changeSet>
+    <changeSet id="2024-02-20-09-14-PM-16" author="miirochristopher">
+        <comment>
+            Set concept 'Measles' UUID
+        </comment>
+        <sql>UPDATE concept SET uuid = 'efd2679c-4e14-11e4-8a57-0800271c1b75' WHERE concept_id = (select DISTINCT concept_id from concept_name where name='Measles');</sql>
+    </changeSet>
+    <changeSet id="2024-02-20-09-15-PM-17" author="miirochristopher">
+        <comment>
+            Set concept 'Constipation' UUID
+        </comment>
+        <sql>UPDATE concept SET uuid = '1e233bb7-4e15-11e4-8a57-0800271c1b75' WHERE concept_id = (select DISTINCT concept_id from concept_name where name='Constipation');</sql>
+    </changeSet>
+    <changeSet id="2024-02-20-09-16-PM-18" author="miirochristopher">
+        <comment>
+            Set concept 'Cough' UUID
+        </comment>
+        <sql>UPDATE concept SET uuid = '1e2918fb-4e15-11e4-8a57-0800271c1b75', datatype_id = 4 WHERE concept_id = (select DISTINCT concept_id from concept_name where name='Cough');</sql>
+    </changeSet>
+    <changeSet id="2024-02-20-09-17-PM-19" author="miirochristopher">
+        <comment>
+            Set concept 'Fever' UUID
+        </comment>
+        <sql>UPDATE concept SET uuid = '1f0f8ec6-4e15-11e4-8a57-0800271c1b75', datatype_id = 4 WHERE concept_id = (select DISTINCT concept_id from concept_name where name='Fever');</sql>
+    </changeSet>
+    <changeSet id="2024-02-20-09-18-PM-20" author="miirochristopher">
+        <comment>
+            Set concept 'Headache' UUID
+        </comment>
+        <sql>UPDATE concept SET uuid = '1f592562-4e15-11e4-8a57-0800271c1b75' WHERE concept_id = (select DISTINCT concept_id from concept_name where name='Headache');</sql>
+    </changeSet>
+    <changeSet id="2024-02-20-09-19-PM-21" author="miirochristopher">
+        <comment>
+            Set concept 'Every hour' UUID
+        </comment>
+        <sql>UPDATE concept SET uuid = '33436036-8a92-11e4-977f-0800271c1b75' WHERE concept_id = (select DISTINCT concept_id from concept_name where name='Every hour');</sql>
+    </changeSet>
+    <changeSet id="2024-02-20-09-20-PM-22" author="miirochristopher">
+        <comment>
+            Set concept 'Intraosseous' UUID
+        </comment>
+        <sql>UPDATE concept SET uuid = '335a4e0a-8a92-11e4-977f-0800271c1b75' WHERE concept_id = (select DISTINCT concept_id from concept_name where name='Intraosseous');</sql>
+    </changeSet>
+    <changeSet id="2024-02-20-09-21-PM-23" author="miirochristopher">
+        <comment>
+            Set concept 'Tablet' UUID
+        </comment>
+        <sql>UPDATE concept SET uuid = '33b0b316-8a92-11e4-977f-0800271c1b75' WHERE concept_id = (select DISTINCT concept_id from concept_name where name='Tablet');</sql>
+    </changeSet>
+    <changeSet id="2024-02-20-09-22-PM-24" author="miirochristopher">
+        <comment>
+            Set concept 'Capsule' UUID
+        </comment>
+        <sql>UPDATE concept SET uuid = '33b11175-8a92-11e4-977f-0800271c1b75' WHERE concept_id = (select DISTINCT concept_id from concept_name where name='Capsule');</sql>
+    </changeSet>
+    <changeSet id="2024-02-20-09-23-PM-25" author="miirochristopher">
+        <comment>
+            Set concept 'Inhalation' UUID
+        </comment>
+        <sql>UPDATE concept SET uuid = '33b2324f-8a92-11e4-977f-0800271c1b75' WHERE concept_id = (select DISTINCT concept_id from concept_name where name='Inhalation');</sql>
+    </changeSet>
+    <changeSet id="2024-02-20-09-24-PM-26" author="miirochristopher">
+        <comment>
+            Set concept 'date' UUID
+        </comment>
+        <sql>UPDATE concept SET uuid = 'e605731b-2e81-41a9-8446-2ed442c339e2', datatype_id = 6 WHERE concept_id = (select DISTINCT concept_id from concept_name where name='date');</sql>
+    </changeSet>
+    <changeSet id="2024-02-20-09-25-PM-27" author="miirochristopher">
+        <comment>
+            Set concept 'Negative' UUID
+        </comment>
+        <sql>UPDATE concept SET uuid = '718b4589-2a11-4355-b8dc-aa668a93e098' WHERE concept_id = (select DISTINCT concept_id from concept_name where name='Negative');</sql>
+    </changeSet>
+    <changeSet id="2024-02-20-09-26-PM-28" author="miirochristopher">
+        <comment>
+            Set concept 'None' UUID
+        </comment>
+        <sql>UPDATE concept SET uuid = '75f3c572-74dc-4c71-aa9a-3278dbcd2fb6' WHERE concept_id = (select DISTINCT concept_id from concept_name where name='None');</sql>
+    </changeSet>
+    <changeSet id="2024-02-20-09-27-PM-29" author="miirochristopher">
+        <comment>
+            Set concept 'Platelets' UUID
+        </comment>
+        <sql>UPDATE concept SET uuid = 'eddf74f8-a29d-4014-b3e8-187d021e9ac4' WHERE concept_id = (select DISTINCT concept_id from concept_name where name='Platelets');</sql>
+    </changeSet>
+    <changeSet id="2024-02-20-09-28-PM-30" author="miirochristopher">
+        <comment>
+            Set concept 'Amylase' UUID
+        </comment>
+        <sql>UPDATE concept SET uuid = 'd97b53ae-5f73-42ad-9a4a-920ecfcc1576' WHERE concept_id = (select DISTINCT concept_id from concept_name where name='Amylase');</sql>
+    </changeSet>
+    <changeSet id="2024-02-20-09-29-PM-31" author="miirochristopher">
+        <comment>
+            Set concept 'Metformin' UUID
+        </comment>
+        <sql>UPDATE concept SET uuid = '63aaaeba-9b3c-4ff5-9faf-522c10b6f54c' WHERE concept_id = (select DISTINCT concept_id from concept_name where name='Metformin');</sql>
+    </changeSet>
+    <changeSet id="2024-02-20-09-30-PM-32" author="miirochristopher">
+        <comment>
+            Set concept 'Amlodipine' UUID
+        </comment>
+        <sql>UPDATE concept SET uuid = '93491208-5dc1-47e5-9f3c-7bf99919f13a' WHERE concept_id = (select DISTINCT concept_id from concept_name where name='Amlodipine');</sql>
+    </changeSet>
+    <changeSet id="2024-02-20-09-31-PM-33" author="miirochristopher">
+        <comment>
+            Set concept 'Acetylsalicylate sodium' UUID
+        </comment>
+        <sql>UPDATE concept SET uuid = '09291895-fb7d-4989-9e31-723ab44856d2' WHERE concept_id = (select DISTINCT concept_id from concept_name where name='Acetylsalicylate sodium');</sql>
+    </changeSet>
+    <changeSet id="2024-02-20-09-32-PM-34" author="miirochristopher">
+        <comment>
+            Set concept 'Azithromycin' UUID
+        </comment>
+        <sql>UPDATE concept SET uuid = 'c3b264e0-8e01-42ee-a3b2-e2a357b73896' WHERE concept_id = (select DISTINCT concept_id from concept_name where name='Azithromycin');</sql>
+    </changeSet>
+    <changeSet id="2024-02-20-09-33-PM-35" author="miirochristopher">
+        <comment>
+            Set concept 'Ceftriaxone' UUID
+        </comment>
+        <sql>UPDATE concept SET uuid = '' WHERE concept_id = (select DISTINCT concept_id from concept_name where name='Ceftriaxone');</sql>
+    </changeSet>
+    <changeSet id="2024-02-20-09-34-PM-36" author="miirochristopher">
+        <comment>
+            Set concept 'Famotidine' UUID
+        </comment>
+        <sql>UPDATE concept SET uuid = '1952c13e-d829-4450-a605-828a1bd6c11e' WHERE concept_id = (select DISTINCT concept_id from concept_name where name='Famotidine');</sql>
+    </changeSet>
+    <changeSet id="2024-02-20-09-35-PM-37" author="miirochristopher">
+        <comment>
+            Set concept 'Hydrochlorothiazide' UUID
+        </comment>
+        <sql>UPDATE concept SET uuid = '8df288a5-9288-4ded-a862-ffb1ed062a12' WHERE concept_id = (select DISTINCT concept_id from concept_name where name='Hydrochlorothiazide');</sql>
+    </changeSet>
+    <changeSet id="2024-02-20-09-36-PM-38" author="miirochristopher">
+        <comment>
+            Set concept 'Morphine' UUID
+        </comment>
+        <sql>UPDATE concept SET uuid = '9c2f2f22-6e7a-464e-a8ca-129bc1fdf4b5' WHERE concept_id = (select DISTINCT concept_id from concept_name where name='Morphine');</sql>
+    </changeSet>
+    <changeSet id="2024-02-20-09-37-PM-39" author="miirochristopher">
+        <comment>
+            Set concept 'Ondansetron' UUID
+        </comment>
+        <sql>UPDATE concept SET uuid = 'c1c56699-79cd-4d37-9cbd-6166430b7948' WHERE concept_id = (select DISTINCT concept_id from concept_name where name='Ondansetron');</sql>
+    </changeSet>
+    <changeSet id="2024-02-20-09-38-PM-40" author="miirochristopher">
+        <comment>
+            Set concept 'Tetanus toxoid' UUID
+        </comment>
+        <sql>UPDATE concept SET uuid = '70197a8d-7242-4c27-8ece-9daf294d01d7' WHERE concept_id = (select DISTINCT concept_id from concept_name where name='Tetanus toxoid');</sql>
+    </changeSet>
+    <changeSet id="2024-02-20-09-39-PM-41" author="miirochristopher">
+        <comment>
+            Set concept 'Positive' UUID
+        </comment>
+        <sql>UPDATE concept SET uuid = '7acfafa4-f19b-485e-97a7-c9e002dbe37a' WHERE concept_id = (select DISTINCT concept_id from concept_name where name='Positive');</sql>
+    </changeSet>
+    <changeSet id="2024-02-20-09-40-PM-42" author="miirochristopher">
+        <comment>
+            Set concept 'Unknown' UUID
+        </comment>
+        <sql>UPDATE concept SET uuid = '3b75cc72-924b-4d36-8891-95484287495e' WHERE concept_id = (select DISTINCT concept_id from concept_name where name='Unknown');</sql>
+    </changeSet>
+    <changeSet id="2024-02-20-09-41-PM-43" author="miirochristopher">
+        <comment>
+            Set concept 'Hypertension' UUID
+        </comment>
+        <sql>UPDATE concept SET uuid = '8961717d-b30d-46b1-b917-ff5a463fcb51' WHERE concept_id = (select DISTINCT concept_id from concept_name where name='Hypertension');</sql>
+    </changeSet>
+    <changeSet id="2024-02-20-09-42-PM-44" author="miirochristopher">
+        <comment>
+            Set concept 'Hyperthyroidism' UUID
+        </comment>
+        <sql>UPDATE concept SET uuid = 'ef2f98e2-a4c5-44b7-9205-e178f0b147a9' WHERE concept_id = (select DISTINCT concept_id from concept_name where name='Hyperthyroidism');</sql>
+    </changeSet>
+    <changeSet id="2024-02-20-09-43-PM-45" author="miirochristopher">
+        <comment>
+            Set concept 'High' UUID
+        </comment>
+        <sql>UPDATE concept SET uuid = '380a3aaa-c282-4156-9272-b02b45a03449', datatype_id = 4 WHERE concept_id = (select DISTINCT concept_id from concept_name where name='High');</sql>
+    </changeSet>
+    <changeSet id="2024-02-20-09-44-PM-46" author="miirochristopher">
+        <comment>
+            Set concept 'Moderate' UUID
+        </comment>
+        <sql>UPDATE concept SET uuid = '54798d14-ae3b-4666-8667-a9be973f9996' WHERE concept_id = (select DISTINCT concept_id from concept_name where name='Moderate');</sql>
+    </changeSet>
+    <changeSet id="2024-02-20-09-45-PM-47" author="miirochristopher">
+        <comment>
+            Set concept 'Severe' UUID
+        </comment>
+        <sql>UPDATE concept SET uuid = '258d897f-da46-4d35-ae1f-f6517117bd01' WHERE concept_id = (select DISTINCT concept_id from concept_name where name='Severe');</sql>
+    </changeSet>
+    <changeSet id="2024-02-20-09-46-PM-48" author="miirochristopher">
+        <comment>
+            Set concept 'Yes' UUID
+        </comment>
+        <sql>UPDATE concept SET uuid = 'a2065636-5326-40f5-aed6-0cc2cca81ccc' WHERE concept_id = (select DISTINCT concept_id from concept_name where name='Yes');</sql>
+    </changeSet>
+    <changeSet id="2024-02-20-09-47-PM-49" author="miirochristopher">
+        <comment>
+            Set concept 'No' UUID
+        </comment>
+        <sql>UPDATE concept SET uuid = 'b497171e-0410-4d8d-bbd4-7e1a8f8b504e' WHERE concept_id = (select DISTINCT concept_id from concept_name where name='No');</sql>
+    </changeSet>
+    <changeSet id="2024-02-20-09-48-PM-50" author="miirochristopher">
+        <comment>
+            Set concept 'Completed' UUID
+        </comment>
+        <sql>UPDATE concept SET uuid = 'b1c872e5-224b-494e-ac33-978c07853f9b' WHERE concept_id = (select DISTINCT concept_id from concept_name where name='Completed');</sql>
+    </changeSet>
+    <changeSet id="2024-02-20-09-49-PM-51" author="miirochristopher">
+        <comment>
+            Set concept 'Appendectomy' UUID
+        </comment>
+        <sql>UPDATE concept SET uuid = '70de1c00-d244-4649-b413-bc7893ead902' WHERE concept_id = (select DISTINCT concept_id from concept_name where name='Appendectomy');</sql>
+    </changeSet>
+    <changeSet id="2024-02-20-09-50-PM-52" author="miirochristopher">
+        <comment>
+            Set concept 'Ulcer' UUID
+        </comment>
+        <sql>UPDATE concept SET uuid = '93247337-c9bf-4ccc-9159-c16710b5ee11' WHERE concept_id = (select DISTINCT concept_id from concept_name where name='Ulcer');</sql>
+    </changeSet>
+    <changeSet id="2024-02-20-09-51-PM-53" author="miirochristopher">
+        <comment>
+            Set concept 'Trace' UUID
+        </comment>
+        <sql>UPDATE concept SET uuid = '95aaf8f6-a9a9-494e-a9d5-fbb97d607a4c' WHERE concept_id = (select DISTINCT concept_id from concept_name where name='Trace');</sql>
+    </changeSet>
+    <changeSet id="2024-02-20-09-52-PM-54" author="miirochristopher">
+        <comment>
+            Set concept 'Haemoglobin' UUID
+        </comment>
+        <sql>UPDATE concept SET uuid = 'fe769568-16da-4d9e-9c99-fbed0a8a60f5' WHERE concept_id = (select DISTINCT concept_id from concept_name where name='Haemoglobin');</sql>
+    </changeSet>
+    <changeSet id="2024-02-20-09-53-PM-55" author="miirochristopher">
+        <comment>
+            Set concept 'Total bilirubin' UUID
+        </comment>
+        <sql>UPDATE concept SET uuid = '6f5afa6e-8e05-45fc-8c86-c01de9671d6a' WHERE concept_id = (select DISTINCT concept_id from concept_name where name='Total bilirubin');</sql>
+    </changeSet>
+    <changeSet id="2024-02-20-09-54-PM-56" author="miirochristopher">
+        <comment>
+            Set concept 'Other' UUID
+        </comment>
+        <sql>UPDATE concept SET uuid = '8dabf0ac-0d7c-9450-0413-78db87d989ee' WHERE concept_id = (select DISTINCT concept_id from concept_name where name='Other');</sql>
+    </changeSet>
+    <changeSet id="2024-02-20-09-55-PM-57" author="miirochristopher">
+        <comment>
+            Set concept 'Assessment' UUID
+        </comment>
+        <sql>UPDATE concept SET uuid = '23a6aae3-8f12-a298-8981-0eaa5a5a92fb' WHERE concept_id = (select DISTINCT concept_id from concept_name where name='Assessment');</sql>
+    </changeSet>
+    <changeSet id="2024-02-20-09-56-PM-58" author="miirochristopher">
+        <comment>
+            Set concept 'Plan' UUID
+        </comment>
+        <sql>UPDATE concept SET uuid = '9198eadf-6d11-13c8-7fc3-7f15ced91940' WHERE concept_id = (select DISTINCT concept_id from concept_name where name='Plan');</sql>
+    </changeSet>
+    <changeSet id="2024-02-20-09-57-PM-59" author="miirochristopher">
+        <comment>
+            Set concept 'Mild' UUID
+        </comment>
+        <sql>UPDATE concept SET uuid = '8db1770d-fa3d-419f-a794-f6c3e3d04d6f' WHERE concept_id = (select DISTINCT concept_id from concept_name where name='Mild');</sql>
+    </changeSet>
+    <changeSet id="2024-02-20-09-58-PM-60" author="miirochristopher">
+        <comment>
+            Set concept 'Emergency' UUID
+        </comment>
+        <sql>UPDATE concept SET uuid = '2acd52d4-a0c5-45da-be77-0fe34bb3dd84' WHERE concept_id = (select DISTINCT concept_id from concept_name where name='Emergency');</sql>
+    </changeSet>
+    <changeSet id="2024-02-20-09-59-PM-61" author="miirochristopher">
+        <comment>
+            Set concept 'Urgent' UUID
+        </comment>
+        <sql>UPDATE concept SET uuid = '67d2cba3-44a2-0582-5ccb-b852e80d6f51' WHERE concept_id = (select DISTINCT concept_id from concept_name where name='Urgent');</sql>
+    </changeSet>
+    <changeSet id="2024-02-20-10-00-PM-62" author="miirochristopher">
+        <comment>
+            Set concept 'Subcutaneous administration' UUID
+        </comment>
+        <sql>UPDATE concept SET uuid = '52595c84-9136-4994-acab-2dbf54abaf27' WHERE concept_id = (select DISTINCT concept_id from concept_name where name='Subcutaneous administration');</sql>
+    </changeSet>
+    <changeSet id="2024-02-20-10-01-PM-63" author="miirochristopher">
+        <comment>
+            Set concept 'Colonoscopy' UUID
+        </comment>
+        <sql>UPDATE concept SET uuid = 'c3f9bda3-3f10-11e4-adec-0800271c1b75', datatype_id = 3 WHERE concept_id = (select DISTINCT concept_id from concept_name where name='Colonoscopy');</sql>
+    </changeSet>
+    <changeSet id="2024-02-20-10-02-PM-64" author="miirochristopher">
+        <comment>
+            Set concept 'Malaria' UUID
+        </comment>
+        <sql>UPDATE concept SET uuid = '58370446-3439-4007-a6bc-4d6687c8d354' WHERE concept_id = (select DISTINCT concept_id from concept_name where name='Malaria');</sql>
+    </changeSet>
+    <changeSet id="2024-02-20-10-03-PM-65" author="miirochristopher">
+        <comment>
+            Set concept 'REFERRED_OUT' UUID
+        </comment>
+        <sql>UPDATE concept SET uuid = 'df00648c-f5c5-11ea-b6e4-d290d17436c8' WHERE concept_id = (select DISTINCT concept_id from concept_name where name='REFERRED_OUT');</sql>
+    </changeSet>
+    <changeSet id="2024-02-20-10-04-PM-66" author="miirochristopher">
+        <comment>
+            Set concept 'Total bilirubin' UUID
+        </comment>
+        <sql>UPDATE concept SET uuid = '687c767f-d968-4b4a-afc9-f3c99f54f313' WHERE concept_id = (select DISTINCT concept_id from concept_name where name='Total bilirubin');</sql>
+    </changeSet>
+    <changeSet id="2024-02-20-10-05-PM-67" author="miirochristopher">
+        <comment>
+            Set concept 'Serum creatinine (umol/L)' UUID
+        </comment>
+        <sql>UPDATE concept SET uuid = 'e1945bb9-596d-43d9-9046-3f160e21378d' WHERE concept_id = (select DISTINCT concept_id from concept_name where name='Serum creatinine (umol/L)');</sql>
+    </changeSet>
+    <changeSet id="2024-02-20-10-06-PM-68" author="miirochristopher">
+        <comment>
+            Set concept 'Cholera due to Vibrio cholerae' UUID
+        </comment>
+        <sql>UPDATE concept SET uuid = 'f129df86-4e14-11e4-8a57-0800271c1b75' WHERE concept_id = (select DISTINCT concept_id from concept_name where name='Cholera due to Vibrio cholerae');</sql>
+    </changeSet>
+    <changeSet id="2024-02-21-11-00-PM-69" author="miirochristopher">
+        <comment>
+            Set concept 'Prothrombin time' UUID
+        </comment>
+        <sql>UPDATE concept SET uuid = 'd970faea-4665-4ac5-9ecf-5fad0dbed77c', datatype_id = 4 WHERE concept_id = (select DISTINCT concept_id from concept_name where name='Prothrombin time');</sql>
     </changeSet>
 </databaseChangeLog>
