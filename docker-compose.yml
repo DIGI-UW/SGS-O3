@@ -44,7 +44,8 @@ services:
       test: ["CMD", "curl", "-f", "http://localhost:8080/openmrs"]
       timeout: 5s
     volumes:
-      - ./distro/configuration:/openmrs/distribution/openmrs_config
+      - openmrs_data:/openmrs/data
+      - ./distro/configuration/:/openmrs/distribution/openmrs_config
 
   # MariaDB
   db:
