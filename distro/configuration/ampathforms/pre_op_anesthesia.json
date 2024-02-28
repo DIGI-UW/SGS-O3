@@ -1,0 +1,267 @@
+{
+    "name": "Pre-Op (Anesthesia)",
+    "description": "Pre-Op (Anesthesia) Form",
+    "version": "1.0",
+    "published": true,
+    "retired": false,
+    "encounter": "Pre-Op Anesthesia",
+    "pages": [
+      {
+        "label": "Form",
+        "sections": [
+          {
+            "label": "Patient Vitals",
+            "isExpanded": "true",
+            "questions": [
+              {
+                "label": "Temperature",
+                "type": "obs",
+                "required": false,
+                "id": "temperature",
+                "questionOptions": {
+                  "rendering": "number",
+                  "concept": "c37bd733-3f10-11e4-adec-0800271c1b75",
+                  "conceptMappings": [],
+                  "answers": []
+                },
+                "validators": []
+              },
+              {
+                "label": "Abnormal",
+                "type": "obs",
+                "required": false,
+                "id": "abnormal",
+                "questionOptions": {
+                  "rendering": "radio",
+                  "concept": "c37c942d-3f10-11e4-adec-0800271c1b75",
+                  "conceptMappings": [],
+                  "answers": []
+                },
+                "validators": []
+              },
+              {
+                "label": "Heart Rate",
+                "type": "obs",
+                "required": false,
+                "id": "heartRate",
+                "questionOptions": {
+                  "rendering": "number",
+                  "concept": "c248c2f3-e927-429e-b2c0-adc104b956a9",
+                  "conceptMappings": [],
+                  "answers": []
+                },
+                "validators": []
+              },
+              {
+                "label": "Abnormal",
+                "type": "obs",
+                "required": false,
+                "id": "heartRateAbnormal",
+                "questionOptions": {
+                  "rendering": "radio",
+                  "concept": "94562c90-2a82-49c4-873c-aa8376a5781e",
+                  "conceptMappings": [],
+                  "answers": []
+                },
+                "validators": []
+              },
+              {
+                "label": "Systolic Blood Pressure (mm Hg)",
+                "type": "obs",
+                "required": false,
+                "id": "systolicBloodPressure",
+                "questionOptions": {
+                  "rendering": "number",
+                  "concept": "26fede17-3317-9054-70c1-ac41dea7556b",
+                  "conceptMappings": [],
+                  "answers": []
+                },
+                "validators": []
+              },
+              {
+                "label": "Diastolic Blood Pressure (mm Hg)",
+                "type": "obs",
+                "required": false,
+                "id": "diastolicBloodPressure",
+                "questionOptions": {
+                  "rendering": "number",
+                  "concept": "8ee724a5-250c-0955-9336-a42bd3041b6a",
+                  "conceptMappings": [],
+                  "answers": []
+                },
+                "validators": []
+              },
+              {
+                "label": "Respiratory Rate ",
+                "type": "obs",
+                "required": false,
+                "id": "respiratoryRate",
+                "questionOptions": {
+                  "rendering": "number",
+                  "concept": "6a2c1bf8-27d4-42b9-a1aa-aa9860db8609",
+                  "conceptMappings": [],
+                  "answers": []
+                },
+                "validators": []
+              },
+              {
+                "label": "Weight (Kg)",
+                "type": "obs",
+                "required": false,
+                "id": "weight ",
+                "questionOptions": {
+                  "rendering": "number",
+                  "concept": "5089AAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                  "conceptMappings": [],
+                  "answers": []
+                },
+                "validators": []
+              }
+            ]
+          },
+          {
+            "label": "General",
+            "isExpanded": "true",
+            "questions": [
+              {
+                "label": "Anesthesia plan",
+                "type": "obs",
+                "required": false,
+                "id": "anesthesiaPlan",
+                "questionOptions": {
+                  "rendering": "text",
+                  "concept": "c2ceee7f-a36c-4cc3-8d5f-5e61fa722a7c",
+                  "conceptMappings": [],
+                  "answers": []
+                },
+                "validators": []
+              }
+            ]
+          },
+          {
+            "label": "Upload anesthesia sheet",
+            "isExpanded": "true",
+            "questions": [
+              {
+                "label": "Upload anesthesia sheet here",
+                "type": "complex-obs",
+                "required": false,
+                "id": "uploadAnesthesiaSheet",
+                "questionOptions": {
+                  "rendering": "file",
+                  "concept": "38bf0734-cf72-4eb3-99de-e0c85d4c23a1",
+                  "conceptMappings": [],
+                  "answers": []
+                },
+                "validators": []
+              }
+            ]
+          },
+          {
+            "label": "Clearance and Evaluation",
+            "isExpanded": "true",
+            "questions": [
+              {
+                "label": "Anesthesia Evaluation Cleared for Surgery",
+                "type": "obs",
+                "required": false,
+                "id": "anesthesiaEvaluationClearedSurgery",
+                "questionOptions": {
+                  "rendering": "select",
+                  "concept": "a8430f9e-224c-45a6-8d45-cd89372bcf6b",
+                  "conceptMappings": [],
+                  "answers": [
+                    {
+                      "concept": "fb1216ec-412f-11eb-9591-6388fef9721b",
+                      "label": "Yes_1"
+                    },
+                    {
+                      "concept": "0fac2336-4130-11eb-951b-6ffc17310f7c",
+                      "label": "No_1"
+                    }
+                  ]
+                },
+                "validators": []
+              },
+              {
+                "label": "H&P by anesthesiologist or pediatrician completed",
+                "type": "obs",
+                "required": false,
+                "id": "HPCompleted",
+                "questionOptions": {
+                  "rendering": "select",
+                  "concept": "c2012a40-a4ac-4491-6298-7d7171955203",
+                  "conceptMappings": [],
+                  "answers": [
+                    {
+                      "concept": "fb1216ec-412f-11eb-9591-6388fef9721b",
+                      "label": "Yes_1"
+                    },
+                    {
+                      "concept": "99dfbe7a-5639-8f90-15df-383e2ca65867",
+                      "label": "Not indicated"
+                    },
+                    {
+                      "concept": "0fac2336-4130-11eb-951b-6ffc17310f7c",
+                      "label": "No_1"
+                    }
+                  ]
+                },
+                "validators": []
+              },
+              {
+                "label": "Trip or local anesthesiologist evaluation",
+                "type": "obs",
+                "required": false,
+                "id": "anesthesiologistEvaluation",
+                "questionOptions": {
+                  "rendering": "select",
+                  "concept": "ead4735a-88d1-59cc-79f1-fb0e54dc3f98",
+                  "conceptMappings": [],
+                  "answers": [
+                    {
+                      "concept": "fb1216ec-412f-11eb-9591-6388fef9721b",
+                      "label": "Yes_1"
+                    },
+                    {
+                      "concept": "99dfbe7a-5639-8f90-15df-383e2ca65867",
+                      "label": "Not indicated"
+                    },
+                    {
+                      "concept": "0fac2336-4130-11eb-951b-6ffc17310f7c",
+                      "label": "No_1"
+                    }
+                  ]
+                },
+                "validators": []
+              },
+              {
+                "label": "IV access obtained",
+                "type": "obs",
+                "required": false,
+                "id": "ivAccessObtained",
+                "questionOptions": {
+                  "rendering": "select",
+                  "concept": "127ab82f-70df-4619-0b9b-187ec15c8dd0",
+                  "conceptMappings": [],
+                  "answers": [
+                    {
+                      "concept": "fb1216ec-412f-11eb-9591-6388fef9721b",
+                      "label": "Yes_1"
+                    },
+                    {
+                      "concept": "0fac2336-4130-11eb-951b-6ffc17310f7c",
+                      "label": "No_1"
+                    }
+                  ]
+                },
+                "validators": []
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "processor": "EncounterFormProcessor",
+    "uuid": "48f144c9-8fe0-4eb6-a15b-1305aae309c6"
+  }

@@ -1,0 +1,1240 @@
+{
+    "name": "Clinic Visit (Anesthesia)",
+    "description": "Clinic Visit (Anesthesia) Form",
+    "version": "1.0",
+    "published": true,
+    "retired": false,
+    "encounter": "Clinic Visit Anesthesia",
+    "pages": [
+      {
+        "label": "Form",
+        "sections": [
+          {
+            "label": "Patient Vitals",
+            "isExpanded": "true",
+            "questions": [
+                {
+                    "label": "Temperature (F)",
+                    "type": "obs",
+                    "required": false,
+                    "id": "temperature",
+                    "questionOptions": {
+                      "rendering": "number",
+                      "concept": "c37bd733-3f10-11e4-adec-0800271c1b75",
+                      "conceptMappings": [],
+                      "answers": []
+                    },
+                    "validators": []
+              },  
+              {
+                "label": "Heart Rate",
+                "type": "obs",
+                "required": false,
+                "id": "heartRate",
+                "questionOptions": {
+                  "rendering": "number",
+                  "concept": "c248c2f3-e927-429e-b2c0-adc104b956a9",
+                  "conceptMappings": [],
+                  "answers": []
+                },
+                "validators": []
+              },
+              {
+                "label": "Systolic Blood Pressure (mm Hg)",
+                "type": "obs",
+                "required": false,
+                "id": "systolicBloodPressure",
+                "questionOptions": {
+                  "rendering": "number",
+                  "concept": "26fede17-3317-9054-70c1-ac41dea7556b",
+                  "conceptMappings": [],
+                  "answers": []
+                },
+                "validators": []
+              },
+              {
+                "label": "Diastolic Blood Pressure (mm Hg)",
+                "type": "obs",
+                "required": false,
+                "id": "diastolicBloodPressure",
+                "questionOptions": {
+                  "rendering": "number",
+                  "concept": "8ee724a5-250c-0955-9336-a42bd3041b6a",
+                  "conceptMappings": [],
+                  "answers": []
+                },
+                "validators": []
+              },
+              {
+                "label": "Respiratory Rate",
+                "type": "obs",
+                "required": false,
+                "id": "respiratoryRate",
+                "questionOptions": {
+                  "rendering": "number",
+                  "concept": "6a2c1bf8-27d4-42b9-a1aa-aa9860db8609",
+                  "conceptMappings": [],
+                  "answers": []
+                },
+                "validators": []
+              },
+              {
+                "label": "Weight (Kg)",
+                "type": "obs",
+                "required": false,
+                "id": "weight",
+                "questionOptions": {
+                  "rendering": "number",
+                  "concept": "5089AAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                  "conceptMappings": [],
+                  "answers": []
+                },
+                "validators": []
+              },
+              {
+                "label": "Height (Cm)",
+                "type": "obs",
+                "required": false,
+                "id": "height",
+                "questionOptions": {
+                  "rendering": "number",
+                  "concept": "5090AAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                  "conceptMappings": [],
+                  "answers": []
+                },
+                "validators": []
+              },
+              {
+                "label": "SPO2 (%)",
+                "type": "obs",
+                "required": false,
+                "id": "SPO2",
+                "questionOptions": {
+                  "rendering": "number",
+                  "concept": "c3838414-3f10-11e4-adec-0800271c1b75",
+                  "conceptMappings": [],
+                  "answers": []
+                },
+                "validators": []
+              }
+            ]
+          },
+          {
+            "label": "Medical /Surgical /Social History",
+            "isExpanded": "true",
+            "questions": [
+              {
+                "label": "Past medical history",
+                "type": "obs",
+                "required": false,
+                "id": "pastMedicalHistory",
+                "questionOptions": {
+                  "rendering": "text",
+                  "concept": "30c10a0b-6099-1e09-4b4b-9ac62bf13902",
+                  "conceptMappings": [],
+                  "answers": []
+                },
+                "validators": []
+              },
+              {
+                "label": "Past Surgical History",
+                "type": "obs",
+                "required": false,
+                "id": "pastSurgicalHistory",
+                "questionOptions": {
+                  "rendering": "text",
+                  "concept": "efb230b2-070e-9340-042e-cee3d5ca401a",
+                  "conceptMappings": [],
+                  "answers": []
+                },
+                "validators": []
+              },
+              {
+                "label": "Social history",
+                "type": "obs",
+                "required": false,
+                "id": "socialHistory",
+                "questionOptions": {
+                  "rendering": "text",
+                  "concept": "f9f666dd-8de6-09cf-5b01-d34493002e69",
+                  "conceptMappings": [],
+                  "answers": []
+                },
+                "validators": []
+              },
+              {
+                "label": "Allergies",
+                "type": "obs",
+                "required": false,
+                "id": "allergies",
+                "questionOptions": {
+                  "rendering": "text",
+                  "concept": "a2a312b5-a588-97de-3414-734d50367791",
+                  "conceptMappings": [],
+                  "answers": []
+                },
+                "validators": []
+              },
+              {
+                "label": "Time traveled for care",
+                "type": "obs",
+                "required": false,
+                "id": "timeTraveledForCare",
+                "questionOptions": {
+                  "rendering": "text",
+                  "concept": "8eac5b9b-8aa6-44dd-9bb9-b754f436e5b4",
+                  "conceptMappings": [],
+                  "answers": []
+                },
+                "validators": []
+              },
+              {
+                "label": "Physical Exam",
+                "type": "obs",
+                "required": false,
+                "id": "physicalExam",
+                "questionOptions": {
+                  "rendering": "text",
+                  "concept": "4ca3e055-2fca-8659-31cd-65a2c79f263e",
+                  "conceptMappings": [],
+                  "answers": []
+                },
+                "validators": []
+              }
+            ]
+          },
+          {
+            "label": "Anesthesia evaluation",
+            "isExpanded": "true",
+            "questions": [
+              {
+                "label": "ASA Score",
+                "type": "obs",
+                "required": false,
+                "id": "ASAScore",
+                "questionOptions": {
+                  "rendering": "select",
+                  "concept": "9F9DDA23-028E-9D1F-2D31-3E0D8A4A00FE",
+                  "conceptMappings": [],
+                  "answers": [
+                    {
+                      "concept": "8fc57db0-9de5-4db2-956a-b25e5b83c2c2",
+                      "label": "Severity classification NYHA - Class IV"
+                    },
+                    {
+                      "concept": "9d5ec533-36f1-4f64-acaf-5d86726dba26",
+                      "label": "Severity classification NYHA - Class III"
+                    },
+                    {
+                      "concept": "127d6ea2-4d23-4100-ac8b-d8c3cd345d55",
+                      "label": "Severity classification NYHA - Class II"
+                    },
+                    {
+                      "concept": "1973a47e-6750-410c-b748-8900d4e8ad2f",
+                      "label": "Severity classification NYHA - Class I"
+                    }
+                  ]
+                },
+                "validators": []
+              },
+              {
+                "label": "Anesthesia Evaluation Cleared for Surgery",
+                "type": "obs",
+                "required": false,
+                "id": "anesthesiaEvaluationClearedForSurgery",
+                "questionOptions": {
+                  "rendering": "select",
+                  "concept": "a8430f9e-224c-45a6-8d45-cd89372bcf6b",
+                  "conceptMappings": [],
+                  "answers": [
+                    {
+                      "concept": "fb1216ec-412f-11eb-9591-6388fef9721b",
+                      "label": "Yes_1"
+                    },
+                    {
+                      "concept": "0fac2336-4130-11eb-951b-6ffc17310f7c",
+                      "label": "No_1"
+                    }
+                  ]
+                },
+                "validators": []
+              },
+              {
+                "label": "Anesthesia plan",
+                "type": "obs",
+                "required": false,
+                "id": "anesthesiaPlan",
+                "questionOptions": {
+                  "rendering": "text",
+                  "concept": "c2ceee7f-a36c-4cc3-8d5f-5e61fa722a7c",
+                  "conceptMappings": [],
+                  "answers": []
+                },
+                "validators": []
+              },
+              {
+                "label": "Anesthesia history or complications from previous anesthetics in patients or family",
+                "type": "obs",
+                "required": false,
+                "id": "anesthesiaHistoryFromPreviousAnesthetics",
+                "questionOptions": {
+                  "rendering": "text",
+                  "concept": "31ce0a24-cb11-448e-adc8-59e828f8a412",
+                  "conceptMappings": [],
+                  "answers": []
+                },
+                "validators": []
+              },
+              {
+                "label": "Airway Exam/Mallampati classification",
+                "type": "obs",
+                "required": false,
+                "id": "airwayExamMallampatiClassification",
+                "questionOptions": {
+                  "rendering": "text",
+                  "concept": "087a1478-74cc-4210-9442-97e3af158149",
+                  "conceptMappings": [],
+                  "answers": []
+                },
+                "validators": []
+              },
+              {
+                "label": "Pulmonary exam",
+                "type": "obs",
+                "required": false,
+                "id": "pulmonaryExam",
+                "questionOptions": {
+                  "rendering": "text",
+                  "concept": "6dc729cb-bd08-4e78-a6a6-ef43c1a33d31",
+                  "conceptMappings": [],
+                  "answers": []
+                },
+                "validators": []
+              },
+              {
+                "label": "Cardiovascular exam",
+                "type": "obs",
+                "required": false,
+                "id": "cardiovascularExam",
+                "questionOptions": {
+                  "rendering": "text",
+                  "concept": "7e4b6f6c-09a4-45f7-9038-71d1c0e326db",
+                  "conceptMappings": [],
+                  "answers": []
+                },
+                "validators": []
+              },
+              {
+                "label": "Neurological exam",
+                "type": "obs",
+                "required": false,
+                "id": "neurologicalExam",
+                "questionOptions": {
+                  "rendering": "text",
+                  "concept": "82608f9e-25ac-4b84-b801-cfaf6a03bdd6",
+                  "conceptMappings": [],
+                  "answers": []
+                },
+                "validators": []
+              },
+              {
+                "label": "NPO instructions",
+                "type": "obs",
+                "required": false,
+                "id": "NPOInstructions",
+                "questionOptions": {
+                  "rendering": "text",
+                  "concept": "aa8395d0-b07d-4a7d-9f5e-8ef7938362c9",
+                  "conceptMappings": [],
+                  "answers": []
+                },
+                "validators": []
+              }
+            ]
+          },
+          {
+            "label": "Upload Anesthesia Form",
+            "isExpanded": "true",
+            "questions": [
+              {
+                "label": "Upload anesthesia form here",
+                "type": "complex-obs",
+                "required": false,
+                "id": "uploadAnesthesiaFormHere",
+                "questionOptions": {
+                  "rendering": "file",
+                  "concept": "519e0d65-0fd3-47d6-8faa-b280a04d9b33",
+                  "conceptMappings": [],
+                  "answers": []
+                },
+                "validators": []
+              }
+            ]
+          },
+          {
+            "label": "VAS Pain Scale of 1-10:  0 = no pain, 10 = max pain",
+            "isExpanded": "true",
+            "questions": [
+              {
+                "label": "VAS Pain",
+                "type": "obs",
+                "required": false,
+                "id": "VASPain",
+                "questionOptions": {
+                  "rendering": "select",
+                  "concept": "51a413e9-0790-0d4d-5094-a591f59f6c2f",
+                  "conceptMappings": [],
+                  "answers": [
+                    {
+                      "concept": "ef1f09c9-b124-4616-80cf-dadf99251de4",
+                      "label": "Number, 4"
+                    },
+                    {
+                      "concept": "8c6b2506-505f-4473-ac36-6a6e5995d45d",
+                      "label": "Number, 3"
+                    },
+                    {
+                      "concept": "8f63b407-8fdd-4efd-94c7-e6c3f93f0403",
+                      "label": "Number, 2"
+                    },
+                    {
+                      "concept": "bcb6ca2d-8b01-4d40-bbab-195d2da0f908",
+                      "label": "Number, 1"
+                    },
+                    {
+                      "concept": "4c9d68e1-5189-438c-a826-894c9533bb2f",
+                      "label": "Number, 0"
+                    },
+                    {
+                      "concept": "a83b430b-8339-3ad1-5760-5eca8033603f",
+                      "label": "10"
+                    },
+                    {
+                      "concept": "ea136e11-a77d-9ffa-17d7-f4bfa60a2c1c",
+                      "label": "9"
+                    },
+                    {
+                      "concept": "dcaf11f7-6dee-1e93-85e2-1817c4b0114a",
+                      "label": "8"
+                    },
+                    {
+                      "concept": "93e44683-9e65-6391-8a9a-2028c38689e2",
+                      "label": "7"
+                    },
+                    {
+                      "concept": "ac526c4d-7ebc-62e4-54f3-4fda2b5a2ef7",
+                      "label": "6"
+                    },
+                    {
+                      "concept": "da9643b8-5fad-0f6e-5372-e6803c1555cf",
+                      "label": "5"
+                    }
+                  ]
+                },
+                "validators": []
+              }
+            ]
+          },
+          {
+            "label": "CDC",
+            "isExpanded": "true",
+            "questions": [
+              {
+                "label": "Would you say that in general your health is",
+                "type": "obs",
+                "required": false,
+                "id": "wouldSayOnGeneralHealth ",
+                "questionOptions": {
+                  "rendering": "select",
+                  "concept": "c3fba212-710f-4c12-8886-472cea348a04",
+                  "conceptMappings": [],
+                  "answers": [
+                    {
+                      "concept": "b87a9c81-8900-9ef6-104a-d980347303c5",
+                      "label": "Very Good"
+                    },
+                    {
+                      "concept": "8ab9dba0-5a77-a63f-72dd-e4e9bb848b16",
+                      "label": "Poor"
+                    },
+                    {
+                      "concept": "57cc5b02-93ee-4101-bf64-af2a3527fe24",
+                      "label": "Good"
+                    },
+                    {
+                      "concept": "9e159aaa-621c-38c7-3ec5-e4295b547166",
+                      "label": "Fair"
+                    },
+                    {
+                      "concept": "0838c3de-0815-5339-2465-84b667508e21",
+                      "label": "Excellent"
+                    }
+                  ]
+                },
+                "validators": []
+              },
+              {
+                "label": "Now, thinking about your physical health, which includes physical illness and injury, for how many days during the past 30 days was your physical health not good?",
+                "type": "obs",
+                "required": false,
+                "id": "physicalHealthNotGoodInLast30Days",
+                "questionOptions": {
+                  "rendering": "number",
+                  "concept": "386584be-6cc0-48ec-8dba-27c2b0f4b669",
+                  "conceptMappings": [],
+                  "answers": []
+                },
+                "validators": []
+              },
+              {
+                "label": "Now thinking about your mental health, which includes stress, depression, and problems with emotions, for how many days during the past 30 days was your mental health not good?",
+                "type": "obs",
+                "required": false,
+                "id": "mentalHealthNotGoodLast30Days",
+                "questionOptions": {
+                  "rendering": "number",
+                  "concept": "3ab92468-f620-4ced-9178-ff19422ed4a0",
+                  "conceptMappings": [],
+                  "answers": []
+                },
+                "validators": []
+              },
+              {
+                "label": "During the past 30 days, for about how many days did poor physical or mental health keep you from doing your usual activities, such as self-care, work, or recreation?",
+                "type": "obs",
+                "required": false,
+                "id": "mentalHealthPreventingUsualActivities",
+                "questionOptions": {
+                  "rendering": "number",
+                  "concept": "1796cdb5-e72c-4b1e-9b7a-7a970a8a8d9e",
+                  "conceptMappings": [],
+                  "answers": []
+                },
+                "validators": []
+              }
+            ]
+          },
+          {
+            "label": "SF-12",
+            "isExpanded": "true",
+            "questions": []
+          },
+          {
+            "label": "This information will help your doctors keep track of how you feel and how well you are able to do your usual activities",
+            "isExpanded": "true",
+            "questions": [
+              {
+                "label": "In general, would you say your health is",
+                "type": "obs",
+                "required": false,
+                "id": "inGeneralYourHealthIs",
+                "questionOptions": {
+                  "rendering": "select",
+                  "concept": "b3d909c9-701a-6814-4168-ef1eaad59e05",
+                  "conceptMappings": [],
+                  "answers": [
+                    {
+                      "concept": "b87a9c81-8900-9ef6-104a-d980347303c5",
+                      "label": "Very Good"
+                    },
+                    {
+                      "concept": "8ab9dba0-5a77-a63f-72dd-e4e9bb848b16",
+                      "label": "Poor"
+                    },
+                    {
+                      "concept": "57cc5b02-93ee-4101-bf64-af2a3527fe24",
+                      "label": "Good"
+                    },
+                    {
+                      "concept": "9e159aaa-621c-38c7-3ec5-e4295b547166",
+                      "label": "Fair"
+                    },
+                    {
+                      "concept": "0838c3de-0815-5339-2465-84b667508e21",
+                      "label": "Excellent"
+                    }
+                  ]
+                },
+                "validators": []
+              }
+            ]
+          },
+          {
+            "label": "Health Limit",
+            "isExpanded": "true",
+            "questions": []
+          },
+          {
+            "label": "The following two questions are about activities you might do during a typical day. Does YOUR HEALTH NOW LIMIT YOU in these activities? If so, how much?",
+            "isExpanded": "true",
+            "questions": [
+              {
+                "label": "MODERATE ACTIVITIES",
+                "type": "obs",
+                "required": false,
+                "id": "MODERATEACTIVITIES",
+                "questionOptions": {
+                  "rendering": "select",
+                  "concept": "ff20066b-3060-9bc8-942c-aead0bc944fd",
+                  "conceptMappings": [],
+                  "answers": [
+                    {
+                      "concept": "9157ecdf-a297-a09f-0dce-6d2dc3c7089e",
+                      "label": "Yes, Limited A Lot"
+                    },
+                    {
+                      "concept": "d2170132-9eed-783b-0a9d-3958ab3c3023",
+                      "label": "Yes, Limited A Little"
+                    },
+                    {
+                      "concept": "21b437de-8d0e-225d-8162-74deb65e909a",
+                      "label": "No, Not Limited At All"
+                    }
+                  ]
+                },
+                "validators": []
+              },
+              {
+                "label": "Climbing SEVERAL flights of stairs",
+                "type": "obs",
+                "required": false,
+                "id": "climbingSEVERALFlightsOfStairs",
+                "questionOptions": {
+                  "rendering": "select",
+                  "concept": "ac2dde8c-7bda-62b2-26ff-f2cb07992e7c",
+                  "conceptMappings": [],
+                  "answers": [
+                    {
+                      "concept": "9157ecdf-a297-a09f-0dce-6d2dc3c7089e",
+                      "label": "Yes, Limited A Lot"
+                    },
+                    {
+                      "concept": "d2170132-9eed-783b-0a9d-3958ab3c3023",
+                      "label": "Yes, Limited A Little"
+                    },
+                    {
+                      "concept": "21b437de-8d0e-225d-8162-74deb65e909a",
+                      "label": "No, Not Limited At All"
+                    }
+                  ]
+                },
+                "validators": []
+              }
+            ]
+          },
+          {
+            "label": "PHYSICAL HEALTH",
+            "isExpanded": "true",
+            "questions": []
+          },
+          {
+            "label": "During the PAST 4 WEEKS have you had any of the following problems with your work or other regular activities AS A RESULT OF YOUR PHYSICAL HEALTH?",
+            "isExpanded": "true",
+            "questions": [
+              {
+                "label": "ACCOMPLISHED LESS than you would like",
+                "type": "obs",
+                "required": false,
+                "id": "ACCOMPLISHEDLESSThanYouWouldLike",
+                "questionOptions": {
+                  "rendering": "select",
+                  "concept": "5759bcc7-27a5-4606-8b81-4e71a0b0e428",
+                  "conceptMappings": [],
+                  "answers": [
+                    {
+                      "concept": "a2065636-5326-40f5-aed6-0cc2cca81ccc",
+                      "label": "Yes"
+                    },
+                    {
+                      "concept": "b497171e-0410-4d8d-bbd4-7e1a8f8b504e",
+                      "label": "No"
+                    }
+                  ]
+                },
+                "validators": []
+              },
+              {
+                "label": "Were limited in the KIND of work or other activities",
+                "type": "obs",
+                "required": false,
+                "id": "WereLimitedKINDOfWorkOrActivities",
+                "questionOptions": {
+                  "rendering": "select",
+                  "concept": "26e490f3-a262-a67b-50fd-45bcf2de8c34",
+                  "conceptMappings": [],
+                  "answers": [
+                    {
+                      "concept": "a2065636-5326-40f5-aed6-0cc2cca81ccc",
+                      "label": "Yes"
+                    },
+                    {
+                      "concept": "b497171e-0410-4d8d-bbd4-7e1a8f8b504e",
+                      "label": "No"
+                    }
+                  ]
+                },
+                "validators": []
+              }
+            ]
+          },
+          {
+            "label": "EMOTIONAL PROBLEMS",
+            "isExpanded": "true",
+            "questions": []
+          },
+          {
+            "label": "During the PAST 4 WEEKS, were you limited in the kind of work you do or other regular activities AS A RESULT OF ANY EMOTIONAL PROBLEMS such as feeling depressed or anxious?",
+            "isExpanded": "true",
+            "questions": [
+              {
+                "label": "ACCOMPLISHED LESS than you would like",
+                "type": "obs",
+                "required": false,
+                "id": "LESSACCOMPLISHEDThanYouWouldLike",
+                "questionOptions": {
+                  "rendering": "select",
+                  "concept": "5759bcc7-27a5-4606-8b81-4e71a0b0e428",
+                  "conceptMappings": [],
+                  "answers": [
+                    {
+                      "concept": "a2065636-5326-40f5-aed6-0cc2cca81ccc",
+                      "label": "Yes"
+                    },
+                    {
+                      "concept": "b497171e-0410-4d8d-bbd4-7e1a8f8b504e",
+                      "label": "No"
+                    }
+                  ]
+                },
+                "validators": []
+              },
+              {
+                "label": "Didn’t do work or other activities as CAREFULLY as usual",
+                "type": "obs",
+                "required": false,
+                "id": "DoWorkOrOtherActivitiesCAREFULLY ",
+                "questionOptions": {
+                  "rendering": "select",
+                  "concept": "a572149b-169e-075d-048b-b41350319fb1",
+                  "conceptMappings": [],
+                  "answers": [
+                    {
+                      "concept": "b497171e-0410-4d8d-bbd4-7e1a8f8b504e",
+                      "label": "No"
+                    },
+                    {
+                      "concept": "a2065636-5326-40f5-aed6-0cc2cca81ccc",
+                      "label": "Yes"
+                    }
+                  ]
+                },
+                "validators": []
+              },
+              {
+                "label": "During the PAST 4 WEEKS, how much did PAIN interfere with your normal work (including both work outside the home and housework)?",
+                "type": "obs",
+                "required": false,
+                "id": "duringPAST4WEEKSHowMuchPAIN ",
+                "questionOptions": {
+                  "rendering": "select",
+                  "concept": "c8a327a0-01d4-0e6d-5ff7-7c5e51b10327",
+                  "conceptMappings": [],
+                  "answers": [
+                    {
+                      "concept": "56a3ab79-30d2-4855-ba4a-3758b8ae309d",
+                      "label": "QUITE A BIT"
+                    },
+                    {
+                      "concept": "f1e56bd1-83f8-419e-9d8c-9aaadf6f9790",
+                      "label": "NOT AT ALL"
+                    },
+                    {
+                      "concept": "20d03ba9-454a-45c2-8244-88ae1e7de2d6",
+                      "label": "MODERATELY"
+                    },
+                    {
+                      "concept": "606947a4-ad44-44b9-bb0f-34b6530c2c43",
+                      "label": "EXTREMELY"
+                    },
+                    {
+                      "concept": "99eb9924-5384-4d5b-991a-4ca5d6ba6a48",
+                      "label": "A Little Bit"
+                    }
+                  ]
+                },
+                "validators": []
+              }
+            ]
+          },
+          {
+            "label": "The next three questions are about how you feel",
+            "isExpanded": "true",
+            "questions": [
+              {
+                "label": "Have you felt calm and peaceful?",
+                "type": "obs",
+                "required": false,
+                "id": "HaveYouFeltCalmAndPeaceful",
+                "questionOptions": {
+                  "rendering": "select",
+                  "concept": "80bf1f1a-1476-7521-2596-ea6734704b96",
+                  "conceptMappings": [],
+                  "answers": [
+                    {
+                      "concept": "a4ab954a-812b-1889-3ec3-e056f0ae0f6c",
+                      "label": "Some of the Time"
+                    },
+                    {
+                      "concept": "9922b400-3a88-5bb0-0d59-c121ad5751e6",
+                      "label": "None of the Time"
+                    },
+                    {
+                      "concept": "9b69dde0-a76a-8eb6-5cc7-e3eb288b0224",
+                      "label": "Most of the Time"
+                    },
+                    {
+                      "concept": "865c08d4-7b11-88ff-951d-5432dcde864d",
+                      "label": "All of the Time"
+                    },
+                    {
+                      "concept": "c58bbc23-7e5e-638c-1d5b-b4108e7260b0",
+                      "label": "A Little of the Time"
+                    },
+                    {
+                      "concept": "6c5524a5-8d3d-81e8-9e9d-c3ab1fa25ef8",
+                      "label": "A Good Bit of the Time"
+                    }
+                  ]
+                },
+                "validators": []
+              },
+              {
+                "label": "Did you have a lot of energy?",
+                "type": "obs",
+                "required": false,
+                "id": "didYouHaveALotOfEnergy",
+                "questionOptions": {
+                  "rendering": "select",
+                  "concept": "99fe3faf-2daf-013b-165f-faea4ccc3ad8",
+                  "conceptMappings": [],
+                  "answers": [
+                    {
+                      "concept": "9922b400-3a88-5bb0-0d59-c121ad5751e6",
+                      "label": "None of the Time"
+                    },
+                    {
+                      "concept": "a4ab954a-812b-1889-3ec3-e056f0ae0f6c",
+                      "label": "Some of the Time"
+                    },
+                    {
+                      "concept": "9b69dde0-a76a-8eb6-5cc7-e3eb288b0224",
+                      "label": "Most of the Time"
+                    },
+                    {
+                      "concept": "865c08d4-7b11-88ff-951d-5432dcde864d",
+                      "label": "All of the Time"
+                    },
+                    {
+                      "concept": "c58bbc23-7e5e-638c-1d5b-b4108e7260b0",
+                      "label": "A Little of the Time"
+                    },
+                    {
+                      "concept": "6c5524a5-8d3d-81e8-9e9d-c3ab1fa25ef8",
+                      "label": "A Good Bit of the Time"
+                    }
+                  ]
+                },
+                "validators": []
+              },
+              {
+                "label": "Have you felt downhearted and blue?",
+                "type": "obs",
+                "required": false,
+                "id": "haveYouFeltDownheartedAndBlue",
+                "questionOptions": {
+                  "rendering": "select",
+                  "concept": "4f484415-3a5b-9f69-8d0a-49292547a03e",
+                  "conceptMappings": [],
+                  "answers": [
+                    {
+                      "concept": "9922b400-3a88-5bb0-0d59-c121ad5751e6",
+                      "label": "None of the Time"
+                    },
+                    {
+                      "concept": "a4ab954a-812b-1889-3ec3-e056f0ae0f6c",
+                      "label": "Some of the Time"
+                    },
+                    {
+                      "concept": "9b69dde0-a76a-8eb6-5cc7-e3eb288b0224",
+                      "label": "Most of the Time"
+                    },
+                    {
+                      "concept": "865c08d4-7b11-88ff-951d-5432dcde864d",
+                      "label": "All of the Time"
+                    },
+                    {
+                      "concept": "c58bbc23-7e5e-638c-1d5b-b4108e7260b0",
+                      "label": "A Little of the Time"
+                    },
+                    {
+                      "concept": "6c5524a5-8d3d-81e8-9e9d-c3ab1fa25ef8",
+                      "label": "A Good Bit of the Time"
+                    }
+                  ]
+                },
+                "validators": []
+              },
+              {
+                "label": "During the PAST 4 WEEKS, how much of the time has your PHYSICAL HEALTH OR EMOTIONAL PROBLEMS interfered with your social activities?",
+                "type": "obs",
+                "required": false,
+                "id": "PHYSICALHEALTHOREMOTIONALPROBLEMSInterferedActivities",
+                "questionOptions": {
+                  "rendering": "select",
+                  "concept": "4a29e455-192e-2556-16ed-3c471fe45830",
+                  "conceptMappings": [],
+                  "answers": [
+                    {
+                      "concept": "a4ab954a-812b-1889-3ec3-e056f0ae0f6c",
+                      "label": "Some of the Time"
+                    },
+                    {
+                      "concept": "9922b400-3a88-5bb0-0d59-c121ad5751e6",
+                      "label": "None of the Time"
+                    },
+                    {
+                      "concept": "9b69dde0-a76a-8eb6-5cc7-e3eb288b0224",
+                      "label": "Most of the Time"
+                    },
+                    {
+                      "concept": "865c08d4-7b11-88ff-951d-5432dcde864d",
+                      "label": "All of the Time"
+                    },
+                    {
+                      "concept": "c58bbc23-7e5e-638c-1d5b-b4108e7260b0",
+                      "label": "A Little of the Time"
+                    },
+                    {
+                      "concept": "6c5524a5-8d3d-81e8-9e9d-c3ab1fa25ef8",
+                      "label": "A Good Bit of the Time"
+                    }
+                  ]
+                },
+                "validators": []
+              },
+              {
+                "label": "Total Score",
+                "type": "obs",
+                "required": false,
+                "id": "totalScore",
+                "questionOptions": {
+                  "rendering": "number",
+                  "concept": "000bf6a5-896d-48bd-94c9-961bbcbee6a2",
+                  "conceptMappings": [],
+                  "answers": []
+                },
+                "validators": []
+              }
+            ]
+          },
+          {
+            "label": "Poverty probability index for Ecuador",
+            "isExpanded": "true",
+            "questions": [
+              {
+                "label": "How many members does the household have?",
+                "type": "obs",
+                "required": false,
+                "id": "howManyMembersDoesTheHouseholdHave",
+                "questionOptions": {
+                  "rendering": "select",
+                  "concept": "b466808e-6ef0-8c17-46a7-e7e7460b2832",
+                  "conceptMappings": [],
+                  "answers": [
+                    {
+                      "concept": "4b2ec7bc-f241-4eca-b5fa-5c1f02caf973",
+                      "label": "Two"
+                    },
+                    {
+                      "concept": "cb673080-2cf0-63b0-1161-fc6f451f8300",
+                      "label": "Three"
+                    },
+                    {
+                      "concept": "6ee88ee3-9127-4595-9f8e-40c29217047f",
+                      "label": "Six or More"
+                    },
+                    {
+                      "concept": "f8ce657f-5ea6-4f29-be59-6778f2d4daa7",
+                      "label": "One"
+                    },
+                    {
+                      "concept": "6b2b3652-0786-45f8-3dc7-7cc382fe9788",
+                      "label": "Four"
+                    },
+                    {
+                      "concept": "8d755d31-6e2f-5179-8967-c368fae79089",
+                      "label": "Five"
+                    }
+                  ]
+                },
+                "validators": []
+              },
+              {
+                "label": "How many members household 12 years old or older have an activated cellular telephone?",
+                "type": "obs",
+                "required": false,
+                "id": "haveActivatedCellularTelephone",
+                "questionOptions": {
+                  "rendering": "select",
+                  "concept": "00c1c4cf-6d17-86b1-61c2-239274104eda",
+                  "conceptMappings": [],
+                  "answers": [
+                    {
+                      "concept": "4b2ec7bc-f241-4eca-b5fa-5c1f02caf973",
+                      "label": "Two"
+                    },
+                    {
+                      "concept": "2eb22ea7-4edf-821e-9cf6-43c170a57e6f",
+                      "label": "Three or more"
+                    },
+                    {
+                      "concept": "f8ce657f-5ea6-4f29-be59-6778f2d4daa7",
+                      "label": "One"
+                    },
+                    {
+                      "concept": "75f3c572-74dc-4c71-aa9a-3278dbcd2fb6",
+                      "label": "NONE"
+                    }
+                  ]
+                },
+                "validators": []
+              },
+              {
+                "label": "Does the household have a car (for its exclusive use),air conditioner,video camera, or exercise machine?",
+                "type": "obs",
+                "required": false,
+                "id": "doesHouseholdHaveAcar",
+                "questionOptions": {
+                  "rendering": "select",
+                  "concept": "3fd0117e-12c7-a2fd-3f9b-e24c187b2f76",
+                  "conceptMappings": [],
+                  "answers": [
+                    {
+                      "concept": "a2065636-5326-40f5-aed6-0cc2cca81ccc",
+                      "label": "Yes"
+                    },
+                    {
+                      "concept": "b497171e-0410-4d8d-bbd4-7e1a8f8b504e",
+                      "label": "No"
+                    }
+                  ]
+                },
+                "validators": []
+              },
+              {
+                "label": "What is the main construction materials of the floor of the residence?",
+                "type": "obs",
+                "required": false,
+                "id": "mainConstructionMaterialsOfResidenceFloor",
+                "questionOptions": {
+                  "rendering": "select",
+                  "concept": "931490d4-0907-8218-09b7-3e5d4e133d05",
+                  "conceptMappings": [],
+                  "answers": [
+                    {
+                      "concept": "5e955611-31d3-4c72-03de-b73ace349c09",
+                      "label": "Untreated planks or reeds"
+                    },
+                    {
+                      "concept": "63c3e293-3365-80f7-82a0-ac2de30e8347",
+                      "label": "Dirt"
+                    },
+                    {
+                      "concept": "61285ab4-88a6-884c-9c5b-ba73bdfa3058",
+                      "label": "Ceramic tile or granite"
+                    },
+                    {
+                      "concept": "1bdb0e4f-13c9-9483-320b-ea34073f6169",
+                      "label": "Cement/bricks"
+                    }
+                  ]
+                },
+                "validators": []
+              },
+              {
+                "label": "Does the household have a place with running water to take a bath or shower?",
+                "type": "obs",
+                "required": false,
+                "id": "gotRunningWaterToTakeShower",
+                "questionOptions": {
+                  "rendering": "select",
+                  "concept": "20d63f31-770d-7662-06f4-41dbe54d8fa9",
+                  "conceptMappings": [],
+                  "answers": [
+                    {
+                      "concept": "a2065636-5326-40f5-aed6-0cc2cca81ccc",
+                      "label": "Yes"
+                    },
+                    {
+                      "concept": "b497171e-0410-4d8d-bbd4-7e1a8f8b504e",
+                      "label": "No"
+                    }
+                  ]
+                },
+                "validators": []
+              },
+              {
+                "label": "Is the bathroom inside the residence?",
+                "type": "obs",
+                "required": false,
+                "id": "isBathroomInsideResidence",
+                "questionOptions": {
+                  "rendering": "select",
+                  "concept": "1086eb6a-3dfa-1a7c-55c8-78278d258fb5",
+                  "conceptMappings": [],
+                  "answers": [
+                    {
+                      "concept": "a2065636-5326-40f5-aed6-0cc2cca81ccc",
+                      "label": "Yes"
+                    },
+                    {
+                      "concept": "b497171e-0410-4d8d-bbd4-7e1a8f8b504e",
+                      "label": "No"
+                    }
+                  ]
+                },
+                "validators": []
+              },
+              {
+                "label": "Does the household have a blender, waffle iron/sandwich grill, or electric mixer?",
+                "type": "obs",
+                "required": false,
+                "id": "doesHouseholdHaveAblender",
+                "questionOptions": {
+                  "rendering": "select",
+                  "concept": "377bbec9-2915-6639-9d4b-580a147115cd",
+                  "conceptMappings": [],
+                  "answers": [
+                    {
+                      "concept": "7bdf22ef-8b4c-848c-1b8e-873e93e78b4e",
+                      "label": "Waffle iron or electric mixer"
+                    },
+                    {
+                      "concept": "78662bd2-8c2b-0efb-0326-f7ee34717f6e",
+                      "label": "Only blender"
+                    },
+                    {
+                      "concept": "b497171e-0410-4d8d-bbd4-7e1a8f8b504e",
+                      "label": "No"
+                    }
+                  ]
+                },
+                "validators": []
+              },
+              {
+                "label": "Does the household have an iron?",
+                "type": "obs",
+                "required": false,
+                "id": "doesHouseholdHaveAnIron",
+                "questionOptions": {
+                  "rendering": "select",
+                  "concept": "af459618-07f7-a478-5955-c69f1f7628ee",
+                  "conceptMappings": [],
+                  "answers": [
+                    {
+                      "concept": "a2065636-5326-40f5-aed6-0cc2cca81ccc",
+                      "label": "Yes"
+                    },
+                    {
+                      "concept": "b497171e-0410-4d8d-bbd4-7e1a8f8b504e",
+                      "label": "No"
+                    }
+                  ]
+                },
+                "validators": []
+              },
+              {
+                "label": "How many color or plasma/LCD?LED televisions does the household have?",
+                "type": "obs",
+                "required": false,
+                "id": "plasmaLCDorLEDTelevisionsInhousehold",
+                "questionOptions": {
+                  "rendering": "select",
+                  "concept": "8c594303-8c89-756f-2097-b4aa455b3d58",
+                  "conceptMappings": [],
+                  "answers": [
+                    {
+                      "concept": "cbcc4a90-4309-0aa1-9777-a1fd2b2f5daa",
+                      "label": "Two or More"
+                    },
+                    {
+                      "concept": "f8ce657f-5ea6-4f29-be59-6778f2d4daa7",
+                      "label": "One"
+                    },
+                    {
+                      "concept": "75f3c572-74dc-4c71-aa9a-3278dbcd2fb6",
+                      "label": "NONE"
+                    }
+                  ]
+                },
+                "validators": []
+              },
+              {
+                "label": "How many light bulbs does the household use?",
+                "type": "obs",
+                "required": false,
+                "id": "howManyLightBulbsInHousehold",
+                "questionOptions": {
+                  "rendering": "select",
+                  "concept": "ed5cad7e-8266-570b-a27c-90d3e51c2451",
+                  "conceptMappings": [],
+                  "answers": [
+                    {
+                      "concept": "cb673080-2cf0-63b0-1161-fc6f451f8300",
+                      "label": "Three"
+                    },
+                    {
+                      "concept": "671e1c0a-85e0-3ebf-08d6-d6b5578848ef",
+                      "label": "Six or Seven"
+                    },
+                    {
+                      "concept": "50998340-87d1-9eb8-8092-a078068a685e",
+                      "label": "None, One or Two"
+                    },
+                    {
+                      "concept": "6b2b3652-0786-45f8-3dc7-7cc382fe9788",
+                      "label": "Four"
+                    },
+                    {
+                      "concept": "8d755d31-6e2f-5179-8967-c368fae79089",
+                      "label": "Five"
+                    },
+                    {
+                      "concept": "18fba6b3-4c70-4c7d-831e-a3d8b1ab2068",
+                      "label": "Eight or More"
+                    }
+                  ]
+                },
+                "validators": []
+              },
+              {
+                "label": "Total Score",
+                "type": "obs",
+                "required": false,
+                "id": "totalScores",
+                "questionOptions": {
+                  "rendering": "number",
+                  "concept": "189c4cd3-4bb1-4ade-acfd-f4b0fd49a4be",
+                  "conceptMappings": [],
+                  "answers": []
+                },
+                "validators": []
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "processor": "EncounterFormProcessor",
+    "uuid": "173f412f-692d-47d0-901f-620802bd81f2"
+  }

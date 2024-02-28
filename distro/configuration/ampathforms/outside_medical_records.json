@@ -1,0 +1,36 @@
+{
+    "name": "Outside Medical Records",
+    "description": "Outside Medical Records Form",
+    "version": "1.0",
+    "published": true,
+    "retired": false,
+    "encounter": "Outside Medical Records",
+    "pages": [
+      {
+        "label": "Form",
+        "sections": [
+          {
+            "label": "Upload any outside records or imaging",
+            "isExpanded": "true",
+            "questions": [
+              {
+                "label": "Upload any outside records or imaging here",
+                "type": "complex-obs",
+                "required": false,
+                "id": "uploadAnyOutsideRecords",
+                "questionOptions": {
+                  "rendering": "file",
+                  "concept": "50af4efe-1c25-4aa9-9acf-a8166cdc00e3",
+                  "conceptMappings": [],
+                  "answers": []
+                },
+                "validators": []
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "processor": "EncounterFormProcessor",
+    "uuid": "8bd774b3-4ed3-4011-9289-abae816af0b0"
+  }

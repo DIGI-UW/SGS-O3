@@ -1,0 +1,396 @@
+{
+    "name": "Clinic Visit (Surgeon)",
+    "description": "Clinic Visit (Surgeon) Form",
+    "version": "1.0",
+    "published": true,
+    "retired": false,
+    "encounter": "Clinic Visit Surgeon",
+    "pages": [
+      {
+        "label": "Form",
+        "sections": [
+          {
+            "label": "Injury Information",
+            "isExpanded": "true",
+            "questions": [
+              {
+                "label": "Location of condition",
+                "type": "obs",
+                "required": false,
+                "id": "locationOfCondition",
+                "questionOptions": {
+                  "rendering": "select",
+                  "concept": "bdc10a31-a543-4bd8-9158-8fb49f77546f",
+                  "conceptMappings": [],
+                  "answers": [
+                    {
+                      "concept": "c88d2363-9a7d-5b7b-1759-e264ce298788",
+                      "label": "Right"
+                    },
+                    {
+                      "concept": "10c902dd-2567-00f6-1a73-7f541d9617ea",
+                      "label": "Left"
+                    },
+                    {
+                      "concept": "55591eee-d400-43bd-bdc2-ca8d64bc42b1",
+                      "label": "bilateral"
+                    }
+                  ]
+                }
+              },
+              {
+                "label": "Body part",
+                "type": "obs",
+                "required": false,
+                "id": "bodyPart",
+                "questionOptions": {
+                  "rendering": "select",
+                  "concept": "9691f323-5364-81e9-8ce3-e1506c6c85ad",
+                  "conceptMappings": [],
+                  "answers": [
+                    {
+                      "concept": "af5b53a4-20c4-56a4-8bc3-ee6c5ef1a044",
+                      "label": "wrist"
+                    },
+                    {
+                      "concept": "eed77f75-9142-5408-3ec0-684eb2a52e4c",
+                      "label": "upper leg"
+                    },
+                    {
+                      "concept": "c3cc49a1-3f10-11e4-adec-0800271c1b75",
+                      "label": "Shoulder"
+                    },
+                    {
+                      "concept": "c3f1bf99-3f10-11e4-adec-0800271c1b75",
+                      "label": "Neck"
+                    },
+                    {
+                      "concept": "d849c275-9f1b-74ae-83d9-4f9206e58be9",
+                      "label": "lower leg"
+                    },
+                    {
+                      "concept": "c3a65505-3f10-11e4-adec-0800271c1b75",
+                      "label": "Knee"
+                    },
+                    {
+                      "concept": "17086684-239c-513c-88eb-c55c3817a009",
+                      "label": "hip/pelvis"
+                    },
+                    {
+                      "concept": "c3ae2b5a-3f10-11e4-adec-0800271c1b75",
+                      "label": "Hand"
+                    },
+                    {
+                      "concept": "271116eb-33e5-1929-8296-b22c5ad648c4",
+                      "label": "forearm"
+                    },
+                    {
+                      "concept": "2be130e5-9ebb-569b-7ef7-466a82b526f2",
+                      "label": "foot"
+                    },
+                    {
+                      "concept": "ca79aa9f-35c0-41b8-a205-8334ed23a710",
+                      "label": "elbow"
+                    },
+                    {
+                      "concept": "8ca4e7dd-1078-83ca-7b82-41139c8088a1",
+                      "label": "back"
+                    },
+                    {
+                      "concept": "c3bc017f-3f10-11e4-adec-0800271c1b75",
+                      "label": "Arm"
+                    },
+                    {
+                      "concept": "eab957ac-8ae3-6860-603b-f9c4ca8a3aee",
+                      "label": "ankle"
+                    }
+                  ]
+                },
+                "validators": []
+              },
+              {
+                "label": "Date of injury/Age of onset",
+                "type": "obs",
+                "required": false,
+                "id": "DateOfInjuryOnset",
+                "questionOptions": {
+                  "rendering": "date",
+                  "concept": "6a357035-7a0a-0b12-6889-1c9d71d5090d",
+                  "conceptMappings": [],
+                  "answers": []
+                },
+                "validators": []
+              },
+              {
+                "label": "Cause of injury",
+                "type": "obs",
+                "required": false,
+                "id": "causeOfInjury",
+                "questionOptions": {
+                  "rendering": "text",
+                  "concept": "e3a3ba5f-45d3-9438-1746-3b46c395225a",
+                  "conceptMappings": [],
+                  "answers": []
+                },
+                "validators": []
+              },
+              {
+                "label": "Trauma classification",
+                "type": "obs",
+                "required": false,
+                "id": "traumaClassification",
+                "questionOptions": {
+                  "rendering": "select",
+                  "concept": "3e92da53-1848-0928-9d63-32c74392548a",
+                  "conceptMappings": [],
+                  "answers": [
+                    {
+                      "concept": "cae8ab21-2b86-60d6-54b9-a5031f65987d",
+                      "label": "Blunt"
+                    },
+                    {
+                      "concept": "ee798155-482f-14bd-67bd-39edf3af166c",
+                      "label": "burn"
+                    },
+                    {
+                      "concept": "c3e9f0a3-3f10-11e4-adec-0800271c1b75",
+                      "label": "Other Radiology"
+                    },
+                    {
+                      "concept": "17169673-309a-72cb-2c28-d38c7e5408a6",
+                      "label": "penetrating"
+                    }
+                  ]
+                },
+                "validators": []
+              },
+              {
+                "label": "Mechanism of injury",
+                "type": "obs",
+                "required": false,
+                "id": "mechanismOfInjury",
+                "questionOptions": {
+                  "rendering": "select",
+                  "concept": "252daba7-3d03-37b9-0bdd-85913fc49446",
+                  "conceptMappings": [],
+                  "answers": [
+                    {
+                      "concept": "f6c8694f-6b1e-99a1-4321-30fbbe881737",
+                      "label": "vehicle passenger"
+                    },
+                    {
+                      "concept": "9853b93d-390d-3596-a0a3-cd9b5bcb3f29",
+                      "label": "vehicle driver"
+                    },
+                    {
+                      "concept": "2c841c0c-2fda-67dd-a166-65746fd817d1",
+                      "label": "pedestrian"
+                    },
+                    {
+                      "concept": "c3e9f0a3-3f10-11e4-adec-0800271c1b75",
+                      "label": "Other Radiology"
+                    },
+                    {
+                      "concept": "b279c8ff-42df-954b-120b-0130809e3e45",
+                      "label": "fall"
+                    },
+                    {
+                      "concept": "8c4d32d4-9514-a0f1-253a-45742cbd6c57",
+                      "label": "boda boda passenger"
+                    },
+                    {
+                      "concept": "1be64db4-13e5-9954-4c5c-98538ab797f0",
+                      "label": "boda boda driver"
+                    },
+                    {
+                      "concept": "ed32a6ee-0c26-7401-565a-9943f5324dd3",
+                      "label": "assault"
+                    }
+                  ]
+                },
+                "validators": []
+              },
+              {
+                "label": "Surgical Candidate",
+                "type": "obs",
+                "required": false,
+                "id": "surgicalCandidate",
+                "questionOptions": {
+                  "rendering": "select",
+                  "concept": "549e439f-6b65-4180-9b81-c0801a92d86d",
+                  "conceptMappings": [],
+                  "answers": [
+                    {
+                      "concept": "a2065636-5326-40f5-aed6-0cc2cca81ccc",
+                      "label": "Yes"
+                    },
+                    {
+                      "concept": "b497171e-0410-4d8d-bbd4-7e1a8f8b504e",
+                      "label": "No"
+                    },
+                    {
+                      "concept": "49c31011-8455-482a-a6b7-1f11dafd0046",
+                      "label": "N/A"
+                    }
+                  ]
+                },
+                "validators": []
+              },
+              {
+                "label": "Surgical Priority ",
+                "type": "obs",
+                "required": true,
+                "id": "surgicalPriority ",
+                "questionOptions": {
+                  "rendering": "select",
+                  "concept": "64464f90-2e1d-4e39-b363-c318fbdc724f",
+                  "conceptMappings": [],
+                  "answers": [
+                    {
+                      "concept": "8c6b2506-505f-4473-ac36-6a6e5995d45d",
+                      "label": "Number, 3"
+                    },
+                    {
+                      "concept": "8f63b407-8fdd-4efd-94c7-e6c3f93f0403",
+                      "label": "Number, 2"
+                    },
+                    {
+                      "concept": "99dfbe7a-5639-8f90-15df-383e2ca65867",
+                      "label": "Not indicated"
+                    },
+                    {
+                      "concept": "280d20ea-b4fe-4747-9682-c3a6b76945ab",
+                      "label": "4_Low"
+                    },
+                    {
+                      "concept": "e2a6fa43-58a1-455f-815c-9f08f76a2623",
+                      "label": "1_high"
+                    }
+                  ]
+                },
+                "validators": []
+              },
+              {
+                "label": "Past medical history",
+                "type": "obs",
+                "required": false,
+                "id": "pastMedicalHistory",
+                "questionOptions": {
+                  "rendering": "text",
+                  "concept": "30c10a0b-6099-1e09-4b4b-9ac62bf13902",
+                  "conceptMappings": [],
+                  "answers": []
+                },
+                "validators": []
+              },
+              {
+                "label": "Past Surgical History",
+                "type": "obs",
+                "required": false,
+                "id": "pastSurgicalHistory",
+                "questionOptions": {
+                  "rendering": "text",
+                  "concept": "efb230b2-070e-9340-042e-cee3d5ca401a",
+                  "conceptMappings": [],
+                  "answers": []
+                },
+                "validators": []
+              },
+              {
+                "label": "Social history",
+                "type": "obs",
+                "required": false,
+                "id": "socialHistory",
+                "questionOptions": {
+                  "rendering": "text",
+                  "concept": "f9f666dd-8de6-09cf-5b01-d34493002e69",
+                  "conceptMappings": [],
+                  "answers": []
+                },
+                "validators": []
+              },
+              {
+                "label": "Allergies",
+                "type": "obs",
+                "required": false,
+                "id": "allergies",
+                "questionOptions": {
+                  "rendering": "text",
+                  "concept": "a2a312b5-a588-97de-3414-734d50367791",
+                  "conceptMappings": [],
+                  "answers": []
+                },
+                "validators": []
+              },
+              {
+                "label": "Physical Exam",
+                "type": "obs",
+                "required": false,
+                "id": "physicalExam",
+                "questionOptions": {
+                  "rendering": "text",
+                  "concept": "4ca3e055-2fca-8659-31cd-65a2c79f263e",
+                  "conceptMappings": [],
+                  "answers": []
+                },
+                "validators": []
+              }
+            ]
+          },
+          {
+            "label": "Impact Information",
+            "isExpanded": "true",
+            "questions": [
+              {
+                "label": "Assessment",
+                "type": "obs",
+                "required": false,
+                "id": "assessment",
+                "questionOptions": {
+                  "rendering": "text",
+                  "concept": "23a6aae3-8f12-a298-8981-0eaa5a5a92fb",
+                  "conceptMappings": [],
+                  "answers": []
+                },
+                "validators": []
+              },
+              {
+                "label": "Plan",
+                "type": "obs",
+                "required": false,
+                "id": "plan",
+                "questionOptions": {
+                  "rendering": "text",
+                  "concept": "9198eadf-6d11-13c8-7fc3-7f15ced91940",
+                  "conceptMappings": [],
+                  "answers": []
+                },
+                "validators": []
+              }
+            ]
+          },
+          {
+            "label": "Injury Photo",
+            "isExpanded": "true",
+            "questions": [
+              {
+                "label": "Injury Photo",
+                "type": "complex-obs",
+                "required": false,
+                "id": "injuryPhoto",
+                "questionOptions": {
+                  "rendering": "file",
+                  "concept": "7c06583b-a425-44eb-b4f5-ac63332c00a2",
+                  "conceptMappings": [],
+                  "answers": []
+                },
+                "validators": []
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "processor": "EncounterFormProcessor",
+    "uuid": "61817d50-8c08-468a-b5e5-eecd486b007b"
+  }

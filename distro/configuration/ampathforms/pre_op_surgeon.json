@@ -1,0 +1,194 @@
+{
+    "name": "Pre-op (Surgeon)",
+    "description": "Pre-op (Surgeon) Form",
+    "version": "1.0",
+    "published": true,
+    "retired": false,
+    "encounter": "Pre-Op Surgeon",
+    "pages": [
+      {
+        "label": "Form",
+        "sections": [
+          {
+            "label": "Patient Information",
+            "isExpanded": "true",
+            "questions": [
+              {
+                "label": "Date of surgery",
+                "type": "obs",
+                "required": false,
+                "id": "dateOfSurgery",
+                "questionOptions": {
+                  "rendering": "date",
+                  "concept": "07645ff4-0315-a65d-7ee0-806a026a9848",
+                  "conceptMappings": [],
+                  "answers": []
+                },
+                "validators": []
+              },
+              {
+                "label": "H&P update or review by local or trip surgeons",
+                "type": "obs",
+                "required": false,
+                "id": "H_P_Update",
+                "questionOptions": {
+                  "rendering": "select",
+                  "concept": "df204757-6874-5141-5280-8f3658e20d5a",
+                  "conceptMappings": [],
+                  "answers": [
+                    {
+                      "concept": "fb1216ec-412f-11eb-9591-6388fef9721b",
+                      "label": "Yes_1"
+                    },
+                    {
+                      "concept": "99dfbe7a-5639-8f90-15df-383e2ca65867",
+                      "label": "Not indicated"
+                    },
+                    {
+                      "concept": "0fac2336-4130-11eb-951b-6ffc17310f7c",
+                      "label": "No_1"
+                    }
+                  ]
+                },
+                "validators": []
+              },
+              {
+                "label": "Preoperative review of the operative plan and necessary equipment",
+                "type": "obs",
+                "required": false,
+                "id": "preoperativeReview",
+                "questionOptions": {
+                  "rendering": "select",
+                  "concept": "d50d86c7-5e12-49cf-97bd-8683519d053b",
+                  "conceptMappings": [],
+                  "answers": [
+                    {
+                      "concept": "fb1216ec-412f-11eb-9591-6388fef9721b",
+                      "label": "Yes_1"
+                    },
+                    {
+                      "concept": "0fac2336-4130-11eb-951b-6ffc17310f7c",
+                      "label": "No_1"
+                    }
+                  ]
+                },
+                "validators": []
+              },
+              {
+                "label": "Patient identification verified?",
+                "type": "obs",
+                "required": false,
+                "id": "patientIdentificationVerified",
+                "questionOptions": {
+                  "rendering": "select",
+                  "concept": "fd0ecc91-4b4c-4000-889a-8cc88dc0d7af",
+                  "conceptMappings": [],
+                  "answers": [
+                    {
+                      "concept": "fb1216ec-412f-11eb-9591-6388fef9721b",
+                      "label": "Yes_1"
+                    },
+                    {
+                      "concept": "0fac2336-4130-11eb-951b-6ffc17310f7c",
+                      "label": "No_1"
+                    }
+                  ]
+                },
+                "validators": []
+              },
+              {
+                "label": "Patient photo verified?",
+                "type": "obs",
+                "required": false,
+                "id": "patientPhotoVerified",
+                "questionOptions": {
+                  "rendering": "select",
+                  "concept": "042defed-1ce7-47e9-8f65-5770ca2d9acc",
+                  "conceptMappings": [],
+                  "answers": [
+                    {
+                      "concept": "fb1216ec-412f-11eb-9591-6388fef9721b",
+                      "label": "Yes_1"
+                    },
+                    {
+                      "concept": "0fac2336-4130-11eb-951b-6ffc17310f7c",
+                      "label": "No_1"
+                    }
+                  ]
+                },
+                "validators": []
+              },
+              {
+                "label": "Written surgical consent for surgery",
+                "type": "obs",
+                "required": false,
+                "id": "writtenSurgicalConsentForSurgery",
+                "questionOptions": {
+                  "rendering": "select",
+                  "concept": "a65d1bbc-0494-969b-879d-bff434e2793c",
+                  "conceptMappings": [],
+                  "answers": [
+                    {
+                      "concept": "fb1216ec-412f-11eb-9591-6388fef9721b",
+                      "label": "Yes_1"
+                    },
+                    {
+                      "concept": "0fac2336-4130-11eb-951b-6ffc17310f7c",
+                      "label": "No_1"
+                    }
+                  ]
+                },
+                "validators": []
+              },
+              {
+                "label": "Preoperative marking of patient by the operating surgeon",
+                "type": "obs",
+                "required": false,
+                "id": "preoperativeMarkingPatientBySurgeon",
+                "questionOptions": {
+                  "rendering": "select",
+                  "concept": "d81f4225-3e7f-103f-9d2b-33b8a7db36c7",
+                  "conceptMappings": [],
+                  "answers": [
+                    {
+                      "concept": "fb1216ec-412f-11eb-9591-6388fef9721b",
+                      "label": "Yes_1"
+                    },
+                    {
+                      "concept": "0fac2336-4130-11eb-951b-6ffc17310f7c",
+                      "label": "No_1"
+                    }
+                  ]
+                },
+                "validators": []
+              },
+              {
+                "label": "Preoperative imaging reviewed by surgical team",
+                "type": "obs",
+                "required": false,
+                "id": "preoperativeImagingReviewed",
+                "questionOptions": {
+                  "rendering": "select",
+                  "concept": "5f32c8e5-62db-11a2-8f53-0e2920485465",
+                  "conceptMappings": [],
+                  "answers": [
+                    {
+                      "concept": "fb1216ec-412f-11eb-9591-6388fef9721b",
+                      "label": "Yes_1"
+                    },
+                    {
+                      "concept": "0fac2336-4130-11eb-951b-6ffc17310f7c",
+                      "label": "No_1"
+                    }
+                  ]
+                },
+                "validators": []
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "processor": "EncounterFormProcessor",
+    "uuid": "64fe0847-c00d-4174-bc12-c57e249b6f44"
+  }

@@ -1,5 +1,8 @@
 Uuid,Void/Retire,Name,Description,Required,Format,Format description,Validator,Location behavior,Uniqueness behavior
 05a29f94-c0ed-11e2-94be-8c13b969e334,,OpenMRS ID,"OpenMRS patient identifier, with check-digit",TRUE,,,org.openmrs.module.idgen.validator.LuhnMod30IdentifierValidator,NOT_USED,UNIQUE
-22348099-3873-459e-a32e-d93b17eda533,,Legacy ID,Identifier type to record optional previous identifers ,FALSE,,,,NOT_USED,
-b4143563-16cd-4439-b288-f83d61670fc8,,ID Card,ID Card,FALSE,,,,NOT_USED,UNIQUE
-a71403f3-8584-4289-ab41-2b4e5570bd45,,SSN,Social Security Number,FALSE,[A-Z]{1}-[0-9]{7},"Identifier should be 1 letter, followed by a dash and 7 numerical characters. Eg, A-0010902",,NOT_USED,UNIQUE
+df879a6b-6fe3-4d60-a300-b086bd386a65,,National ID,National ID,FALSE,,,,NOT_USED,UNIQUE
+2f488614-0d33-4f56-8197-fab519b3bd8d,,Hospital ID,Hospital ID,FALSE,,,,NOT_USED,UNIQUE
+219705b4-f180-455e-8f60-bbb42ff32af1,,Host ID,Host ID,FALSE,,,,NOT_USED,UNIQUE
+8d79403a-c2cc-11de-8d13-0010c6dffd0f,,Old Identification Number,Number given out prior to the OpenMRS system (No check digit),FALSE,,,,NOT_USED,UNIQUE
+0d2ac572-8de3-46c8-9976-1f78899c599f,,Organization ID,Organization ID,FALSE,,,,NOT_USED,UNIQUE
+22348099-3873-459e-a32e-d93b17eda533,,Legacy ID,Identifier type to record optional previous identifers,FALSE,,,,NOT_USED,,
