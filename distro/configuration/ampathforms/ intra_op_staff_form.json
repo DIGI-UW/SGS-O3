@@ -100,21 +100,21 @@
                 "label": "Confirm correct patient by trip or local surgeon",
                 "type": "obs",
                 "required": false,
-                "id": "confirmCorrectPatientByTrip",
+                "id": "confirmPatient",
                 "questionOptions": {
-                    "rendering": "radio",
-                    "concept": "3258",
-                    "conceptMappings": [],
-                    "answers": [
-                      {
-                        "concept": "78763e68-104e-465d-8ce3-35f9edfb083d",
-                        "label": "True"
-                      },
-                      {
-                        "concept": "f9f633a5-1544-4c44-9394-a7f746a12dff",
-                        "label": "False"
-                      }
-                    ]
+                  "rendering": "radio",
+                  "concept": "4d6c14b6-a559-84b0-1d93-26e95bef3d76",
+                  "conceptMappings": [],
+                  "answers": [
+                    {
+                      "concept": "78763e68-104e-465d-8ce3-35f9edfb083d",
+                      "label": "True"
+                    },
+                    {
+                      "concept": "f9f633a5-1544-4c44-9394-a7f746a12dff",
+                      "label": "False"
+                    }
+                  ]
                 },
                 "validators": []
               },
@@ -122,21 +122,21 @@
                 "label": "Confirm correct site of surgery by trip or local surgeon",
                 "type": "obs",
                 "required": false,
-                "id": "confirmCorrectSiteOfSurgeryByTrip",
+                "id": "confirmSite",
                 "questionOptions": {
-                    "rendering": "radio",
-                    "concept": "3259",
-                    "conceptMappings": [],
-                    "answers": [
-                      {
-                        "concept": "78763e68-104e-465d-8ce3-35f9edfb083d",
-                        "label": "True"
-                      },
-                      {
-                        "concept": "f9f633a5-1544-4c44-9394-a7f746a12dff",
-                        "label": "False"
-                      }
-                    ]
+                  "rendering": "radio",
+                  "concept": "4526507d-8d61-9cde-a260-614010c51661",
+                  "conceptMappings": [],
+                  "answers": [
+                    {
+                      "concept": "78763e68-104e-465d-8ce3-35f9edfb083d",
+                      "label": "True"
+                    },
+                    {
+                      "concept": "f9f633a5-1544-4c44-9394-a7f746a12dff",
+                      "label": "False"
+                    }
+                  ]
                 },
                 "validators": []
               },
@@ -292,7 +292,7 @@
                 "required": false,
                 "id": "pathologySent",
                 "questionOptions": {
-                  "rendering": "select",
+                  "rendering": "radio",
                   "concept": "6defe1a3-5128-292e-9dbc-9022ceff8c16",
                   "conceptMappings": [],
                   "answers": [

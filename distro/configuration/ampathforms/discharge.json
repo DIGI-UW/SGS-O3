@@ -98,7 +98,16 @@
                   "rendering": "radio",
                   "concept": "433e1ba7-326b-5de4-9241-9d8ca1da69a5",
                   "conceptMappings": [],
-                  "answers": []
+                  "answers": [
+                    {
+                      "concept": "78763e68-104e-465d-8ce3-35f9edfb083d",
+                      "label": "True"
+                    },
+                    {
+                      "concept": "f9f633a5-1544-4c44-9394-a7f746a12dff",
+                      "label": "False"
+                    }
+                  ]
                 },
                 "validators": []
               }
