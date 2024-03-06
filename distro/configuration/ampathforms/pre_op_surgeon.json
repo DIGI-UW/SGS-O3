@@ -38,7 +38,7 @@
                   "answers": [
                     {
                       "concept": "fb1216ec-412f-11eb-9591-6388fef9721b",
-                      "label": "Yes_1"
+                      "label": "Yes"
                     },
                     {
                       "concept": "99dfbe7a-5639-8f90-15df-383e2ca65867",
@@ -46,7 +46,7 @@
                     },
                     {
                       "concept": "0fac2336-4130-11eb-951b-6ffc17310f7c",
-                      "label": "No_1"
+                      "label": "No"
                     }
                   ]
                 },
@@ -64,11 +64,11 @@
                   "answers": [
                     {
                       "concept": "fb1216ec-412f-11eb-9591-6388fef9721b",
-                      "label": "Yes_1"
+                      "label": "Yes"
                     },
                     {
                       "concept": "0fac2336-4130-11eb-951b-6ffc17310f7c",
-                      "label": "No_1"
+                      "label": "No"
                     }
                   ]
                 },
@@ -86,11 +86,11 @@
                   "answers": [
                     {
                       "concept": "fb1216ec-412f-11eb-9591-6388fef9721b",
-                      "label": "Yes_1"
+                      "label": "Yes"
                     },
                     {
                       "concept": "0fac2336-4130-11eb-951b-6ffc17310f7c",
-                      "label": "No_1"
+                      "label": "No"
                     }
                   ]
                 },
@@ -108,11 +108,11 @@
                   "answers": [
                     {
                       "concept": "fb1216ec-412f-11eb-9591-6388fef9721b",
-                      "label": "Yes_1"
+                      "label": "Yes"
                     },
                     {
                       "concept": "0fac2336-4130-11eb-951b-6ffc17310f7c",
-                      "label": "No_1"
+                      "label": "No"
                     }
                   ]
                 },
@@ -130,11 +130,11 @@
                   "answers": [
                     {
                       "concept": "fb1216ec-412f-11eb-9591-6388fef9721b",
-                      "label": "Yes_1"
+                      "label": "Yes"
                     },
                     {
                       "concept": "0fac2336-4130-11eb-951b-6ffc17310f7c",
-                      "label": "No_1"
+                      "label": "No"
                     }
                   ]
                 },
@@ -152,11 +152,11 @@
                   "answers": [
                     {
                       "concept": "fb1216ec-412f-11eb-9591-6388fef9721b",
-                      "label": "Yes_1"
+                      "label": "Yes"
                     },
                     {
                       "concept": "0fac2336-4130-11eb-951b-6ffc17310f7c",
-                      "label": "No_1"
+                      "label": "No"
                     }
                   ]
                 },
@@ -174,11 +174,11 @@
                   "answers": [
                     {
                       "concept": "fb1216ec-412f-11eb-9591-6388fef9721b",
-                      "label": "Yes_1"
+                      "label": "Yes"
                     },
                     {
                       "concept": "0fac2336-4130-11eb-951b-6ffc17310f7c",
-                      "label": "No_1"
+                      "label": "No"
                     }
                   ]
                 },

@@ -1,0 +1,113 @@
+{
+    "name": "Discharge",
+    "description": "Discharge Form",
+    "version": "1.0",
+    "published": true,
+    "retired": false,
+    "encounter": "Discharge",
+    "pages": [
+      {
+        "label": "Form",
+        "sections": [
+          {
+            "label": "Discharge Information",
+            "isExpanded": "true",
+            "questions": [
+              {
+                "label": "Discharge date",
+                "type": "obs",
+                "required": false,
+                "id": "dischargeDate",
+                "questionOptions": {
+                  "rendering": "date",
+                  "concept": "d0d75eac-01fe-2857-09e6-a4e8afab1cca",
+                  "conceptMappings": [],
+                  "answers": []
+                },
+                "validators": []
+              },
+              {
+                "label": "Discharge diagnosis",
+                "type": "obs",
+                "required": false,
+                "id": "dischargeDiagnosis",
+                "questionOptions": {
+                  "rendering": "text",
+                  "concept": "4cdaa448-09d3-240d-3629-1fa9feb32117",
+                  "conceptMappings": [],
+                  "answers": []
+                },
+                "validators": []
+              }
+            ]
+          },
+          {
+            "label": "Outcome",
+            "isExpanded": "true",
+            "questions": [
+              {
+                "label": "If death, cause",
+                "type": "obs",
+                "required": false,
+                "id": "ifDeathCause",
+                "questionOptions": {
+                  "rendering": "text",
+                  "concept": "0d727613-8d38-2d83-3ed4-8d7054c892f4",
+                  "conceptMappings": [],
+                  "answers": []
+                },
+                "validators": []
+              }
+            ]
+          },
+          {
+            "label": "Post operative follow",
+            "isExpanded": "true",
+            "questions": [
+              {
+                "label": "Post operative follow up date/ time",
+                "type": "obs",
+                "required": false,
+                "id": "postOperativeFollowUpDatetime",
+                "questionOptions": {
+                  "rendering": "date",
+                  "concept": "3ccb25fd-1bbb-8f65-1cbf-fdb0ddac2df4",
+                  "conceptMappings": [],
+                  "answers": []
+                },
+                "validators": []
+              },              {
+                "label": "Name and contact of healthcare professional responsible for patient follow-up",
+                "type": "obs",
+                "required": false,
+                "id": "nameContactOfHealthcareFollowupProfessional",
+                "questionOptions": {
+                  "rendering": "text",
+                  "concept": "58423efa-ab4d-11eb-8769-9b8ff99797f2",
+                  "conceptMappings": [],
+                  "answers": []
+                },
+                "validators": []
+              },
+              {
+                "label": "Was a caregiver instructed in home therapy?",
+                "type": "obs",
+                "required": false,
+                "id": "caregiverInstructedInHomeTherapy",
+                "questionOptions": {
+                  "rendering": "radio",
+                  "concept": "433e1ba7-326b-5de4-9241-9d8ca1da69a5",
+                  "conceptMappings": [],
+                  "answers": []
+                },
+                "validators": []
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "referencedForms": [],
+    "processor": "EncounterFormProcessor",
+    "uuid": "2df3fe83-2de0-40ae-b417-cae209f645bc"
+  }

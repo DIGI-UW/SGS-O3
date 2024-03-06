@@ -1,0 +1,195 @@
+{
+    "name": "Post-Op Surgeon",
+    "description": "Post-Op Surgeon Form",
+    "version": "1.0",
+    "published": true,
+    "retired": false,
+    "encounter": "Post-Op Surgeon",
+    "pages": [
+      {
+        "label": "Form",
+        "sections": [
+          {
+            "label": "Post-Operative Instructions",
+            "isExpanded": "true",
+            "questions": [
+              {
+                "label": "Post-Op X-ray needed",
+                "type": "obs",
+                "required": false,
+                "id": "postOpXrayNeeded",
+                "questionOptions": {
+                  "rendering": "select",
+                  "concept": "bd8869b7-6db8-4df9-963b-b06264b89b2e",
+                  "conceptMappings": [],
+                  "answers": [
+                    {
+                      "concept": "fb1216ec-412f-11eb-9591-6388fef9721b",
+                      "label": "Yes"
+                    },
+                    {
+                      "concept": "0fac2336-4130-11eb-951b-6ffc17310f7c",
+                      "label": "No"
+                    }
+                  ]
+                },
+                "validators": []
+              },
+              {
+                "label": "Operative note",
+                "type": "obs",
+                "required": false,
+                "id": "Operative note",
+                "questionOptions": {
+                  "rendering": "text",
+                  "concept": "5d144bee-9147-5177-5a19-4303c9d51613",
+                  "conceptMappings": [],
+                  "answers": []
+                },
+                "validators": []
+              },
+              {
+                "label": "Post-operative plan",
+                "type": "obs",
+                "required": false,
+                "id": "postOperativePlan",
+                "questionOptions": {
+                  "rendering": "text",
+                  "concept": "cac954ec-6ac3-19f6-6237-53d6fcd99116",
+                  "conceptMappings": [],
+                  "answers": []
+                },
+                "validators": []
+              },
+              {
+                "label": "Post-operative rehabilitation plan",
+                "type": "obs",
+                "required": false,
+                "id": "postOperativeRehabilitationPlan",
+                "questionOptions": {
+                  "rendering": "text",
+                  "concept": "3b780b65-23fc-9778-2aea-4ff0e48c7700",
+                  "conceptMappings": [],
+                  "answers": []
+                },
+                "validators": []
+              },
+              {
+                "label": "IV fluids",
+                "type": "obs",
+                "required": false,
+                "id": "iVFluids",
+                "questionOptions": {
+                  "rendering": "text",
+                  "concept": "59e773fe-e223-4669-b08c-5758412049b2",
+                  "conceptMappings": [],
+                  "answers": []
+                },
+                "validators": []
+              },
+              {
+                "label": "Pain medication",
+                "type": "obs",
+                "required": false,
+                "id": "painMedication",
+                "questionOptions": {
+                  "rendering": "text",
+                  "concept": "6cafe0bf-a913-4c45-aa22-51e72e8a5fc9",
+                  "conceptMappings": [],
+                  "answers": []
+                },
+                "validators": []
+              },
+              {
+                "label": "Antibiotics",
+                "type": "obs",
+                "required": false,
+                "id": "antibiotics",
+                "questionOptions": {
+                  "rendering": "text",
+                  "concept": "0fdc833b-bc92-4e1c-a184-58fd290ea7e6",
+                  "conceptMappings": [],
+                  "answers": []
+                },
+                "validators": []
+              },
+              {
+                "label": "Positioning of the patient",
+                "type": null,
+                "required": false,
+                "id": "positioningOfPatient",
+                "questionOptions": {
+                  "rendering": "text",
+                  "concept": "8e6b0e5d-c86c-498a-ac43-0b6a16a468b7",
+                  "conceptMappings": [],
+                  "answers": []
+                },
+                "validators": []
+              },
+              {
+                "label": "Other instructions",
+                "type": "obs",
+                "required": false,
+                "id": "otherInstructions",
+                "questionOptions": {
+                  "rendering": "text",
+                  "concept": "0238541e-5578-4945-a852-8a961900420c",
+                  "conceptMappings": [],
+                  "answers": []
+                },
+                "validators": []
+              }
+            ]
+          },
+          {
+            "label": "Discharge",
+            "isExpanded": "true",
+            "questions": [
+              {
+                "label": "Discharge instructions",
+                "type": "obs",
+                "required": false,
+                "id": "dischargeInstructions",
+                "questionOptions": {
+                  "rendering": "text",
+                  "concept": "def7bb60-29a1-615e-66b3-6f12bca383ea",
+                  "conceptMappings": [],
+                  "answers": []
+                },
+                "validators": []
+              },
+              {
+                "label": "Discharge Dressing Care",
+                "type": "obs",
+                "required": false,
+                "id": "dischargeDressingCare",
+                "questionOptions": {
+                  "rendering": "text",
+                  "concept": "7640c382-4f0e-47b9-8c28-4fa9f2585932",
+                  "conceptMappings": [],
+                  "answers": []
+                },
+                "validators": []
+              },
+              {
+                "label": "Discharge medications",
+                "type": "obs",
+                "required": false,
+                "id": "dischargeMedications",
+                "questionOptions": {
+                  "rendering": "text",
+                  "concept": "383bb084-1628-05c4-64bf-b5266d2636bf",
+                  "conceptMappings": [],
+                  "answers": []
+                },
+                "validators": []
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "referencedForms": [],
+    "processor": "EncounterFormProcessor",
+    "uuid": "ab06a5fe-4379-43d4-b897-1cb1d7c15a53"
+  }

@@ -1,0 +1,289 @@
+{
+    "name": "Intra-Op (Anesthesia)",
+    "description": "Intra-Op (Anesthesia) Form",
+    "version": "1.0",
+    "published": true,
+    "retired": false,
+    "encounter": "Intra-Op Anesthesia",
+    "pages": [
+      {
+        "label": "Form",
+        "sections": [
+          {
+            "label": "Intra-op",
+            "isExpanded": "true",
+            "questions": [
+              {
+                "label": "ASA Score",
+                "type": "obs",
+                "required": false,
+                "id": "ASAScore",
+                "questionOptions": {
+                  "rendering": "select",
+                  "concept": "9F9DDA23-028E-9D1F-2D31-3E0D8A4A00FE",
+                  "conceptMappings": [],
+                  "answers": [
+                    {
+                      "concept": "8fc57db0-9de5-4db2-956a-b25e5b83c2c2",
+                      "label": "Severity classification NYHA - Class IV"
+                    },
+                    {
+                      "concept": "9d5ec533-36f1-4f64-acaf-5d86726dba26",
+                      "label": "Severity classification NYHA - Class III"
+                    },
+                    {
+                      "concept": "127d6ea2-4d23-4100-ac8b-d8c3cd345d55",
+                      "label": "Severity classification NYHA - Class II"
+                    },
+                    {
+                      "concept": "1973a47e-6750-410c-b748-8900d4e8ad2f",
+                      "label": "Severity classification NYHA - Class I"
+                    }
+                  ]
+                },
+                "validators": []
+              },
+              {
+                "label": "Anesthesiologist and level of training",
+                "type": "obs",
+                "required": false,
+                "id": "anesthesiologistAndTrainingLevel ",
+                "questionOptions": {
+                  "rendering": "select",
+                  "concept": "FC79A9DC-8AC9-99A2-A4E9-4B46B86718DB",
+                  "conceptMappings": [],
+                  "answers": [
+                    {
+                      "concept": "4A39406C-8B8A-9EF3-1367-8E6024F58349",
+                      "label": "specialist"
+                    },
+                    {
+                      "concept": "1C5EDF92-882D-9540-341F-AA77071D4FDA",
+                      "label": "resident"
+                    },
+                    {
+                      "concept": "c3e9f0a3-3f10-11e4-adec-0800271c1b75",
+                      "label": "Other Radiology"
+                    },
+                    {
+                      "concept": "F8178236-1F17-44D7-1F04-FC8B699E0451",
+                      "label": "anesthetist officer"
+                    }
+                  ]
+                },
+                "validators": []
+              },
+              {
+                "label": "Anesthetic type",
+                "type": "obs",
+                "required": false,
+                "id": "anestheticType",
+                "questionOptions": {
+                  "rendering": "select",
+                  "concept": "D09B4F76-6A72-1180-7895-41668D8221BA",
+                  "conceptMappings": [],
+                  "answers": [
+                    {
+                      "concept": "DABA5CA0-612A-5370-746A-C88C234F7FDB",
+                      "label": "spinal"
+                    },
+                    {
+                      "concept": "B03A339A-1752-1933-52D1-DA65C0C79F30",
+                      "label": "regional block"
+                    },
+                    {
+                      "concept": "c3e9f0a3-3f10-11e4-adec-0800271c1b75",
+                      "label": "Other Radiology"
+                    },
+                    {
+                      "concept": "98B58214-5074-991D-2FEE-BB44521B091F",
+                      "label": "local"
+                    },
+                    {
+                      "concept": "3C03B8A2-6C9D-32D1-30B0-3D085F514568",
+                      "label": "general anesthesia + spinal"
+                    },
+                    {
+                      "concept": "96228561-A5FE-6F76-17AA-B21C3BF56ADD",
+                      "label": "general anesthesia + block"
+                    },
+                    {
+                      "concept": "021D0303-4E5E-3374-5D58-E66294EE553F",
+                      "label": "general anesthesia"
+                    }
+                  ]
+                },
+                "validators": []
+              },
+              {
+                "label": "Prophylactic antibiotics",
+                "type": "obs",
+                "required": false,
+                "id": "prophylacticAntibiotics",
+                "questionOptions": {
+                  "rendering": "text",
+                  "concept": "6E319FFA-9862-73E6-33C0-BA9166088435",
+                  "conceptMappings": [],
+                  "answers": []
+                },
+                "validators": []
+              },
+              {
+                "label": "Time antibiotics given",
+                "type": "obs",
+                "required": false,
+                "id": "timeAntibioticsGiven",
+                "questionOptions": {
+                  "rendering": "date",
+                  "concept": "770029A9-05B8-5CDD-7468-A7A74053A33C",
+                  "conceptMappings": [],
+                  "answers": []
+                },
+                "validators": []
+              },
+              {
+                "label": "Block performed",
+                "type": "obs",
+                "required": false,
+                "id": "blockPerformed",
+                "questionOptions": {
+                  "rendering": "radio",
+                  "concept": "3B6BE436-81EC-3D75-248C-F9C70B257542",
+                  "conceptMappings": [],
+                  "answers": [
+                    {
+                      "concept": "78763e68-104e-465d-8ce3-35f9edfb083d",
+                      "label": "True"
+                    },
+                    {
+                      "concept": "f9f633a5-1544-4c44-9394-a7f746a12dff",
+                      "label": "False"
+                    }
+                  ]
+                },
+                "validators": []
+              },
+              {
+                "label": "Block laterality",
+                "type": "obs",
+                "required": false,
+                "id": "blockLaterality",
+                "questionOptions": {
+                  "rendering": "select",
+                  "concept": "CD8A90C4-7D5C-770A-4D01-58F74B3390D1",
+                  "conceptMappings": [],
+                  "answers": [
+                    {
+                      "concept": "153D0795-A44D-933A-5360-B90D21925061",
+                      "label": "upper extremity"
+                    },
+                    {
+                      "concept": "c88d2363-9a7d-5b7b-1759-e264ce298788",
+                      "label": "Right"
+                    },
+                    {
+                      "concept": "B3D0C3A9-001D-329F-8FD6-1CA0AFB95E59",
+                      "label": "lower extremity"
+                    },
+                    {
+                      "concept": "10c902dd-2567-00f6-1a73-7f541d9617ea",
+                      "label": "Left"
+                    }
+                  ]
+                },
+                "validators": []
+              },
+              {
+                "label": "Block complications",
+                "type": "obs",
+                "required": false,
+                "id": "blockComplications",
+                "questionOptions": {
+                  "rendering": "select",
+                  "concept": "271729C3-31C7-6B0B-5522-88C99B953E60",
+                  "conceptMappings": [],
+                  "answers": [
+                    {
+                      "concept": "c3e9f0a3-3f10-11e4-adec-0800271c1b75",
+                      "label": "Other Radiology"
+                    },
+                    {
+                      "concept": "75f3c572-74dc-4c71-aa9a-3278dbcd2fb6",
+                      "label": "NONE"
+                    },
+                    {
+                      "concept": "1F1CCB72-8941-50FD-2252-78EED64666BD",
+                      "label": "intravascular"
+                    },
+                    {
+                      "concept": "D8FDD902-5745-1FE5-89ED-A99E0AFF5208",
+                      "label": "intraneural"
+                    },
+                    {
+                      "concept": "7597929A-3B0A-05BF-0297-8283956CA031",
+                      "label": "failed block"
+                    }
+                  ]
+                },
+                "validators": []
+              },
+              {
+                "label": "SP02 (%)",
+                "type": "obs",
+                "required": false,
+                "id": "SP02",
+                "questionOptions": {
+                  "rendering": "number",
+                  "concept": "ac307689-3e89-4774-a0e3-eeeb956ab892",
+                  "conceptMappings": [],
+                  "answers": []
+                },
+                "validators": []
+              },
+              {
+                "label": "Airway",
+                "type": "obs",
+                "required": false,
+                "id": "airway",
+                "questionOptions": {
+                  "rendering": "text",
+                  "concept": "683da3e6-3336-4087-9f82-4fbb7b725635",
+                  "conceptMappings": [],
+                  "answers": []
+                },
+                "validators": []
+              },
+              {
+                "label": "CV",
+                "type": "obs",
+                "required": false,
+                "id": "CV",
+                "questionOptions": {
+                  "rendering": "text",
+                  "concept": "47cc7920-6053-44c5-a7ba-b8b78040a97c",
+                  "conceptMappings": [],
+                  "answers": []
+                },
+                "validators": []
+              },
+              {
+                "label": "Intra-operative complications?",
+                "type": "obs",
+                "required": false,
+                "id": "intraOperativeComplications",
+                "questionOptions": {
+                  "rendering": "text",
+                  "concept": "e0e3600d-6b9a-5d52-a637-c935c7398b61",
+                  "conceptMappings": [],
+                  "answers": []
+                },
+                "validators": []
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "processor": "EncounterFormProcessor",
+    "uuid": "47f31801-6d42-4208-bf19-5bd637e93fe9"
+  }

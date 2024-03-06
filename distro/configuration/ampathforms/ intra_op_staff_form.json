@@ -1,0 +1,344 @@
+{
+    "name": "Intra-Op (Staff)",
+    "description": "Intra-Op (Staff) Form",
+    "version": "1.0",
+    "published": true,
+    "retired": false,
+    "encounter": "Intra-Op Staff",
+    "pages": [
+      {
+        "label": "Form",
+        "sections": [
+          {
+            "label": "Intra-op",
+            "isExpanded": "true",
+            "questions": [
+              {
+                "label": "Date of surgery",
+                "type": "obs",
+                "required": false,
+                "id": "dateOfSurgery",
+                "questionOptions": {
+                  "rendering": "date",
+                  "concept": "07645ff4-0315-a65d-7ee0-806a026a9848",
+                  "conceptMappings": [],
+                  "answers": []
+                },
+                "validators": []
+              },
+              {
+                "label": "Urgency",
+                "type": "obs",
+                "required": false,
+                "id": "urgency",
+                "questionOptions": {
+                  "rendering": "select",
+                  "concept": "ef1fe7a8-4702-0dad-448b-3d896f3c25e6",
+                  "conceptMappings": [],
+                  "answers": [
+                    {
+                      "concept": "67d2cba3-44a2-0582-5ccb-b852e80d6f51",
+                      "label": "urgent"
+                    },
+                    {
+                      "concept": "f2c680be-6efe-4bd1-97b8-48003c894d0d",
+                      "label": "Operative Notes, Emergency"
+                    },
+                    {
+                      "concept": "903cdb1a-8ea2-2032-8fcf-58ed75a271ce",
+                      "label": "elective"
+                    }
+                  ]
+                },
+                "validators": []
+              },
+              {
+                "label": "Preoperative scrub",
+                "type": "obs",
+                "required": false,
+                "id": "preoperativeScrub",
+                "questionOptions": {
+                  "rendering": "select",
+                  "concept": "8b930178-4a14-18c0-6fd8-6ac6feb55206",
+                  "conceptMappings": [],
+                  "answers": [
+                    {
+                      "concept": "fb1216ec-412f-11eb-9591-6388fef9721b",
+                      "label": "Yes"
+                    },
+                    {
+                      "concept": "0fac2336-4130-11eb-951b-6ffc17310f7c",
+                      "label": "No"
+                    }
+                  ]
+                },
+                "validators": []
+              },
+              {
+                "label": "Adherence to universal precautions",
+                "type": "obs",
+                "required": false,
+                "id": "adherenceToUniversalPrecautions",
+                "questionOptions": {
+                  "rendering": "select",
+                  "concept": "5e45bf6d-24b9-8f29-a2a0-39e8f7971361",
+                  "conceptMappings": [],
+                  "answers": [
+                    {
+                      "concept": "fb1216ec-412f-11eb-9591-6388fef9721b",
+                      "label": "Yes"
+                    },
+                    {
+                      "concept": "0fac2336-4130-11eb-951b-6ffc17310f7c",
+                      "label": "No"
+                    }
+                  ]
+                },
+                "validators": []
+              },
+              {
+                "label": "Confirm correct patient by trip or local surgeon",
+                "type": "obs",
+                "required": false,
+                "id": "confirmCorrectPatientByTrip",
+                "questionOptions": {
+                    "rendering": "radio",
+                    "concept": "3258",
+                    "conceptMappings": [],
+                    "answers": [
+                      {
+                        "concept": "78763e68-104e-465d-8ce3-35f9edfb083d",
+                        "label": "True"
+                      },
+                      {
+                        "concept": "f9f633a5-1544-4c44-9394-a7f746a12dff",
+                        "label": "False"
+                      }
+                    ]
+                },
+                "validators": []
+              },
+              {
+                "label": "Confirm correct site of surgery by trip or local surgeon",
+                "type": "obs",
+                "required": false,
+                "id": "confirmCorrectSiteOfSurgeryByTrip",
+                "questionOptions": {
+                    "rendering": "radio",
+                    "concept": "3259",
+                    "conceptMappings": [],
+                    "answers": [
+                      {
+                        "concept": "78763e68-104e-465d-8ce3-35f9edfb083d",
+                        "label": "True"
+                      },
+                      {
+                        "concept": "f9f633a5-1544-4c44-9394-a7f746a12dff",
+                        "label": "False"
+                      }
+                    ]
+                },
+                "validators": []
+              },
+              {
+                "label": "Tourniquet time raised",
+                "type": "obs",
+                "required": false,
+                "id": "tourniquetTimeRaised",
+                "questionOptions": {
+                  "rendering": "text",
+                  "concept": "a1e772b7-22ae-2923-7246-7be620a62009",
+                  "conceptMappings": [],
+                  "answers": []
+                },
+                "validators": []
+              },
+              {
+                "label": "Tourniquet time released",
+                "type": "obs",
+                "required": false,
+                "id": "tourniquetTimeReleased",
+                "questionOptions": {
+                  "rendering": "text",
+                  "concept": "9a247bb1-987e-35a2-0084-f80a9c068852",
+                  "conceptMappings": [],
+                  "answers": []
+                },
+                "validators": []
+              },
+              {
+                "label": "Surgeon and level of training",
+                "type": "obs",
+                "required": false,
+                "id": "surgeonAndLevelOfTraining",
+                "questionOptions": {
+                  "rendering": "select",
+                  "concept": "7ea3483e-945f-11a3-0f48-390a7dd478d1",
+                  "conceptMappings": [],
+                  "answers": [
+                    {
+                      "concept": "4A39406C-8B8A-9EF3-1367-8E6024F58349",
+                      "label": "specialist"
+                    },
+                    {
+                      "concept": "1C5EDF92-882D-9540-341F-AA77071D4FDA",
+                      "label": "resident"
+                    },
+                    {
+                      "concept": "c3e9f0a3-3f10-11e4-adec-0800271c1b75",
+                      "label": "Other Radiology"
+                    },
+                    {
+                      "concept": "4bbf65f6-9a4d-49bc-64b5-4b17f1bf500a",
+                      "label": "intern"
+                    }
+                  ]
+                },
+                "validators": []
+              },
+              {
+                "label": "Assistant",
+                "type": "obs",
+                "required": false,
+                "id": "assistant",
+                "questionOptions": {
+                  "rendering": "select",
+                  "concept": "4ca8d4d3-4f75-17de-7016-04854fff058f",
+                  "conceptMappings": [],
+                  "answers": [
+                    {
+                      "concept": "c2232daf-3f10-11e4-adec-0800271c1b75",
+                      "label": "Student"
+                    },
+                    {
+                      "concept": "4A39406C-8B8A-9EF3-1367-8E6024F58349",
+                      "label": "specialist"
+                    },
+                    {
+                      "concept": "1bbc64bb-1054-6ccb-78f8-019fb62e060f",
+                      "label": "scrub tech"
+                    },
+                    {
+                      "concept": "1C5EDF92-882D-9540-341F-AA77071D4FDA",
+                      "label": "resident"
+                    },
+                    {
+                      "concept": "c3e9f0a3-3f10-11e4-adec-0800271c1b75",
+                      "label": "Other Radiology"
+                    },
+                    {
+                      "concept": "4bbf65f6-9a4d-49bc-64b5-4b17f1bf500a",
+                      "label": "intern"
+                    }
+                  ]
+                },
+                "validators": []
+              },
+              {
+                "label": "Operative length (min)",
+                "type": "obs",
+                "required": false,
+                "id": "operativeLength",
+                "questionOptions": {
+                  "rendering": "number",
+                  "concept": "6981f7eb-0090-1816-7058-837103f83864",
+                  "conceptMappings": [],
+                  "answers": []
+                },
+                "validators": []
+              },
+              {
+                "label": "Implants used",
+                "type": "obs",
+                "required": false,
+                "id": "implantsUsed",
+                "questionOptions": {
+                  "rendering": "text",
+                  "concept": "625d7229-6320-3f4e-9e04-6eb41f0e124c",
+                  "conceptMappings": [],
+                  "answers": []
+                },
+                "validators": []
+              },
+              {
+                "label": "Tourniquet Time",
+                "type": "obs",
+                "required": false,
+                "id": "tourniquetTime",
+                "questionOptions": {
+                  "rendering": "number",
+                  "concept": "4aee6007-04d7-5d71-349b-b8be86cb949c",
+                  "conceptMappings": [],
+                  "answers": []
+                },
+                "validators": []
+              },
+              {
+                "label": "Medications delivered intra-op",
+                "type": "obs",
+                "required": false,
+                "id": "medicationsDelivered ",
+                "questionOptions": {
+                  "rendering": "text",
+                  "concept": "2073819f-daa8-43a3-b533-557b729cc631",
+                  "conceptMappings": [],
+                  "answers": []
+                },
+                "validators": []
+              },
+              {
+                "label": "Pathology sent",
+                "type": "obs",
+                "required": false,
+                "id": "pathologySent",
+                "questionOptions": {
+                  "rendering": "select",
+                  "concept": "6defe1a3-5128-292e-9dbc-9022ceff8c16",
+                  "conceptMappings": [],
+                  "answers": [
+                    {
+                      "concept": "78763e68-104e-465d-8ce3-35f9edfb083d",
+                      "label": "True"
+                    },
+                    {
+                      "concept": "f9f633a5-1544-4c44-9394-a7f746a12dff",
+                      "label": "False"
+                    }
+                  ]
+                },
+                "validators": []
+              },
+              {
+                "label": "Postoperative comments/plan",
+                "type": "obs",
+                "required": false,
+                "id": "postoperativeComments",
+                "questionOptions": {
+                  "rendering": "text",
+                  "concept": "32bf3b28-4775-2738-801d-30e243427012",
+                  "conceptMappings": [],
+                  "answers": []
+                },
+                "validators": []
+              },
+              {
+                "label": "Intra-operative complications?",
+                "type": "obs",
+                "required": false,
+                "id": "intraOperativeComplications",
+                "questionOptions": {
+                  "rendering": "text",
+                  "concept": "e0e3600d-6b9a-5d52-a637-c935c7398b61",
+                  "conceptMappings": [],
+                  "answers": []
+                },
+                "validators": []
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "processor": "EncounterFormProcessor",
+    "uuid": "c30243f8-f9c0-4d85-a9fc-0f6172358d5d"
+  }
