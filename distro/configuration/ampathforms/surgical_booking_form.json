@@ -143,6 +143,19 @@
                   ]
                 },
                 "validators": []
+              },
+              {
+                "label": "Anticipated Procedure",
+                "type": "obs",
+                "required": false,
+                "id": "anticipatedProcedure",
+                "questionOptions": {
+                  "rendering": "text",
+                  "concept": "0ffe3bc1-20fc-4996-a6ab-56f1cd0f3724",
+                  "conceptMappings": [],
+                  "answers": []
+                },
+                "validators": []
               }
             ]
           }

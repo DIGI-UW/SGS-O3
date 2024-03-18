@@ -3940,6 +3940,7 @@ c3ff264a-3f10-11e4-adec-0800271c1b75,,Laparoscopy,laparoscopy,,Test,Text,,,,,,,,
 c3ffeda6-3f10-11e4-adec-0800271c1b75,,Sigmoidoscopy,sigmoidoscopy,,Test,Text,,,,,,,,,,,,,,,,,,,,,,,
 bb5e4849-3f10-11e4-adec-0800271c1b75,,LAB_REPORT,LAB_REPORT,,URL,Text,,,,,,,,,,,,,,,,,,,,,,,
 eef8e969-269d-40c4-b7c9-182da11c2653,,Patient Video,,,Video,Complex,,,,,,,,,,,,,,,,,,,,,,,VideoUrlHandler
+0ffe3bc1-20fc-4996-a6ab-56f1cd0f3724,,Anticipated Procedure,Anticipated Procedure,Procedure,Misc,Text,,,,,,,,,,,,,,,,,,,,,,,
 81c5840e-3f10-11e4-adec-0800271c1b75,,Visit Diagnoses,Visit Diagnoses,,ConvSet,N/A,,Bahmni Diagnosis Status;Bahmni Diagnosis Revised;Bahmni Initial Diagnosis;Diagnosis order;Diagnosis Certainty;Coded Diagnosis;Non-coded Diagnosis,,,,,,,,,,,Diagnosis Concept Set,,,,,,,,,,
 81e79a45-3f10-11e4-adec-0800271c1b75,,Lab Departments,Lab departments,,ConvSet,N/A,,Haematology Department;Urine Department;Biochemistry Department;Clinical Pathology Department;Stool Department;Microbiology Department;Histo Pathology Department;Serology Department;Vaginal Department,,,,,,,,,,,,,,,,,,,,,
 81e8776e-3f10-11e4-adec-0800271c1b75,,Other Investigations,Other Investigations,,ConvSet,N/A,,Endoscopy;Radiology,,,,,,,,,,,,,,,,,,,,,
