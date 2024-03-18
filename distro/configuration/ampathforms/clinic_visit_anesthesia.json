@@ -481,6 +481,8 @@
                 "questionOptions": {
                   "rendering": "number",
                   "concept": "386584be-6cc0-48ec-8dba-27c2b0f4b669",
+                  "max" : "30",
+                  "min" : "0",
                   "conceptMappings": [],
                   "answers": []
                 },
@@ -494,6 +496,8 @@
                 "questionOptions": {
                   "rendering": "number",
                   "concept": "3ab92468-f620-4ced-9178-ff19422ed4a0",
+                  "max" : "30",
+                  "min" : "0",
                   "conceptMappings": [],
                   "answers": []
                 },
@@ -506,7 +510,9 @@
                 "id": "mentalHealthPreventingUsualActivities",
                 "questionOptions": {
                   "rendering": "number",
-                  "concept": "1796cdb5-e72c-4b1e-9b7a-7a970a8a8d9e",
+                  "concept": "bb847c93-e4f6-45a5-8273-1aaeead512d6",
+                  "max" : "30",
+                  "min" : "0",
                   "conceptMappings": [],
                   "answers": []
                 },
@@ -1236,5 +1242,6 @@
       }
     ],
     "processor": "EncounterFormProcessor",
+    "referencedForms": [],
     "uuid": "173f412f-692d-47d0-901f-620802bd81f2"
   }
