@@ -1,0 +1,185 @@
+{
+    "name": "Pre-Op (Anesthesia)",
+    "description": "Pre-Op (Anesthesia) Form",
+    "version": "1.0",
+    "published": true,
+    "retired": false,
+    "encounter": "Pre-Op Anesthesia",
+    "pages": [
+      {
+        "label": "Form",
+        "sections": [
+          {
+            "label": "NPO",
+            "isExpanded": "true",
+            "questions": [
+              {
+                "label": "NPO Status / Appropriately NPO",
+                "type": "obs",
+                "required": false,
+                "id": "NPOStatus",
+                "questionOptions": {
+                  "rendering": "select",
+                  "concept": "86ca63a7-62eb-4c18-a223-03119ef6f9f5",
+                  "conceptMappings": [],
+                  "answers": [
+                    {
+                      "concept": "fb1216ec-412f-11eb-9591-6388fef9721b",
+                      "label": "Yes"
+                    },
+                    {
+                      "concept": "0fac2336-4130-11eb-951b-6ffc17310f7c",
+                      "label": "No"
+                    }
+                  ]
+                },
+                "validators": []
+              }
+            ]
+          },
+          {
+            "label": "General",
+            "isExpanded": "true",
+            "questions": [
+              {
+                "label": "Anesthesia plan",
+                "type": "obs",
+                "required": false,
+                "id": "anesthesiaPlan",
+                "questionOptions": {
+                  "rendering": "text",
+                  "concept": "c2ceee7f-a36c-4cc3-8d5f-5e61fa722a7c",
+                  "conceptMappings": [],
+                  "answers": []
+                },
+                "validators": []
+              }
+            ]
+          },
+          {
+            "label": "Upload anesthesia sheet",
+            "isExpanded": "true",
+            "questions": [
+              {
+                "label": "Upload anesthesia sheet here",
+                "type": "complex-obs",
+                "required": false,
+                "id": "uploadAnesthesiaSheet",
+                "questionOptions": {
+                  "rendering": "file",
+                  "concept": "38bf0734-cf72-4eb3-99de-e0c85d4c23a1",
+                  "conceptMappings": [],
+                  "answers": []
+                },
+                "validators": []
+              }
+            ]
+          },
+          {
+            "label": "Clearance and Evaluation",
+            "isExpanded": "true",
+            "questions": [
+              {
+                "label": "Anesthesia Evaluation Cleared for Surgery",
+                "type": "obs",
+                "required": false,
+                "id": "anesthesiaEvaluationClearedSurgery",
+                "questionOptions": {
+                  "rendering": "select",
+                  "concept": "a8430f9e-224c-45a6-8d45-cd89372bcf6b",
+                  "conceptMappings": [],
+                  "answers": [
+                    {
+                      "concept": "fb1216ec-412f-11eb-9591-6388fef9721b",
+                      "label": "Yes"
+                    },
+                    {
+                      "concept": "0fac2336-4130-11eb-951b-6ffc17310f7c",
+                      "label": "No"
+                    }
+                  ]
+                },
+                "validators": []
+              },
+              {
+                "label": "H&P by anesthesiologist or pediatrician completed",
+                "type": "obs",
+                "required": false,
+                "id": "HPCompleted",
+                "questionOptions": {
+                  "rendering": "select",
+                  "concept": "c2012a40-a4ac-4491-6298-7d7171955203",
+                  "conceptMappings": [],
+                  "answers": [
+                    {
+                      "concept": "fb1216ec-412f-11eb-9591-6388fef9721b",
+                      "label": "Yes"
+                    },
+                    {
+                      "concept": "99dfbe7a-5639-8f90-15df-383e2ca65867",
+                      "label": "Not indicated"
+                    },
+                    {
+                      "concept": "0fac2336-4130-11eb-951b-6ffc17310f7c",
+                      "label": "No"
+                    }
+                  ]
+                },
+                "validators": []
+              },
+              {
+                "label": "Trip or local anesthesiologist evaluation",
+                "type": "obs",
+                "required": false,
+                "id": "anesthesiologistEvaluation",
+                "questionOptions": {
+                  "rendering": "select",
+                  "concept": "ead4735a-88d1-59cc-79f1-fb0e54dc3f98",
+                  "conceptMappings": [],
+                  "answers": [
+                    {
+                      "concept": "fb1216ec-412f-11eb-9591-6388fef9721b",
+                      "label": "Yes"
+                    },
+                    {
+                      "concept": "99dfbe7a-5639-8f90-15df-383e2ca65867",
+                      "label": "Not indicated"
+                    },
+                    {
+                      "concept": "0fac2336-4130-11eb-951b-6ffc17310f7c",
+                      "label": "No"
+                    }
+                  ]
+                },
+                "validators": []
+              },
+              {
+                "label": "IV access obtained",
+                "type": "obs",
+                "required": false,
+                "id": "ivAccessObtained",
+                "questionOptions": {
+                  "rendering": "select",
+                  "concept": "127ab82f-70df-4619-0b9b-187ec15c8dd0",
+                  "conceptMappings": [],
+                  "answers": [
+                    {
+                      "concept": "fb1216ec-412f-11eb-9591-6388fef9721b",
+                      "label": "Yes"
+                    },
+                    {
+                      "concept": "0fac2336-4130-11eb-951b-6ffc17310f7c",
+                      "label": "No"
+                    }
+                  ]
+                },
+                "validators": []
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "processor": "EncounterFormProcessor",
+    "uuid": "48f144c9-8fe0-4eb6-a15b-1305aae309c6"
+  }

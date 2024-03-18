@@ -1,0 +1,148 @@
+{
+    "name": "PACU",
+    "description": "Post-Op Anaesthesia / PACU Form",
+    "version": "1.0",
+    "published": true,
+    "retired": false,
+    "encounter": "Post-Op Anaesthesia",
+    "pages": [
+      {
+        "label": "Form",
+        "sections": [
+          {
+            "label": "Patient Vitals",
+            "isExpanded": "true",
+            "questions": [
+              {
+                "label": "Temperature (F)",
+                "type": "obs",
+                "required": false,
+                "id": "temperature",
+                "questionOptions": {
+                  "rendering": "number",
+                  "concept": "c37bd733-3f10-11e4-adec-0800271c1b75",
+                  "conceptMappings": [],
+                  "answers": []
+                },
+                "validators": []
+              },
+              {
+                "label": "Heart Rate",
+                "type": "obs",
+                "required": false,
+                "id": "heartRate",
+                "questionOptions": {
+                  "rendering": "number",
+                  "concept": "c248c2f3-e927-429e-b2c0-adc104b956a9",
+                  "conceptMappings": [],
+                  "answers": []
+                },
+                "validators": []
+              },
+              {
+                "label": "Systolic Blood Pressure (mm Hg)",
+                "type": "obs",
+                "required": false,
+                "id": "systolicBloodPressure",
+                "questionOptions": {
+                  "rendering": "number",
+                  "concept": "26fede17-3317-9054-70c1-ac41dea7556b",
+                  "conceptMappings": [],
+                  "answers": []
+                },
+                "validators": []
+              },
+              {
+                "label": "Diastolic Blood Pressure (mm Hg)",
+                "type": "obs",
+                "required": false,
+                "id": "diastolicBloodPressure ",
+                "questionOptions": {
+                  "rendering": "number",
+                  "concept": "8ee724a5-250c-0955-9336-a42bd3041b6a",
+                  "conceptMappings": [],
+                  "answers": []
+                },
+                "validators": []
+              },
+              {
+                "label": "Respiratory Rate",
+                "type": "obs",
+                "required": false,
+                "id": "respiratoryRate",
+                "questionOptions": {
+                  "rendering": "number",
+                  "concept": "6a2c1bf8-27d4-42b9-a1aa-aa9860db8609",
+                  "conceptMappings": [],
+                  "answers": []
+                },
+                "validators": []
+              },
+              {
+                "label": "Weight (Kg)",
+                "type": "obs",
+                "required": false,
+                "id": "weight",
+                "questionOptions": {
+                  "rendering": "number",
+                  "concept": "5089AAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                  "conceptMappings": [],
+                  "answers": []
+                },
+                "validators": []
+              },
+              {
+                "label": "Current medications",
+                "type": "obs",
+                "required": false,
+                "id": "currentMedications",
+                "questionOptions": {
+                  "rendering": "text",
+                  "concept": "0b521543-f6b7-4fab-b73b-267e561029f5",
+                  "conceptMappings": [],
+                  "answers": []
+                },
+                "validators": []
+              }
+            ]
+          },
+          {
+            "label": "Admission orders ",
+            "isExpanded": "true",
+            "questions": [
+              {
+                "label": "Admission orders completed",
+                "type": "obs",
+                "required": false,
+                "id": "admissionOrdersCompleted",
+                "questionOptions": {
+                  "rendering": "select",
+                  "concept": "c1670f58-7a07-44d1-b392-c4435592f1f4",
+                  "conceptMappings": [],
+                  "answers": [
+                    {
+                      "concept": "fb1216ec-412f-11eb-9591-6388fef9721b",
+                      "label": "Yes"
+                    },
+                    {
+                      "concept": "99dfbe7a-5639-8f90-15df-383e2ca65867",
+                      "label": "Not indicated"
+                    },
+                    {
+                      "concept": "0fac2336-4130-11eb-951b-6ffc17310f7c",
+                      "label": "No"
+                    }
+                  ]
+                },
+                "validators": []
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "referencedForms": [],
+    "processor": "EncounterFormProcessor",
+    "encounterType": "ca8b17e8-19ee-4279-a97d-8fcf06d5b364",
+    "uuid": "943eca7c-c7f3-4197-a638-bf76d22950c5"
+  }

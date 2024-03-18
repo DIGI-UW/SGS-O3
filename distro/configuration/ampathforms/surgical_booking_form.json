@@ -1,0 +1,167 @@
+{
+    "name": "Surgical Booking",
+    "description": "Surgical Booking Form",
+    "version": "1.0",
+    "published": true,
+    "retired": false,
+    "encounter": "Surgical Booking",
+    "pages": [
+      {
+        "label": "Form",
+        "sections": [
+          {
+            "label": "Surgery Information",
+            "isExpanded": "true",
+            "questions": [
+              {
+                "label": "Equipment Needed",
+                "type": "obs",
+                "required": false,
+                "id": "equipmentNeeded",
+                "questionOptions": {
+                  "rendering": "select",
+                  "concept": "8a736283-44b4-46db-b7af-a46d9e92a56d",
+                  "conceptMappings": [],
+                  "answers": [
+                    {
+                      "concept": "1f07800e-98cd-4841-9b24-01efc2dce95d",
+                      "label": "Tourniquet"
+                    },
+                    {
+                      "concept": "b7fc754b-2888-4d70-8172-0cc0ef4fb467",
+                      "label": "Small Stryker system 2"
+                    },
+                    {
+                      "concept": "e32c7379-939f-424b-a66e-d3e72084da4d",
+                      "label": "Small Stryker sabo"
+                    },
+                    {
+                      "concept": "300c78e3-ad5f-4891-a5a9-7eddcb7b41ef",
+                      "label": "Small Stryker core"
+                    },
+                    {
+                      "concept": "139cf882-3e36-441b-aaf5-ffc8e9fd75d9",
+                      "label": "Small Fragment"
+                    },
+                    {
+                      "concept": "6f7c8c33-7e16-426c-81b1-a6665c9c15a3",
+                      "label": "Sign Nail"
+                    },
+                    {
+                      "concept": "8dabf0ac-0d7c-9450-0413-78db87d989ee",
+                      "label": "Other"
+                    },
+                    {
+                      "concept": "dfedfb18-c040-448b-9b5d-035fd931ed58",
+                      "label": "Ortho Pediatrics small frag locking"
+                    },
+                    {
+                      "concept": "e99aadb4-72ec-4884-880c-8f0d99b6a4fe",
+                      "label": "Ortho Pediatrics Femoral locking plate"
+                    },
+                    {
+                      "concept": "7c658027-edf9-48dd-a511-c2bce96f70ac",
+                      "label": "Ortho Pediatrics blade plate"
+                    },
+                    {
+                      "concept": "e9f7ff02-8ebb-49a8-8496-71bfff987dda",
+                      "label": "Ortho Pediatrics 8 plate"
+                    },
+                    {
+                      "concept": "1eff7fb5-bc5a-4c67-b651-e5d8d3e21dbe",
+                      "label": "Mini Tray"
+                    },
+                    {
+                      "concept": "43f6f34a-5e71-40c7-871e-5bd8b67f7022",
+                      "label": "Major Tray"
+                    },
+                    {
+                      "concept": "d89e9adf-c3d6-41fa-857d-3e941fca0c8e",
+                      "label": "Large Fragment"
+                    }
+                  ]
+                },
+                "validators": []
+              },
+              {
+                "label": "Other Specify",
+                "type": "obs",
+                "required": false,
+                "id": "otherSpecify",
+                "questionOptions": {
+                  "rendering": "text",
+                  "concept": "93300079-2d58-4c99-af30-ab6887d8f160",
+                  "conceptMappings": [],
+                  "answers": []
+                },
+                "validators": []
+              },
+              {
+                "label": "#of PRBC Units needed for surgery",
+                "type": "obs",
+                "required": false,
+                "id": "#ofPRBCUnitsNeededForSurgery",
+                "questionOptions": {
+                  "rendering": "text",
+                  "concept": "a7363914-47b2-4c68-830c-9fdd8fbe4860",
+                  "conceptMappings": [],
+                  "answers": []
+                },
+                "validators": []
+              },
+              {
+                "label": "Position",
+                "type": "obs",
+                "required": false,
+                "id": "position",
+                "questionOptions": {
+                  "rendering": "text",
+                  "concept": "c2659629-c0ca-47a6-9119-c059b083683b",
+                  "conceptMappings": [],
+                  "answers": []
+                },
+                "validators": []
+              },
+              {
+                "label": "Fluoroscopy if Available",
+                "type": "obs",
+                "required": false,
+                "id": "fluoroscopyIfAvailable",
+                "questionOptions": {
+                  "rendering": "select",
+                  "concept": "3707523d-4e78-438e-8d76-3a47b06528f2",
+                  "conceptMappings": [],
+                  "answers": [
+                    {
+                      "concept": "fb1216ec-412f-11eb-9591-6388fef9721b",
+                      "label": "Yes"
+                    },
+                    {
+                      "concept": "0fac2336-4130-11eb-951b-6ffc17310f7c",
+                      "label": "No"
+                    }
+                  ]
+                },
+                "validators": []
+              },
+              {
+                "label": "Anticipated Procedure",
+                "type": "obs",
+                "required": false,
+                "id": "anticipatedProcedure",
+                "questionOptions": {
+                  "rendering": "text",
+                  "concept": "0ffe3bc1-20fc-4996-a6ab-56f1cd0f3724",
+                  "conceptMappings": [],
+                  "answers": []
+                },
+                "validators": []
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "processor": "EncounterFormProcessor",
+    "uuid": "e94966ad-8843-4419-91c1-ef67426d2191"
+  }
