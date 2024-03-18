@@ -27,6 +27,54 @@
                 "validators": []
               },
               {
+                "label": "Allergies Reviewed",
+                "type": "obs",
+                "required": false,
+                "id": "allergiesReviewed",
+                "questionOptions": {
+                  "rendering": "select",
+                  "concept": "07e684d5-7349-4c0d-8fb2-431fc4a17fde",
+                  "conceptMappings": [],
+                  "answers": [
+                    {
+                      "concept": "fb1216ec-412f-11eb-9591-6388fef9721b",
+                      "label": "Yes"
+                    },
+                    {
+                      "concept": "0fac2336-4130-11eb-951b-6ffc17310f7c",
+                      "label": "No"
+                    }
+                  ]
+                },
+                "validators": []
+              },
+              {
+                "label": "Incision time",
+                "type": "obs",
+                "required": false,
+                "id": "incisionTime",
+                "questionOptions": {
+                  "rendering": "text",
+                  "concept": "fedfbf34-791b-460f-87b8-d94d9c9cf163",
+                  "conceptMappings": [],
+                  "answers": []
+                },
+                "validators": []
+              },
+              {
+                "label": "Closure time",
+                "type": "obs",
+                "required": false,
+                "id": "closureTime",
+                "questionOptions": {
+                  "rendering": "text",
+                  "concept": "0b7eb3e2-f95c-4403-ac7d-daa0f9ebe658",
+                  "conceptMappings": [],
+                  "answers": []
+                },
+                "validators": []
+              },
+              {
                 "label": "Urgency",
                 "type": "obs",
                 "required": false,
