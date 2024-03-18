@@ -10,110 +10,28 @@
         "label": "Form",
         "sections": [
           {
-            "label": "Patient Vitals",
+            "label": "NPO",
             "isExpanded": "true",
             "questions": [
               {
-                "label": "Temperature",
+                "label": "NPO Status / Appropriately NPO",
                 "type": "obs",
                 "required": false,
-                "id": "temperature",
+                "id": "NPOStatus",
                 "questionOptions": {
-                  "rendering": "number",
-                  "concept": "c37bd733-3f10-11e4-adec-0800271c1b75",
+                  "rendering": "select",
+                  "concept": "86ca63a7-62eb-4c18-a223-03119ef6f9f5",
                   "conceptMappings": [],
-                  "answers": []
-                },
-                "validators": []
-              },
-              {
-                "label": "Abnormal",
-                "type": "obs",
-                "required": false,
-                "id": "abnormal",
-                "questionOptions": {
-                  "rendering": "radio",
-                  "concept": "c37c942d-3f10-11e4-adec-0800271c1b75",
-                  "conceptMappings": [],
-                  "answers": []
-                },
-                "validators": []
-              },
-              {
-                "label": "Heart Rate",
-                "type": "obs",
-                "required": false,
-                "id": "heartRate",
-                "questionOptions": {
-                  "rendering": "number",
-                  "concept": "c248c2f3-e927-429e-b2c0-adc104b956a9",
-                  "conceptMappings": [],
-                  "answers": []
-                },
-                "validators": []
-              },
-              {
-                "label": "Abnormal",
-                "type": "obs",
-                "required": false,
-                "id": "heartRateAbnormal",
-                "questionOptions": {
-                  "rendering": "radio",
-                  "concept": "94562c90-2a82-49c4-873c-aa8376a5781e",
-                  "conceptMappings": [],
-                  "answers": []
-                },
-                "validators": []
-              },
-              {
-                "label": "Systolic Blood Pressure (mm Hg)",
-                "type": "obs",
-                "required": false,
-                "id": "systolicBloodPressure",
-                "questionOptions": {
-                  "rendering": "number",
-                  "concept": "26fede17-3317-9054-70c1-ac41dea7556b",
-                  "conceptMappings": [],
-                  "answers": []
-                },
-                "validators": []
-              },
-              {
-                "label": "Diastolic Blood Pressure (mm Hg)",
-                "type": "obs",
-                "required": false,
-                "id": "diastolicBloodPressure",
-                "questionOptions": {
-                  "rendering": "number",
-                  "concept": "8ee724a5-250c-0955-9336-a42bd3041b6a",
-                  "conceptMappings": [],
-                  "answers": []
-                },
-                "validators": []
-              },
-              {
-                "label": "Respiratory Rate ",
-                "type": "obs",
-                "required": false,
-                "id": "respiratoryRate",
-                "questionOptions": {
-                  "rendering": "number",
-                  "concept": "6a2c1bf8-27d4-42b9-a1aa-aa9860db8609",
-                  "conceptMappings": [],
-                  "answers": []
-                },
-                "validators": []
-              },
-              {
-                "label": "Weight (Kg)",
-                "type": "obs",
-                "required": false,
-                "id": "weight ",
-                "questionOptions": {
-                  "rendering": "number",
-                  "concept": "5089AAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-                  "conceptMappings": [],
-                  "answers": []
+                  "answers": [
+                    {
+                      "concept": "fb1216ec-412f-11eb-9591-6388fef9721b",
+                      "label": "Yes"
+                    },
+                    {
+                      "concept": "0fac2336-4130-11eb-951b-6ffc17310f7c",
+                      "label": "No"
+                    }
+                  ]
                 },
                 "validators": []
               }
