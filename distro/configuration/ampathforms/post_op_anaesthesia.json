@@ -1,6 +1,6 @@
 {
-    "name": "Post-Op Anaesthesia",
-    "description": "Post-Op Anaesthesia Form",
+    "name": "PACU",
+    "description": "Post-Op Anaesthesia / PACU Form",
     "version": "1.0",
     "published": true,
     "retired": false,
