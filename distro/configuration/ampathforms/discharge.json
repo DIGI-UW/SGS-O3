@@ -65,7 +65,7 @@
             "isExpanded": "true",
             "questions": [
               {
-                "label": "Post operative follow up date/ time",
+                "label": "Post operative follow up date/time",
                 "type": "obs",
                 "required": false,
                 "id": "postOperativeFollowUpDatetime",
@@ -75,8 +75,14 @@
                   "conceptMappings": [],
                   "answers": []
                 },
-                "validators": []
-              },              {
+                "validators": [
+                  {
+                    "type": "date",
+                    "allowFutureDates": "true"
+                  }
+                ]
+              },              
+              {
                 "label": "Name and contact of healthcare professional responsible for patient follow-up",
                 "type": "obs",
                 "required": false,
@@ -106,6 +112,32 @@
                     {
                       "concept": "f9f633a5-1544-4c44-9394-a7f746a12dff",
                       "label": "False"
+                    }
+                  ]
+                },
+                "validators": []
+              },
+              {
+                "label": "Disposition location",
+                "type": "obs",
+                "required": false,
+                "id": "dispositionLocation",
+                "questionOptions": {
+                  "rendering": "select",
+                  "concept": "44e775ec-7bb1-48cb-9523-2ea659698622",
+                  "conceptMappings": [],
+                  "answers": [
+                    {
+                      "concept": "5e326bca-40b9-453f-a810-1d45d1424977",
+                      "label": "Hospital/Admitted"
+                    },
+                    {
+                      "concept": "b06d08ed-952b-4817-825b-017c36a3c5ff",
+                      "label": "Home"
+                    },
+                    {
+                      "concept": "6704c637-7cd4-497b-9132-d9055dfeebfb",
+                      "label": "Nursing facility"
                     }
                   ]
                 },
