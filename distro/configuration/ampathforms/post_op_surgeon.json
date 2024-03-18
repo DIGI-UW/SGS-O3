@@ -183,6 +183,19 @@
                   "answers": []
                 },
                 "validators": []
+              },
+              {
+                "label": "Morning follow-up",
+                "type": "obs",
+                "required": false,
+                "id": "morningFollowup",
+                "questionOptions": {
+                  "rendering": "text",
+                  "concept": "401ab74b-8898-4b69-bbe8-ee853752b88b",
+                  "conceptMappings": [],
+                  "answers": []
+                },
+                "validators": []
               }
             ]
           }
