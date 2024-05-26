@@ -25,12 +25,15 @@ RUN mvn $MVN_ARGS_SETTINGS clean
 
 ### Run Stage
 # Replace 'nightly' with the exact version of openmrs-core built for production (if available)
-FROM openmrs/openmrs-core:2.6.4
+FROM openmrs/openmrs-core:2.5.9
 
 # Do not copy the war if using the correct openmrs-core image version
-COPY --from=dev /openmrs/distribution/openmrs_core/openmrs.war /openmrs/distribution/openmrs_core/
+# COPY --from=dev /openmrs/distribution/openmrs_core/openmrs.war /openmrs/distribution/openmrs_core/
 
 COPY --from=dev /openmrs/distribution/openmrs-distro.properties /openmrs/distribution/
 COPY --from=dev /openmrs/distribution/openmrs_modules /openmrs/distribution/openmrs_modules
 COPY --from=dev /openmrs/distribution/openmrs_owas /openmrs/distribution/openmrs_owas
 COPY --from=dev /openmrs_distro/distro/configuration /openmrs/distribution/openmrs_config
+
+#Add Patient Reported Outcomes Questionnaire backend module and its dependencies.
+COPY distro/modules/outcomes-1.0.0.omod /openmrs/distribution/openmrs_modules
