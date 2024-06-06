@@ -9,7 +9,16 @@ services:
       - frontend
       - backend
     ports:
-      - "80:80"
+      - "80:80" 
+ 
+  outcomes:
+    image: sgs/outcomes:${TAG:-v1.0.0}
+    restart: "unless-stopped"
+    container_name: sgs-outcomes
+    depends_on:
+      - backend 
+    ports:
+      - "3000:3000"         
 
   frontend:
     image: sgs/frontend:${TAG:-v1.0.0}
