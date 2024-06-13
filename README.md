@@ -38,6 +38,8 @@ docker image ls
 
 ### Run the app
 
+Rename .env.example to .env and add the SMS API credentials, USERNAME and API KEY
+
 ```
 docker compose -p sgs_emr up -d
 ```

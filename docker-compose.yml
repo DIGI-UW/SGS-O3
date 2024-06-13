@@ -55,6 +55,8 @@ services:
     volumes:
       - openmrs_data:/openmrs/data
       - ./distro/configuration/:/openmrs/distribution/openmrs_config
+    env_file:
+      - .env
 
   # MariaDB
   db:
