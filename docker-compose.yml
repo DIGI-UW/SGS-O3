@@ -17,8 +17,18 @@ services:
     container_name: sgs-outcomes
     depends_on:
       - backend 
+      - proxy
     ports:
-      - "3000:3000"         
+      - "3000:3000"  
+
+  proxy:
+    image: sgs/proxy:${TAG:-v1.0.0}
+    restart: "unless-stopped"
+    container_name: sgs-proxy
+    ports:
+      - "5000:5000" 
+    env_file:
+      - .env      
 
   frontend:
     image: sgs/frontend:${TAG:-v1.0.0}

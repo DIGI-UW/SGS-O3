@@ -38,7 +38,7 @@ docker image ls
 
 ### Run the app
 
-Rename .env.example to .env and add the SMS API credentials, USERNAME and API KEY
+Rename .env.example to .env and add the SMS API credentials, USERNAME and API KEY as well as OpenMRS User credentials and OpenMRS Questionnaire API Endpoint URL.
 
 ```
 docker compose -p sgs_emr up -d

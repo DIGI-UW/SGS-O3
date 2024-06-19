@@ -32,6 +32,10 @@ upstream outcomes {
   server outcomes:3000 max_fails=0;
 }
 
+upstream proxy {
+  server proxy:5000 max_fails=0;
+}
+
 server {
   listen       80;
 
@@ -94,6 +98,10 @@ server {
 
   location /outcomes {
     proxy_pass  http://outcomes;
+  }
+
+  location /proxy {
+    proxy_pass  http://proxy;
   }
 
   location = / {
