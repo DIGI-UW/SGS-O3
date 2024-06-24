@@ -11,7 +11,7 @@
     "@openmrs/esm-patient-appointments-app": "next",
     "@openmrs/esm-patient-attachments-app": "next",
     "@openmrs/esm-patient-banner-app": "next",
-    "@openmrs/esm-patient-chart-app": "next",
+    "@miirochristopher/esm-patient-chart-app": "8.0.3",
     "@openmrs/esm-patient-conditions-app": "next",
     "@openmrs/esm-patient-forms-app": "next",
     "@openmrs/esm-patient-flags-app": "next",
