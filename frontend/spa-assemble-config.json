@@ -10,7 +10,7 @@
     "@openmrs/esm-patient-allergies-app": "next",
     "@openmrs/esm-patient-appointments-app": "next",
     "@openmrs/esm-patient-attachments-app": "next",
-    "@openmrs/esm-patient-banner-app": "next",
+    "@miirochristopher/esm-patient-banner-app": "8.0.3",
     "@miirochristopher/esm-patient-chart-app": "8.0.5",
     "@openmrs/esm-patient-conditions-app": "next",
     "@openmrs/esm-patient-forms-app": "next",
