@@ -9,7 +9,26 @@ services:
       - frontend
       - backend
     ports:
-      - "80:80"
+      - "80:80" 
+ 
+  outcomes:
+    image: sgs/outcomes:${TAG:-v1.0.0}
+    restart: "unless-stopped"
+    container_name: sgs-outcomes
+    depends_on:
+      - backend 
+      - proxy
+    ports:
+      - "3000:3000"  
+
+  proxy:
+    image: sgs/proxy:${TAG:-v1.0.0}
+    restart: "unless-stopped"
+    container_name: sgs-proxy
+    ports:
+      - "5000:5000" 
+    env_file:
+      - .env      
 
   frontend:
     image: sgs/frontend:${TAG:-v1.0.0}
@@ -46,6 +65,8 @@ services:
     volumes:
       - openmrs_data:/openmrs/data
       - ./distro/configuration/:/openmrs/distribution/openmrs_config
+    env_file:
+      - .env
 
   # MariaDB
   db:

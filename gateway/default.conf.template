@@ -28,6 +28,14 @@ upstream backend {
   server backend:8080 max_fails=0;
 }
 
+upstream outcomes {
+  server outcomes:3000 max_fails=0;
+}
+
+upstream proxy {
+  server proxy:5000 max_fails=0;
+}
+
 server {
   listen       80;
 
@@ -86,6 +94,14 @@ server {
 
   location /openmrs {
     proxy_pass http://backend;
+  }
+
+  location /outcomes {
+    proxy_pass  http://outcomes;
+  }
+
+  location /proxy {
+    proxy_pass  http://proxy;
   }
 
   location = / {

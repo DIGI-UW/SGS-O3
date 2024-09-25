@@ -4,7 +4,7 @@
     "Brand color #2": "#4c6b00",
     "Brand color #3": "#385600"
   },
-  "@openmrs/esm-patient-chart-app": {
+  "@miirochristopher/esm-patient-chart-app": {
     "extensionSlots": {
       "patient-chart-dashboard-slot": {
         "remove": [
