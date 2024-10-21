@@ -44,6 +44,8 @@ services:
       timeout: 5s
     depends_on:
       - backend
+    volumes:
+      - ./frontend/sgs_config.json:/usr/share/nginx/html/sgs_config.json
 
   backend:
     image: sgs/backend:${TAG:-v1.0.0}
