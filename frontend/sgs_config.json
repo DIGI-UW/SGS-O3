@@ -4,7 +4,7 @@
     "Brand color #2": "#4c6b00",
     "Brand color #3": "#385600"
   },
-  "@miirochristopher/esm-patient-chart-app": {
+  "@openmrs/esm-patient-chart-app": {
     "extensionSlots": {
       "patient-chart-dashboard-slot": {
         "remove": [
@@ -27,6 +27,20 @@
     "logo": {
       "src": "sgs-logo-white.svg",
       "alt": "sgs-logo"
+    }
+  },
+  "@openmrs/esm-patient-vitals-app": {
+    "concepts": {
+      "temperatureUuid": "c37bd733-3f10-11e4-adec-0800271c1b75",
+      "systolicBloodPressureUuid": "26fede17-3317-9054-70c1-ac41dea7556b",
+      "diastolicBloodPressureUuid": "8ee724a5-250c-0955-9336-a42bd3041b6a",
+      "pulseUuid": "c36bc411-3f10-11e4-adec-0800271c1b75",
+      "oxygenSaturationUuid": "075c2485-ea84-4e3b-8df8-638ef18edf41",
+      "weightUuid": "5089AAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+      "heightUuid":"5090AAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+      "respiratoryRateUuid": "6a2c1bf8-27d4-42b9-a1aa-aa9860db8609",
+      "midUpperArmCircumferenceUuid": "90f53912-95d5-4b5c-a9eb-81f3f937225e",
+      "generalPatientNoteUuid":"165095AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
     }
   }
 }

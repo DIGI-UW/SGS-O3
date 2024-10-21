@@ -4050,3 +4050,5 @@ c54c999d-edd8-4ba9-8a3c-f2dbd2a7a8d6,,Surgical Booking,Surgical Booking,,ConvSet
 b5f3cda7-d359-4eb7-b558-c2aee58ca6e6,,Assessment test1,Assessment,,ConvSet,N/A,,"Name test1;Email test1;Quiz Questions test1;Your first question? test 1;Your second question? test1;Your third question? test1;Title test1;Based on the text above, your fourth question. test1",,,,,,,,,,,,,,,,,,,,,
 5e8d7984-3130-4c8d-8676-f5e75673d37b,,PROMs,PROMs,,ConvSet,N/A,,SF-12;CDC_Proms;Poverty probability index for Ecuador;VAS Pain Tool,,,,,,,,,,,,,,,,,,,,,
 978e16a9-fe77-44a6-9a23-a438dec3449e,,CDC_Proms,CDC,,ConvSet,N/A,,healthInGeneral;cdc_physical_health_proms;cdc_mental_health_proms;How many days poor physical or mental health keep you from doing your usual activities;cdc_totalScore_proms,,,,,,,,,,,,,,,,,,,,,
+165095AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,General patient note,General patient note,,Question,Text,,,,,,,,,,,,,,,,,,,,,,,
+e4002edf-da2c-4e6b-82b6-d75a4862f2ed,,Vital Signs,Vital Signs,,ConvSet,N/A,,"Systolic Blood Pressure;Diastolic Blood Pressure;Temperature;Heart Rate;Weight;Height;Oxygen Saturation;Respiratory Rate;IMAM, MUAC",,,,,,,,,,,,,,,,,,,,,
