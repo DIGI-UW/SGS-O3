@@ -3,6 +3,8 @@ version: "3.7"
 services:
   gateway:
     image: sgs/gateway:${TAG:-v1.0.0}
+    build:
+      context: ./gateway/    
     restart: "unless-stopped"
     container_name: sgs-gateway
     depends_on:
@@ -32,6 +34,8 @@ services:
 
   frontend:
     image: sgs/frontend:${TAG:-v1.0.0}
+    build:
+      context: ./frontend/
     restart: "unless-stopped"
     container_name: sgs-frontend
     environment:
@@ -49,6 +53,8 @@ services:
 
   backend:
     image: sgs/backend:${TAG:-v1.0.0}
+    build:
+      context: .
     restart: "unless-stopped"
     container_name: sgs-backend
     depends_on:
@@ -88,6 +94,7 @@ services:
       MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD:-openmrs}
     volumes:
       - db_data:/var/lib/mysql
+      - ./db:/docker-entrypoint-initdb.d:ro
 
 volumes:
   openmrs_data: ~
