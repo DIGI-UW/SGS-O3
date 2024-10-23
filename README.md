@@ -1,60 +1,105 @@
 # SGS OpenMRS 3.0 Application
 
-This project holds the build configuration for the SGS OpenMRS 3.0 application, found on
-[http://sgs.uwdigi.org/](sgs.uwdigi.org).
+A containerized deployment of OpenMRS 3.0 with custom configurations for the SGS healthcare system.
 
-## Quick start
+## 🌐 Overview
 
-### Build the custom gateway, frontend and backend images
+This repository contains the build configuration for the SGS OpenMRS 3.0 application, deployed at [sgs.uwdigi.org](http://sgs.uwdigi.org/).
 
-### Frontend
+## 🚀 Quick Start
 
-cd frontend
+### Prerequisites
 
+- Docker and Docker Compose
+- Git
+- Access to SMS API credentials
+- OpenMRS user credentials
+
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-org/sgs-openmrs
+   cd sgs-openmrs
+   ```
+
+2. Set up environment variables:
+   ```bash
+   cp .env.example .env
+   ```
+
+3. Configure the following in `.env`:
+   - SMS API credentials (USERNAME and API KEY)
+   - OpenMRS user credentials
+   - OpenMRS Questionnaire API endpoint URL
+
+4. Start the application:
+   ```bash
+   docker compose up --build
+   ```
+
+## 💾 Database Management
+
+### Backup and Restore
+
+To restore from a backup:
+
+1. Place your SQL backup file in the `db` folder
+2. Update the following configurations in `.env`:
+   ```env
+   OMRS_CONFIG_AUTO_UPDATE_DATABASE=false
+   OMRS_CONFIG_CREATE_TABLES=false
+   ```
+3. Restart the application:
+   ```bash
+   docker compose down
+   docker compose up --build
+   ```
+
+### Creating a Backup
+
+```bash
+docker exec sgs-mariadb mysqldump -u$MYSQL_USER -p$MYSQL_PASSWORD openmrs > backup_$(date +%Y%m%d).sql
 ```
-docker build -t sgs/frontend:v1.0.0 . 
 
+## 🧹 Cleanup
+
+To completely remove the application and its volumes:
+
+```bash
+docker compose -p sgs_emr down -v
 ```
 
-### Gateway
+## 🔧 Configuration
 
-cd ../gateway
+Key configuration files:
+- `docker-compose.yml`: Container orchestration
+- `.env`: Environment variables
+- `db/`: Database initialization scripts
 
-```
-docker build -t sgs/gateway:v1.0.0 . 
+## 🛟 Troubleshooting
 
-```
+Common issues and solutions:
 
-### Backend
+1. Database connection errors:
+   - Verify MariaDB container is running
+   - Ensure proper network connectivity
 
-cd ../
+2. SMS API issues:
+   - Validate API credentials
+   - Check network connectivity to SMS service
+   - Review API endpoint configuration
 
-```
-docker build -t sgs/backend:v1.0.0 . 
+## 📚 Additional Resources
 
-```
+- [OpenMRS Documentation](https://wiki.openmrs.org/)
+- [Docker Documentation](https://docs.docker.com/)
+- [MariaDB Documentation](https://mariadb.org/documentation/)
 
-docker image ls
+## 🤝 Contributing
 
-### Run the app
-
-Rename .env.example to .env and add the SMS API credentials, USERNAME and API KEY as well as OpenMRS User credentials and OpenMRS Questionnaire API Endpoint URL.
-
-```
-docker compose -p sgs_emr up -d
-```
-
-OR 
-
-```
-docker-compose -p sgs_emr up -d
-```
-
-## Clean up 
-
-```
-docker-compose -p sgs_emr down -v
-```
-
-
-
+1. Fork the repository
+2. Create your feature branch
+3. Commit your changes
+4. Push to the branch
+5. Create a new Pull Request
