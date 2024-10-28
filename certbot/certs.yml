@@ -1,0 +1,4 @@
+tls:
+  certificates:
+    - certFile: /etc/certs/live/sgs.uwdigi.org/fullchain.pem
+      keyFile: /etc/certs/live/sgs.uwdigi.org/privkey.pem

@@ -14,13 +14,7 @@ map $http_x_real_ip $forwarded_ip {
   default $remote_addr;
 }
 
-map $forwarded_proto $var_proxy_cookie_flags {
-  https   "JSESSIONID secure samesite=strict";
-  default "off";
-}
-
 upstream frontend {
-  # always assume the frontend will be available
   server frontend max_fails=0;
 }
 
@@ -36,8 +30,44 @@ upstream proxy {
   server proxy:5000 max_fails=0;
 }
 
+# HTTP server (redirect to HTTPS)
 server {
-  listen       80;
+  listen 80;
+  server_name sgs.uwdigi.org;
+  
+  # Allow certbot authentication challenge
+  location /.well-known/acme-challenge/ {
+    root /var/www/certbot;
+  }
+
+  # Redirect all other HTTP traffic to HTTPS
+  location / {
+    return 301 https://$host$request_uri;
+  }
+}
+
+# HTTPS server
+server {
+  listen 443 ssl;
+  server_name sgs.uwdigi.org;
+  
+  # Let's Encrypt SSL configuration
+  ssl_certificate /etc/letsencrypt/live/sgs.uwdigi.org/fullchain.pem;
+  ssl_certificate_key /etc/letsencrypt/live/sgs.uwdigi.org/privkey.pem;
+  ssl_trusted_certificate /etc/letsencrypt/live/sgs.uwdigi.org/chain.pem;
+  
+  # Recommended SSL settings
+  ssl_protocols TLSv1.2 TLSv1.3;
+  ssl_ciphers ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-CHACHA20-POLY1305:ECDHE-RSA-CHACHA20-POLY1305:DHE-RSA-AES128-GCM-SHA256:DHE-RSA-AES256-GCM-SHA384;
+  ssl_prefer_server_ciphers off;
+  ssl_session_timeout 1d;
+  ssl_session_cache shared:SSL:50m;
+  ssl_session_tickets off;
+  ssl_stapling on;
+  ssl_stapling_verify on;
+  
+  # HSTS 
+  add_header Strict-Transport-Security "max-age=63072000" always;
 
   add_header X-XSS-Protection "1; mode=block";
   add_header Content-Security-Policy $csp_header;
@@ -47,13 +77,14 @@ server {
   proxy_set_header      X-Forwarded-Proto $forwarded_proto;
   proxy_set_header      X-Real-IP $forwarded_ip;
   proxy_set_header      X-Forwarded-For $proxy_add_x_forwarded_for;
-  # if serving this via HTTPS, the following is recommended
-  # proxy_cookie_flags      $var_proxy_cookie_flags;
+  proxy_set_header      Cookie $http_cookie;
   proxy_http_version    1.1;
+
+  # Set secure cookies when using HTTPS
+  proxy_cookie_path / "/; secure; HttpOnly; SameSite=strict";
 
   gzip on;
   gzip_vary on;
-  # 1 KiB
   gzip_min_length 1024;
   gzip_proxied any;
   gzip_http_version 1.0;
@@ -80,7 +111,6 @@ server {
               application/xhtml+xml
               application/xml;
 
-  # all redirects are relative to the gateway
   absolute_redirect off;
 
   location = /openmrs/spa {
@@ -97,11 +127,11 @@ server {
   }
 
   location /outcomes {
-    proxy_pass  http://outcomes;
+    proxy_pass http://outcomes;
   }
 
   location /proxy {
-    proxy_pass  http://proxy;
+    proxy_pass http://proxy;
   }
 
   location = / {
