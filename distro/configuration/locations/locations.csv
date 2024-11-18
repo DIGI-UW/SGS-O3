@@ -1,2 +1,9 @@
 Uuid,Void/Retire,Name,Description,Parent,Tags,Address 1,Address 2,Address 3,Address 4,Address 5,Address 6,City/Village,County/District,State/Province,Postal Code,Country,_order:1000
-87b0114f-f55c-4e1b-94c5-53d6550e6ad0,,Cambodia,,,Login Location;Visit Location;Admission Location;Appointment Location," ",,,,,,,,,,,
+87b0114f-f55c-4e1b-94c5-53d6550e6ad0,,Cambodia,,,Login Location;Visit Location;Admission Location;Appointment Location,,,,,,,,,,,,
+0e498ef7-4014-4d04-b8d5-5911a7634ba0,,Ecuador,,,Login Location;Visit Location;Appointment Location,,,,,,,,,,,,
+3e373c54-f7f8-4432-8ef9-163e5721fb3a,,General Ward,,Cambodia,Admission Location,,,,,,,,,,,,
+2e3855b1-65b9-4684-9ebf-a70bacca54f9,,GW-A,,General Ward,Admission Location,,,,,,,,,,,,
+4e45310a-82b3-487c-8211-3e9beb3c04c5,,Honduras,,,Visit Location;Appointment Location,,,,,,,,,,,,
+12d184bf-ea1f-11ea-94de-d290d17436c8,,OT,Operation Theater,,Operation Theater,,,,,,,,,,,,
+675f0bd6-dd24-4693-84c2-51b29ba9197d,,Private Ward,,Cambodia,Admission Location,,,,,,,,,,,,
+965ba8c3-cec9-4a2f-a53e-2c3e4b2b593c,,PW-A,,Private Ward,Admission Location,,,,,,,,,,,,
