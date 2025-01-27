@@ -14,6 +14,12 @@ services:
       - ./gateway/etc/letsencrypt:/etc/letsencrypt
       - ./certbot/data:/var/www/certbot
 
+  restarter:
+    image: docker:cli
+    volumes: ["/var/run/docker.sock:/var/run/docker.sock"]
+    command: ["/bin/sh", "-c", "while true; do sleep 86400; docker restart certbot; done"]
+    restart: unless-stopped
+
   gateway:
     image: sgs/gateway:${TAG:-v1.0.0}
     build:
@@ -27,9 +33,9 @@ services:
       - backend
     ports:
       - "80:80"
-      - "443:443"  # Added HTTPS port
+      - "443:443"
     volumes:
-      - ./gateway/templates:/etc/nginx/templates:ro #Image already adds it
+      - ./gateway/templates:/etc/nginx/templates:ro
       - ./gateway/etc/letsencrypt:/etc/letsencrypt:ro
  
   outcomes:
