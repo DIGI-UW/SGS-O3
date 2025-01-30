@@ -46,7 +46,7 @@ services:
       - backend 
       - proxy
     ports:
-      - "3000:3000"  
+      - "3000:80"  
 
   proxy:
     image: sgs/proxy:${TAG:-v1.0.0}
