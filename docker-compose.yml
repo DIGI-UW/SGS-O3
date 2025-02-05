@@ -1,25 +1,6 @@
 version: "3.7"
 
 services:
-  certbot:
-    container_name: certbot
-    image: certbot/certbot:latest
-    depends_on:
-      - gateway
-    command: >-
-             certonly --reinstall --webroot --webroot-path=/var/www/certbot
-             --email ${EMAIL} --agree-tos --no-eff-email
-             -d ${DOMAIN}
-    volumes:
-      - ./gateway/etc/letsencrypt:/etc/letsencrypt
-      - ./certbot/data:/var/www/certbot
-
-  restarter:
-    image: docker:cli
-    volumes: ["/var/run/docker.sock:/var/run/docker.sock"]
-    command: ["/bin/sh", "-c", "while true; do sleep 86400; docker restart certbot; done"]
-    restart: unless-stopped
-
   gateway:
     image: sgs/gateway:${TAG:-v1.0.0}
     build:
@@ -35,8 +16,9 @@ services:
       - "80:80"
       - "443:443"
     volumes:
-      - ./gateway/templates:/etc/nginx/templates:ro
+      - ./gateway/templates/default.https.conf.template:/etc/nginx/templates/default.https.conf.template:ro
       - ./gateway/etc/letsencrypt:/etc/letsencrypt:ro
+      - ./certbot/data:/var/www/certbot:ro
  
   outcomes:
     image: sgs/outcomes:${TAG:-v1.0.0}
@@ -125,3 +107,4 @@ volumes:
   openmrs_data: ~
   db_data: ~
   certs:
+  certbot:

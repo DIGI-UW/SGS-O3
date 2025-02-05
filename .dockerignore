@@ -4,3 +4,8 @@
 **/node
 *.iml
 .idea/
+.vscode/
+*.log
+*.env
+**/backup/
+**/db/
