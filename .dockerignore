@@ -1,11 +1,4 @@
-**/target/
-**/.DS_Store
 **/node_modules/
 **/node
 *.iml
 .idea/
-.vscode/
-*.log
-*.env
-**/backup/
-**/db/

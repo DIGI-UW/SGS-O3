@@ -16,7 +16,7 @@ services:
       - "80:80"
       - "443:443"
     volumes:
-      - ./gateway/templates/default.https.conf.template:/etc/nginx/templates/default.https.conf.template:ro
+      - ./gateway/templates/default.https.conf.template:/etc/nginx/templates/default.conf.template:ro
       - ./gateway/etc/letsencrypt:/etc/letsencrypt:ro
       - ./certbot/data:/var/www/certbot:ro
  
@@ -27,6 +27,8 @@ services:
     depends_on:
       - backend 
       - proxy
+    env_file:
+      - .env
     ports:
       - "3000:80"  
 
