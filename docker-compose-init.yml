@@ -15,7 +15,7 @@ services:
       - ./certbot/data:/var/www/certbot
 
   gateway:
-    image: sgs/gateway:${TAG:-v1.0.0}
+    image: itechuw/sgs-gateway:latest
     build:
       context: ./gateway/    
     restart: "unless-stopped"
