@@ -19,8 +19,8 @@ This repository contains the build configuration for the SGS OpenMRS 3.0 applica
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-org/sgs-openmrs
-   cd sgs-openmrs
+   git clone https://github.com/your-org/sgs-o3
+   cd sgs-o3
    ```
 
 2. Set up environment variables:
@@ -32,12 +32,22 @@ This repository contains the build configuration for the SGS OpenMRS 3.0 applica
    - SMS API credentials (USERNAME and API KEY)
    - OpenMRS user credentials
    - OpenMRS Questionnaire API endpoint URL
+   - Outcomes endpoint URL
 
-4. Start the application:
+4. Download and configure domain certs:
    ```bash
-   docker compose up --build
+   docker compose -f docker-compose-init.yml up
    ```
 
+5. Stop the Nginx server after certs are downloaded:
+   ```bash
+   docker compose -f docker-compose-init.yml down
+   ```
+   
+4. Start the application:
+   ```bash
+   docker compose up
+   ```
 ## 💾 Database Management
 
 ### Backup and Restore
@@ -53,7 +63,7 @@ To restore from a backup:
 3. Restart the application:
    ```bash
    docker compose down
-   docker compose up --build
+   docker compose up
    ```
 
 ### Creating a Backup
@@ -67,7 +77,7 @@ docker exec sgs-mariadb mysqldump -u$MYSQL_USER -p$MYSQL_PASSWORD openmrs > back
 To completely remove the application and its volumes:
 
 ```bash
-docker compose -p sgs_emr down -v
+docker compose down -v
 ```
 
 ## 🔧 Configuration
