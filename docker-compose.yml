@@ -2,7 +2,7 @@ version: "3.7"
 
 services:
   gateway:
-    image: sgs/gateway:${TAG:-v1.0.0}
+    image: itechuw/sgs-gateway:latest
     build:
       context: ./gateway/    
     restart: "unless-stopped"
@@ -21,7 +21,7 @@ services:
       - ./certbot/data:/var/www/certbot:ro
  
   outcomes:
-    image: sgs/outcomes:${TAG:-v1.0.0}
+    image: itechuw/sgs-outcomes:latest
     restart: "unless-stopped"
     container_name: sgs-outcomes
     depends_on:
@@ -33,7 +33,7 @@ services:
       - "3000:80"  
 
   proxy:
-    image: sgs/proxy:${TAG:-v1.0.0}
+    image: itechuw/sgs-proxy:latest
     restart: "unless-stopped"
     container_name: sgs-proxy
     ports:
@@ -42,7 +42,7 @@ services:
       - .env      
 
   frontend:
-    image: sgs/frontend:${TAG:-v1.0.0}
+    image: itechuw/sgs-frontend:latest
     build:
       context: ./frontend/
     restart: "unless-stopped"
@@ -61,7 +61,7 @@ services:
       - ./frontend/sgs_config.json:/usr/share/nginx/html/sgs_config.json
 
   backend:
-    image: sgs/backend:${TAG:-v1.0.0}
+    image: itechuw/sgs-backend:latest
     build:
       context: .
     restart: "unless-stopped"
