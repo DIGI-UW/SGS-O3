@@ -19,7 +19,7 @@
                 "required": false,
                 "id": "equipmentNeeded",
                 "questionOptions": {
-                  "rendering": "select",
+                  "rendering": "checkbox",
                   "concept": "8a736283-44b4-46db-b7af-a46d9e92a56d",
                   "conceptMappings": [],
                   "answers": [
@@ -152,6 +152,66 @@
                 "questionOptions": {
                   "rendering": "text",
                   "concept": "0ffe3bc1-20fc-4996-a6ab-56f1cd0f3724",
+                  "conceptMappings": [],
+                  "answers": []
+                },
+                "validators": []
+              },
+              {
+                "label": "Surgical Priority ",
+                "type": "obs",
+                "required": true,
+                "id": "surgicalPriority ",
+                "questionOptions": {
+                  "rendering": "select",
+                  "concept": "64464f90-2e1d-4e39-b363-c318fbdc724f",
+                  "conceptMappings": [],
+                  "answers": [
+                    {
+                      "concept": "e2a6fa43-58a1-455f-815c-9f08f76a2623",
+                      "label": "1_high"
+                    },
+                    {
+                      "concept": "8f63b407-8fdd-4efd-94c7-e6c3f93f0403",
+                      "label": "Number, 2"
+                    },
+                    {
+                      "concept": "8c6b2506-505f-4473-ac36-6a6e5995d45d",
+                      "label": "Number, 3"
+                    },
+                    {
+                      "concept": "280d20ea-b4fe-4747-9682-c3a6b76945ab",
+                      "label": "4_Low"
+                    },
+                    {
+                      "concept": "99dfbe7a-5639-8f90-15df-383e2ca65867",
+                      "label": "Not indicated"
+                    }
+                  ]
+                },
+                "validators": []
+              },
+              {
+                "label": "Surgeon",
+                "type": "obs",
+                "required": false,
+                "id": "surgeon",
+                "questionOptions": {
+                  "rendering": "text",
+                  "concept": "b0d2ec92-9786-4576-7b2e-1b38d8eb0521",
+                  "conceptMappings": [],
+                  "answers": []
+                },
+                "validators": []
+              },
+              {
+                "label": "Room Number",
+                "type": "obs",
+                "required": false,
+                "id": "roomNumber",
+                "questionOptions": {
+                  "rendering": "text",
+                  "concept": "8783d26b-a8ce-451b-9630-52f07d74b297",
                   "conceptMappings": [],
                   "answers": []
                 },
