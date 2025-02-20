@@ -7,7 +7,7 @@
     "encounter": "Surgical Booking",
     "pages": [
       {
-        "label": "Form",
+        "label": "Surgical Booking",
         "sections": [
           {
             "label": "Surgery Information",

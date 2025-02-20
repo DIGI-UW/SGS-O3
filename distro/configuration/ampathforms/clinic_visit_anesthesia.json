@@ -7,7 +7,7 @@
     "encounter": "Clinic Visit Anesthesia",
     "pages": [
       {
-        "label": "Form",
+        "label": "Clinic Visit Anesthesia",
         "sections": [
           {
             "label": "Patient Vitals",
