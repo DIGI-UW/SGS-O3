@@ -328,7 +328,8 @@
                 "required": false,
                 "id": "physicalExam",
                 "questionOptions": {
-                  "rendering": "text",
+                  "rendering": "textarea",
+                  "rows": 5,
                   "concept": "4ca3e055-2fca-8659-31cd-65a2c79f263e",
                   "conceptMappings": [],
                   "answers": []
