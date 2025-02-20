@@ -1,5 +1,5 @@
 {
-    "name": "SGS-12. Discharge",
+    "name": "SGS-13. Discharge",
     "description": "Discharge Form",
     "version": "1.0",
     "published": true,
@@ -7,7 +7,7 @@
     "encounter": "Discharge",
     "pages": [
       {
-        "label": "Form",
+        "label": "Discharge",
         "sections": [
           {
             "label": "Discharge Information",

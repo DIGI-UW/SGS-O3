@@ -1,5 +1,5 @@
 {
-    "name": "SGS-11. Physical Therapy/Surgical Tech",
+    "name": "SGS-12. Physical Therapy/Surgical Tech",
     "description": "Physical Therapy/Surgical Tech Form",
     "version": "1.0",
     "published": true,
@@ -7,7 +7,7 @@
     "encounter": "Physical Therapy",
     "pages": [
       {
-        "label": "Form",
+        "label": "Physical Therapy",
         "sections": [
           {
             "label": "Therapy",

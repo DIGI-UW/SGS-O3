@@ -1,5 +1,5 @@
 {
-    "name": "SGS-02. Clinic Visit (Surgeon)",
+    "name": "SGS-01. Clinic Visit (Surgeon)",
     "description": "Clinic Visit (Surgeon) Form",
     "version": "1.0",
     "published": true,
@@ -7,7 +7,7 @@
     "encounter": "Clinic Visit Surgeon",
     "pages": [
       {
-        "label": "Form",
+        "label": "Clinic Visit Surgeon",
         "sections": [
           {
             "label": "Injury Information",

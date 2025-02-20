@@ -1,5 +1,5 @@
 {
-    "name": "SGS-09. Post-Op Surgeon",
+    "name": "SGS-11. Post-Op Surgeon",
     "description": "Post-Op Surgeon Form",
     "version": "1.0",
     "published": true,
@@ -7,7 +7,7 @@
     "encounter": "Post-Op Surgeon",
     "pages": [
       {
-        "label": "Form",
+        "label": "Post-Op Surgeon",
         "sections": [
           {
             "label": "Post-Operative Instructions",

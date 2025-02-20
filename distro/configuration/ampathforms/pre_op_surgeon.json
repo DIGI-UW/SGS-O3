@@ -1,5 +1,5 @@
 {
-    "name": "SGS-05. Pre-op (Surgeon)",
+    "name": "SGS-06. Pre-op (Surgeon)",
     "description": "Pre-op (Surgeon) Form",
     "version": "1.0",
     "published": true,
@@ -7,7 +7,7 @@
     "encounter": "Pre-Op Surgeon",
     "pages": [
       {
-        "label": "Form",
+        "label": "Pre-Op Surgeon",
         "sections": [
           {
             "label": "Patient Information",
