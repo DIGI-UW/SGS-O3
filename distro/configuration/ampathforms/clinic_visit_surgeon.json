@@ -247,24 +247,24 @@
                   "conceptMappings": [],
                   "answers": [
                     {
-                      "concept": "8c6b2506-505f-4473-ac36-6a6e5995d45d",
-                      "label": "Number, 3"
+                      "concept": "e2a6fa43-58a1-455f-815c-9f08f76a2623",
+                      "label": "1_high"
                     },
                     {
                       "concept": "8f63b407-8fdd-4efd-94c7-e6c3f93f0403",
                       "label": "Number, 2"
                     },
                     {
-                      "concept": "99dfbe7a-5639-8f90-15df-383e2ca65867",
-                      "label": "Not indicated"
+                      "concept": "8c6b2506-505f-4473-ac36-6a6e5995d45d",
+                      "label": "Number, 3"
                     },
                     {
                       "concept": "280d20ea-b4fe-4747-9682-c3a6b76945ab",
                       "label": "4_Low"
                     },
                     {
-                      "concept": "e2a6fa43-58a1-455f-815c-9f08f76a2623",
-                      "label": "1_high"
+                      "concept": "99dfbe7a-5639-8f90-15df-383e2ca65867",
+                      "label": "Not indicated"
                     }
                   ]
                 },
