@@ -37,3 +37,4 @@ COPY --from=dev /openmrs_distro/distro/configuration /openmrs/distribution/openm
 
 #Add Patient Reported Outcomes Questionnaire backend module and its dependencies.
 COPY distro/modules/outcomes-1.0.0.omod /openmrs/distribution/openmrs_modules
+COPY distro/modules/sgsreports-1.0.0-SNAPSHOT.omod /openmrs/distribution/openmrs_modules
