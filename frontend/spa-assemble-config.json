@@ -5,7 +5,6 @@
     "@openmrs/esm-login-app": "latest",
     "@openmrs/esm-primary-navigation-app": "latest",
     "@openmrs/esm-home-app": "latest",
-    "@openmrs/esm-form-entry-app": "latest",
     "@openmrs/esm-generic-patient-widgets-app": "latest",
     "@openmrs/esm-patient-allergies-app": "latest",
     "@openmrs/esm-patient-appointments-app": "latest",
@@ -14,7 +13,7 @@
     "@openmrs/esm-patient-banner-app": "latest",
     "@i-tech-uw/esm-patient-outcomes-app":"next",
     "@openmrs/esm-patient-conditions-app": "latest",
-    "@openmrs/esm-patient-forms-app": "latest",
+    "@openmrs/esm-patient-forms-app": "next",
     "@openmrs/esm-patient-flags-app": "latest",
     "@openmrs/esm-patient-immunizations-app": "latest",
     "@openmrs/esm-patient-labs-app": "latest",
@@ -35,7 +34,8 @@
     "@openmrs/esm-dispensing-app": "latest",
     "@openmrs/esm-fast-data-entry-app": "latest",
     "@openmrs/esm-cohort-builder-app": "latest",
-    "@openmrs/esm-form-builder-app": "latest"
+    "@openmrs/esm-form-builder-app": "latest",
+    "@openmrs/esm-form-engine-app": "latest"
   },
   "excludedFrontendModules": []
 }
