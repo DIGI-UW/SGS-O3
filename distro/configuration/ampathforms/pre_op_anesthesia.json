@@ -62,7 +62,7 @@
             "questions": [
               {
                 "label": "Upload anesthesia sheet here",
-                "type": "complex-obs",
+                "type": "obs",
                 "required": false,
                 "id": "uploadAnesthesiaSheet",
                 "questionOptions": {

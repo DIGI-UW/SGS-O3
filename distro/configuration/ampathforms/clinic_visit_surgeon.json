@@ -376,7 +376,7 @@
             "questions": [
               {
                 "label": "Injury Photo",
-                "type": "complex-obs",
+                "type": "obs",
                 "required": false,
                 "id": "injuryPhoto",
                 "questionOptions": {
