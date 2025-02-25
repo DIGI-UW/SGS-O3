@@ -358,7 +358,7 @@
             "questions": [
               {
                 "label": "Upload anesthesia form here",
-                "type": "complex-obs",
+                "type": "obs",
                 "required": false,
                 "id": "uploadAnesthesiaFormHere",
                 "questionOptions": {

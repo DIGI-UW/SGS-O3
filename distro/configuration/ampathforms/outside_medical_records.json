@@ -15,7 +15,7 @@
             "questions": [
               {
                 "label": "Upload any outside records or imaging here",
-                "type": "complex-obs",
+                "type": "obs",
                 "required": false,
                 "id": "uploadAnyOutsideRecords",
                 "questionOptions": {
