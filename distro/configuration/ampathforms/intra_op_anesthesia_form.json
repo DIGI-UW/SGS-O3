@@ -134,7 +134,7 @@
                 "required": false,
                 "id": "timeAntibioticsGiven",
                 "questionOptions": {
-                  "rendering": "date",
+                  "rendering": "datetime",
                   "concept": "770029A9-05B8-5CDD-7468-A7A74053A33C",
                   "conceptMappings": [],
                   "answers": []
