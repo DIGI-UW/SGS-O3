@@ -70,7 +70,7 @@
                 "required": false,
                 "id": "postOperativeFollowUpDatetime",
                 "questionOptions": {
-                  "rendering": "date",
+                  "rendering": "datetime",
                   "concept": "3ccb25fd-1bbb-8f65-1cbf-fdb0ddac2df4",
                   "conceptMappings": [],
                   "answers": []
