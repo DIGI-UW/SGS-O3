@@ -42,5 +42,8 @@
       "midUpperArmCircumferenceUuid": "90f53912-95d5-4b5c-a9eb-81f3f937225e",
       "generalPatientNoteUuid":"165095AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
     }
+  },
+  "@openmrs/esm-patient-attachments-app":{
+    "maxFileSize": 500
   }
 }
