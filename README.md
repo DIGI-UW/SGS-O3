@@ -100,6 +100,10 @@ Common issues and solutions:
    - Check network connectivity to SMS service
    - Review API endpoint configuration
 
+3. Attachment uploads:
+   - Configure the maximum size for upload and storage in the backend using the global properties `attachments.maxStorageFileSize` and `attachments.maxUploadFileSize`
+
+
 ## 📚 Additional Resources
 
 - [OpenMRS Documentation](https://wiki.openmrs.org/)
