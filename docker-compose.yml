@@ -82,6 +82,7 @@ services:
     volumes:
       - openmrs_data:/openmrs/data
       - ./distro/configuration/:/openmrs/distribution/openmrs_config
+      - ./complex_obs/:/openmrs/data/complex_obs
     env_file:
       - .env
 
