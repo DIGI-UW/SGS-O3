@@ -106,6 +106,40 @@ services:
       - db_data:/var/lib/mysql
       - ./db:/docker-entrypoint-initdb.d:ro
 
+  backup:
+    image: mariadb:10.8.2
+    volumes:
+      - ./backup:/backup
+    environment:
+      MYSQL_PWD: ${OMRS_DB_PASSWORD:-openmrs}
+    command: |
+      bash -c '
+      # Run immediate backup when container starts
+      echo "Starting immediate backup at $$(date)" >> /backup/backup_log.txt
+      FILENAME="sgs_backup_$$(date +"%Y%m%d_%H%M%S").sql"
+      mysqldump --host=sgs-mariadb --user=openmrs --single-transaction --quick --lock-tables=false openmrs > /backup/$$FILENAME
+      gzip /backup/$$FILENAME
+      echo "Backup completed: $$FILENAME.gz" >> /backup/backup_log.txt
+
+      # Schedule weekly backups
+      while true; do
+        if [ "$$(date +%u)" -eq "7" ] && [ "$$(date +%H)" -eq "2" ] && [ "$$(date +%M)" -lt "60" ]; then
+          echo "Starting weekly backup at $$(date)" >> /backup/backup_log.txt
+          FILENAME="sgs_backup_$$(date +"%Y%m%d_%H%M%S").sql"
+          mysqldump --host=sgs-mariadb --user=openmrs --single-transaction --quick --lock-tables=false openmrs > /backup/$$FILENAME
+          gzip /backup/$$FILENAME
+          echo "Backup completed: $$FILENAME.gz" >> /backup/backup_log.txt
+          
+          # Keep only last 5 backups
+          ls -tp /backup/sgs_backup_*.sql.gz | grep -v "/$" | tail -n +6 | xargs -I {} rm -- {}
+          
+          # Sleep for the rest of the hour to avoid multiple backups
+          sleep 1h
+        fi
+        sleep 30m
+      done'
+    restart: unless-stopped
+
 volumes:
   openmrs_data: ~
   db_data: ~
